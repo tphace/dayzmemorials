@@ -377,9 +377,9 @@
         transform: translateY(-2px);
     }
 
-    .footer-disclaimer {
-        font-size: 0.6rem;
-        color: var(--text-meta);
+    .footer-info {
+        font-size: 0.7rem;
+        color: var(--text-dim);
         letter-spacing: 0.5px;
         text-align: center;
         max-width: 800px;
@@ -417,57 +417,57 @@
             left: 0;
         }
 
-        .main {
-            padding-bottom: 150px;
-        }
-    }
+        @media (min-width: 1024px) {
+            main {
+                padding-bottom: 150px;
+            }
 
-    @media (max-width: 600px) {
-        .nav-tagline {
-            display: none;
-        }
+            @media (max-width: 600px) {
+                .nav-tagline {
+                    display: none;
+                }
 
-        h1 {
-            letter-spacing: 4px;
-            padding: 0 10px;
-        }
+                h1 {
+                    letter-spacing: 4px;
+                    padding: 0 10px;
+                }
 
-        .curator-tag {
-            letter-spacing: 3px;
-            margin-top: 4px;
-        }
+                .curator-tag {
+                    letter-spacing: 3px;
+                    margin-top: 4px;
+                }
 
-        .header-banner {
-            height: 18vh;
-        }
-    }
+                .header-banner {
+                    height: 18vh;
+                }
+            }
 
-    @media (max-width: 900px) {
+            @media (max-width: 900px) {
 
-        .story-section {
-            grid-template-columns: 1fr;
-            gap: 24px;
-        }
+                .story-section {
+                    grid-template-columns: 1fr;
+                    gap: 24px;
+                }
 
-        .nav-card-grid {
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
+                .nav-card-grid {
+                    grid-template-columns: 1fr;
+                    gap: 16px;
+                }
 
-        .nav-card {
-            height: 160px;
-        }
-    }
+                .nav-card {
+                    height: 160px;
+                }
+            }
 
-    @media (min-width: 600px) and (max-width: 900px) {
-        .nav-card-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
+            @media (min-width: 600px) and (max-width: 900px) {
+                .nav-card-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
 
-        .nav-card {
-            height: 180px;
-        }
-    }
+                .nav-card {
+                    height: 180px;
+                }
+            }
     </style>
 </head>
 
@@ -494,7 +494,7 @@
     </header>
     <main class="container">
         <section class="welcome-intro">
-            <p>A tribute to players who loved DayZ — and have passed away in real life. Wooden crosses, placed by Bohemia Interactive, mark their memory on the DayZ vanilla maps. Each one was requested by friends or family. May they rest in peace.</p>
+            <p>TESTTTTTTT</p>
         </section>
         <div class="section-divider"></div>
         <section class="story-section">
@@ -538,10 +538,11 @@
             <a href="https://www.izurvive.com/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/map.png');" aria-label="Maps"></a>
             <a href="http://www.youtube.com/@tphace" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/yt.png');" aria-label="YouTube"></a>
         </div>
-        <div class="footer-disclaimer">
+        <div class="footer-info">
             The Memorials of DayZ is a fan-created project and is not affiliated with, endorsed by, or connected to Bohemia Interactive a.s. in any official capacity. All trademarks and copyrights related to DayZ are the property of Bohemia Interactive. This website exists solely to celebrate the player community and stories within the DayZ universe.
         </div>
     </footer>
+    <script data-goatcounter="https://tphace.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 
 </html>
