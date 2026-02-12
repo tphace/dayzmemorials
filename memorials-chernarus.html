@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Memorials of DayZ – Chernarus Memorials</title>
+    <meta name="description" content="A curated tribute to DayZ players remembered with in‑game wooden crosses.">
+    <link rel="canonical" href="https://tphace.github.io/dayzmemorials/memorials-chernarus.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tphace.github.io/dayzmemorials/memorials-chernarus.html">
+    <meta property="og:title" content="The Memorials of DayZ – Chernarus Memorials">
+    <meta property="og:description" content="A curated tribute to DayZ players remembered with in‑game wooden crosses.">
+    <meta property="og:image" content="https://tphace.github.io/dayzmemorials/images/nav/banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tphace.github.io/dayzmemorials/memorials-chernarus.html">
+    <meta name="twitter:title" content="The Memorials of DayZ – Chernarus Memorials">
+    <meta name="twitter:description" content="A curated tribute to DayZ players remembered with in‑game wooden crosses.">
+    <meta name="twitter:image" content="https://tphace.github.io/dayzmemorials/images/nav/banner.jpg">
+    <link rel="icon" type="image/x-icon" href="images/nav/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <style>
+    :root {
+        --bg-color: #1e1e1e;
+        --text-bright: #ffffff;
+        --text-dim: #999999;
+        --text-meta: #bbbbbb;
+        --text-muted: #666666;
+        --accent: #222222;
+        --nav-height: 50px;
+    }
+
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-bright);
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    /* --- NAVIGATION --- */
+    nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        min-height: var(--nav-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        z-index: 1000;
+        background-color: rgba(10, 10, 10, 0.95);
+        background-image: url('images/nav/pattern.png');
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-logo {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--text-muted);
+        background-image: url('images/nav/favicon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .nav-logo:hover {
+        border-color: var(--text-bright);
+        transform: scale(1.05);
+    }
+
+    .nav-tagline {
+        font-family: 'Crimson Pro', serif;
+        font-style: italic;
+        font-size: 1.00rem;
+        color: var(--text-dim);
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--text-dim);
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s;
+    }
+
+    .nav-links a.active {
+        color: var(--text-bright);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 2px;
+    }
+
+    .nav-links a:hover {
+        color: var(--text-bright);
+    }
+
+    /* --- HEADER --- */
+    .header-banner {
+        position: relative;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/nav/banner.avif');
+        background-size: cover;
+        background-position: center 40%;
+        filter: grayscale(50%) brightness(0.35);
+        z-index: 1;
+    }
+
+    .header-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Crimson Pro', serif;
+        font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+        font-weight: 200;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .curator-tag {
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+        letter-spacing: 6px;
+        color: var(--text-dim);
+        margin-top: 8px;
+        font-weight: 300;
+        text-transform: lowercase;
+    }
+
+    /* --- MAIN CONTENT --- */
+    main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .intro-section {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .intro-text {
+        font-family: 'Crimson Pro', serif;
+        font-style: italic;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: var(--text-dim);
+        font-weight: 200;
+    }
+
+    .section-header {
+        text-align: center;
+        margin: 30px auto 28px auto;
+    }
+
+    .section-header h2 {
+        font-family: 'Crimson Pro', serif;
+        font-size: 1.75rem;
+        text-transform: normal;
+        letter-spacing: 10px;
+        color: var(--text-bright);
+        font-weight: 300;
+    }
+
+    .section-divider {
+        width: 40px;
+        height: 1px;
+        background: var(--text-muted);
+        margin: 20px auto;
+    }
+
+
+    .map-thumbnail-container {
+        text-align: center;
+        margin: 30px auto;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .map-thumbnail {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        transition: all 0.4s ease;
+        filter: grayscale(20%) brightness(0.8);
+    }
+
+    .map-thumbnail:hover {
+        transform: scale(1.01);
+        border-color: var(--text-bright);
+        filter: grayscale(0%) brightness(1);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .map-modal {
+        display: none;
+        position: fixed;
+        z-index: 3000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+    }
+
+    .map-window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85vw;
+        height: 85vh;
+        background-color: #111;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-map {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 35px;
+        font-weight: 200;
+        z-index: 4000;
+        transition: color 0.3s ease;
+    }
+
+    .close-map:hover {
+        transform: scale(1.2);
+        color: var(--text-dim);
+    }
+
+    .map-wrapper {
+        width: 100%;
+        height: 100%;
+        cursor: grab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .map-full {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        transform-origin: center;
+        user-select: none;
+        -webkit-user-drag: none;
+        transition: transform 0.1s ease-out;
+    }
+
+    .map-controls {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--text-muted);
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        pointer-events: none;
+    }
+
+    .map-action-wrapper {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .download-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        font-weight: 300;
+        transition: all 0.3s ease;
+        background-color: transparent;
+    }
+
+    .download-btn:hover {
+        color: var(--text-bright);
+        border-color: var(--text-bright);
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .map-hint {
+        font-size: 0.6rem;
+        color: var(--text-muted);
+        margin: 0;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+
+    .changelog-section {
+        margin-top: 0px;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 20px;
+        padding-bottom: 64px;
+    }
+
+    .changelog-details {
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .changelog-title {
+        list-style: none;
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        color: var(--text-meta);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s ease;
+    }
+
+    .changelog-title::-webkit-details-marker {
+        display: none;
+    }
+
+    .changelog-title:hover {
+        color: var(--text-bright);
+    }
+
+    .changelog-title .chevron {
+        width: 8px;
+        height: 8px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: rotate(45deg);
+        margin-bottom: 4px;
+        transition: transform 0.3s ease;
+    }
+
+    .changelog-details[open] .chevron {
+        transform: rotate(-135deg);
+        margin-bottom: -4px;
+    }
+
+    .changelog-content {
+        margin-top: 20px;
+        padding: 0 20px;
+        color: var(--text-dim);
+        font-size: 0.85rem;
+        font-weight: 300;
+        line-height: 1.8;
+    }
+
+    .changelog-content p {
+        margin-bottom: 10px;
+        color: var(--text-bright);
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+    }
+
+    .changelog-content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .changelog-content li {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        padding-left: 15px;
+    }
+
+    .loc-name {
+        color: var(--text-meta);
+        font-weight: 400;
+    }
+
+    .loc-coords {
+        font-family: monospace;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+    }
+
+    .loc-ded {
+        font-family: monospace;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+        font-style: italic;
+    }
+
+
+    .table-section {
+        margin: 50px auto;
+        padding: 0 20px 100px 20px;
+        max-width: 1200px;
+        padding-bottom: 160px;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .memorial-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    .memorial-table {
+        counter-reset: rowNumber;
+    }
+
+    .memorial-table tbody tr {
+        counter-increment: rowNumber;
+    }
+
+    .memorial-table tbody tr td:first-child::before {
+        content: counter(rowNumber);
+        font-weight: bold;
+        color: var(--text-muted);
+    }
+
+    .memorial-table th:first-child,
+    .memorial-table td:first-child {
+        width: 30px;
+        text-align: center;
+    }
+
+    .memorial-table thead th {
+        background-color: rgba(255, 255, 255, 0.03);
+        color: var(--text-bright);
+        text-transform: uppercase;
+        padding: 12px 15px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: left;
+    }
+
+    .memorial-table td {
+        padding: 12px 15px;
+        color: var(--text-dim);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        vertical-align: middle;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    .memorial-table tbody tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .memorial-table tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    .table-link {
+        color: var(--text-meta);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .table-link:hover {
+        color: var(--text-bright);
+        border-bottom: 1px solid var(--text-bright);
+    }
+
+
+    .memorial-table td {
+        padding: 12px 15px;
+        color: var(--text-dim);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        vertical-align: middle;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    .memorial-table td:nth-child(3) {
+        font-family: monospace;
+        font-size: 0.7rem;
+    }
+
+    .preview-window {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        background: #111;
+        border: 3px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        z-index: 2000;
+        transition: left 0.05s linear, top 0.05s linear;
+        pointer-events: none;
+        display: none;
+    }
+
+    .preview-window iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        filter: grayscale(40%) brightness(1.0);
+    }
+
+    /* --- FOOTER --- */
+
+    footer {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 25px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+
+    .footer-disclaimer {
+        font-size: 0.6rem;
+        color: var(--text-meta);
+        letter-spacing: 0.5px;
+        text-align: center;
+        max-width: 800px;
+        line-height: 1.5;
+        opacity: 0.7;
+    }
+
+    /* --- RESPONSIVE ADJUSTMENTS --- */
+    @media (max-width: 1100px) {
+        :root {
+            --nav-height: 110px;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px 15px;
+        }
+
+        .nav-links {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px 20px;
+        }
+
+        .header-banner {
+            height: 15vh;
+        }
+    }
+
+    .table-container {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-container thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .table-container {
+        position: relative;
+    }
+
+    .table-container::after {
+        content: "Swipe to see more →";
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.6);
+        background: linear-gradient(90deg, rgba(30, 30, 30, 0) 0%, rgba(30, 30, 30, 0.9) 40%);
+        padding: 6px 8px 6px 24px;
+        border-radius: 4px;
+        pointer-events: none;
+    }
+
+    @media (min-width: 1024px) {
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .main {
+            padding-bottom: 150px;
+        }
+    }
+
+    @media (min-width: 701px) {
+        .table-container::after {
+            display: none;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        .memorial-table td,
+        .memorial-table thead th {
+            padding: 14px 12px;
+            font-size: 0.85rem;
+        }
+    }
+
+
+    @media (max-width: 600px) {
+
+        .nav-tagline {
+            display: none;
+        }
+
+        h1 {
+            letter-spacing: 4px;
+            padding: 0 10px;
+        }
+
+        .curator-tag {
+            letter-spacing: 3px;
+            margin-top: 4px;
+        }
+
+        .header-banner {
+            height: 18vh;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html" class="nav-logo" aria-label="Welcome"></a>
+            <span class="nav-tagline">Gone, but not forgotten</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="memorials-chernarus.html" class="active">Memorials of Chernarus</a></li>
+            <li><a href="memorials-livonia.html">Memorials of Livonia</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <header class="header-banner" id="welcome">
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>The Memorials of DayZ</h1>
+            <div class="curator-tag">curated by tphace</div>
+        </div>
+    </header>
+    <section class="section-header">
+        <h2>Chernarus Map</h2>
+        <div class="map-thumbnail-container">
+            <img src="images/maps/memorials_chernarus_thumb.jpg" alt="Chernarus Memorial Map" class="map-thumbnail" id="openMap">
+            <div class="map-action-wrapper">
+                <p class="map-hint">Click to Enlarge</p>
+                <a href="images/maps/memorials_chernarus.jpg" target="_blank" rel="noopener noreferrer" decoding="async" class="download-btn">
+                    Download Version 4.9.6 | February 2026 | DayZ 1.28 | Hi-Res JPG
+                </a>
+            </div>
+        </div>
+    </section>
+    <div id="mapModal" class="map-modal">
+        <div class="map-window">
+            <span class="close-map" id="closeMap">&times;</span>
+            <div class="map-wrapper" id="mapWrapper">
+                <img src="images/maps/memorials_chernarus.jpg" id="mapImage" class="map-full">
+            </div>
+            <div class="map-controls">Scroll to Zoom • Drag to Move • ESC to quit</div>
+        </div>
+    </div>
+    <div class="changelog-section">
+        <details class="changelog-details">
+            <summary class="changelog-title">
+                RECENT CHANGES
+                <span class="chevron"></span>
+            </summary>
+            <div class="changelog-content">
+                <p>Added new location in:</p>
+                <ul>
+                    <li>
+                        <span class="loc-name">Elektrozavodsk Church (Northeast)</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Murky Bay</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Myshkino (Northeast)</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Lopatino (South)</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Novaya Petrovka Factory #3</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Black Lake Pub</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Rify Railway Crossing</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Berezino Residential</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Black Forest Pond #1</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Black Forest Pond #2</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Black Forest Pub</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Solnechny Waterpump</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Solnechny Shore</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Solnechny Quarry</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Rog Castle</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Cape Crutoy #2</span>
+                    </li>
+                </ul>
+                <p>Memorials dedicated to:</p>
+                <ul>
+                    <li>
+                        <span class="loc-name">Devil's Castle #1</span>
+                        <span class="loc-coords">6804.84;11484.3</span>
+                        <span class="loc-ded">for Cody aka Kh0diak</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Black Forest Pub</span>
+                        <span class="loc-coords">9789.47;8220.32 </span>
+                        <span class="loc-ded">for Tyler</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Lopatino (South)</span>
+                        <span class="loc-coords">2558.91;9240.89</span>
+                        <span class="loc-ded">for Big Red</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Three Valleys</span>
+                        <span class="loc-coords">12994;5501.56</span>
+                        <span class="loc-ded">for Harry</span>
+                    </li>
+                    <li>
+                        <span class="loc-name">Komarovo #1</span>
+                        <span class="loc-coords">3774.59;2605.17</span>
+                        <span class="loc-ded">for Eddie aka AZCowboy</span>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+    <section class="table-section">
+        <div class="table-container">
+            <table class="memorial-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Location</th>
+                        <th>Coordinates</th>
+                        <th>Dedicated to</th>
+                        <th>Source</th>
+                        <th>Bench</th>
+                        <th>Memorial Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Elektrozavodsk Hill</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10606.4;2822.76" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10606.4;2822.76">10606.4;2822.76</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Red Motorcycle Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Elektrozavodsk Church (Northeast)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10612.7;2535.94" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10612.7;2535.94">10612.7;2535.94</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Elektrozavodsk Farm (Northwest)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9977.39;2653.64" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9977.39;2653.64">9977.39;2653.64</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Pusta</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9098.77;3819.42" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9098.77;3819.42">9098.77;3819.42</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Prigorodki Farm</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8321.79;3365.64" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8321.79;3365.64">8321.79;3365.64</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chernogorsk Soldier Memorial</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6357.8;3057.05" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6357.8;3057.05">6357.8;3057.05</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chernogorsk Cemetery (North)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6644.04;2957.93" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6644.04;2957.93">6644.04;2957.93</a></td>
+                        <td><a href="gallery.html#Steve_R_aka_Str8OuttaCherno" class="table-link" target="_blank" rel="noopener noreferrer">Steve R. aka Str8OuttaCherno</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=zADIi5S5gJk&lc=UgxMyVKuS4U6XsmPxzZ4AaABAg" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chernogorsk Cemetery (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6746.23;2865.76" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6746.23;2865.76">6746.23;2865.76</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chernogorsk Townhall</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6623.74;2411.41" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6623.74;2411.41">6623.74;2411.41</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chernogorsk Pier</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6622.92;2240.29" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6622.92;2240.29">6622.92;2240.29</a></td>
+                        <td><a href="gallery.html#Gabriel_aka_SIX" class="table-link" target="_blank" rel="noopener noreferrer">Gabriel aka SIX</a></td>
+                        <td>PM on Discord</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Chernogorsk Waterpump</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6482.95;2337.22" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6482.95;2337.22">6482.95;2337.22</a></td>
+                        <td><a href="gallery.html#Hughie_D._aka_weav_deth666" class="table-link" target="_blank" rel="noopener noreferrer">Hughie D. aka weav_deth666</a></td>
+                        <td><a href="https://feedback.bistudio.com/T176352" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Murky Bay</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5527.97;1902.99" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5527.97;1902.99">5527.97;1902.99</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Balota Airfield #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5400.42;2206.18" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5400.42;2206.18">5400.42;2206.18</a></td>
+                        <td><a href="gallery.html#Anthony_aka_WotalTanker" class="table-link" target="_blank" rel="noopener noreferrer">Anthony aka WotalTanker</a></td>
+                        <td><a href="https://x.com/DokterStrangel1/status/1582318293339164672" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Balota Airfield #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5168.16;2520.27" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5168.16;2520.27">5168.16;2520.27</a></td>
+                        <td><a href="gallery.html#Maks1019" class="table-link" target="_blank" rel="noopener noreferrer">Maks1019</a></td>
+                        <td><a href="https://youtube.com/shorts/IlMxujD4ZUk?si=O0C2BxZ6CFGzZmDN" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross with Pilotka Cap</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Komarovo #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3774.59;2605.17" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3774.59;2605.17">3774.59;2605.17</a></td>
+                        <td><a href="gallery.html#Eddie_aka_AZCowboy" class="table-link" target="_blank" rel="noopener noreferrer">Eddie aka AZCowboy</a></td>
+                        <td><a href="https://www.reddit.com/r/dayz/comments/1cyd47t/comment/l58nr69/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Brown Cowboy Hat</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Komarovo #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3792.21;2460.46" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3792.21;2460.46">3792.21;2460.46</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Komarovo #3</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3563.25;2477.67" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3563.25;2477.67">3563.25;2477.67</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ostrog Lighthouse</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2619;2231.88" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2619;2231.88">2619;2231.88</a></td>
+                        <td><a href="gallery.html#Sergei_T._aka_Bojindo" class="table-link" target="_blank" rel="noopener noreferrer">Sergei T. aka Bojindo</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/qyultp/comment/hligevq/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://youtu.be/oxyr_hRcrUU?si=o9NrhExz1kJhUn2A" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>–</td>
+                        <td>Cemetery Tombstone with ChDKZ Military Beret</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Storozh</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2651.5;1225.32" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2651.5;1225.32">2651.5;1225.32</a></td>
+                        <td><a href="gallery.html#Chris" class="table-link" target="_blank" rel="noopener noreferrer">Chris</a></td>
+                        <td><a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kamenka</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1991.19;2309.41" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1991.19;2309.41">1991.19;2309.41</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tikhiy Zaliv Military</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=845.991;1808.96" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=845.991;1808.96">845.991;1808.96</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Erbenka (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2911.68;3941.74" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2911.68;3941.74">2911.68;3941.74</a></td>
+                        <td><a href="gallery.html#Jen_aka_Poisonantler" class="table-link" target="_blank" rel="noopener noreferrer">Jen aka Poisonantler</a></td>
+                        <td>
+                            <a href="https://forums.dayz.com/topic/238378-status-report-5-june-2018/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://x.com/adamfrancu/status/1004104189436485632" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                            <a href="https://www.reddit.com/r/dayz/comments/97hmvs/comment/e48he2g/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1" class="table-link" target="_blank" rel="noopener noreferrer">[3]</a>
+                            <a href="https://www.twitch.tv/poisonantler/video/238300349" class="table-link" target="_blank" rel="noopener noreferrer">[4]</a>
+                            <a href="https://www.youtube.com/watch?v=Ldu_DjsyfTo" class="table-link" target="_blank" rel="noopener noreferrer">[5]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Erbenka (North)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2881.49;4326.72" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2881.49;4326.72">2881.49;4326.72</a></td>
+                        <td><a href="gallery.html#Jordan" class="table-link" target="_blank" rel="noopener noreferrer">Jordan</a></td>
+                        <td><a href="https://feedback.bistudio.com/T177091" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Zelenogorsk Church</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2705.5;5453.92" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2705.5;5453.92">2705.5;5453.92</a></td>
+                        <td><a href="gallery.html#HarryZeleno" class="table-link" target="_blank" rel="noopener noreferrer">Harry</a></td>
+                        <td><a href="https://youtube.com/shorts/IlMxujD4ZUk?si=HSv-_wiLlOXlGOJ6" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Green Mountain</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3783.03;5998.66" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3783.03;5998.66">3783.03;5998.66</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Green Mountain Military #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3717.04;5925.3" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3717.04;5925.3">3717.04;5925.3</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Green Mountain Military #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3698.87;6019.07" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3698.87;6019.07">3698.87;6019.07</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Pulkovo Barn</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=4542.7;6496.28" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=4542.7;6496.28">4542.7;6496.28</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Pogorevka</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=4542.7;6496.28" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=4542.7;6496.28">4542.7;6496.28</a></td>
+                        <td><a href="gallery.html#Jake_L._aka_AE86FORLIFE" class="table-link" target="_blank" rel="noopener noreferrer">Jake L. aka AE86FORLIFE</a></td>
+                        <td>PM on Discord</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rogovo</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=4585.5;7038.42" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=4585.5;7038.42">4585.5;7038.42</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Matveyevo</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=4291.42;7120.13" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=4291.42;7120.13">4291.42;7120.13</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Brown Cowboy Hat</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>A Dairy Farm</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3638.1;6916.25" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3638.1;6916.25">3638.1;6916.25</a></td>
+                        <td><a href="gallery.html#Jack_Forrest_(Jacka_Foresta)" class="table-link" target="_blank" rel="noopener noreferrer">Jack Forrest (Jacka Foresta)</a>
+                        </td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/inqio6/comment/g4b8r5d/?utm_source=share&utm_medium=web2x&context=3" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://youtu.be/EQ-ygWaGGEs?si=syBnotEdfaR_fK7p" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sosnovy Pass (East)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3570.12;6813.52" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3570.12;6813.52">3570.12;6813.52</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Zelenogorsk (North)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2569.84;5931.36" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2569.84;5931.36">2569.84;5931.36</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Zvir</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=562.406;5167.07" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=562.406;5167.07">562.406;5167.07</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Plotina Tishina</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1169.44;6307.1" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1169.44;6307.1">1169.44;6307.1</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Metallurgist</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1115.42;6617.15" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1115.42;6617.15">1115.42;6617.15</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bolshoy Kotel (West)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=360.438;6615.42" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=360.438;6615.42">360.438;6615.42</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Myshkino (Northeast)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2317.39;7856.74" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2317.39;7856.74">2317.39;7856.74</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Galkino South</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1201.09;8511.32" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1201.09;8511.32">1201.09;8511.32</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lopatino (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2558.91;9240.89" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2558.91;9240.89">2558.91;9240.89</a></td>
+                        <td><a href="gallery.html#Big_Red" class="table-link" target="_blank" rel="noopener noreferrer">Big Red</a></td>
+                        <td><a href="https://youtu.be/DXPeBBjJ_3M?si=PMaW3NPhqn3CwLDU" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tri Kresta</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=450.885;9628.05" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=450.885;9628.05">450.885;9628.05</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Vavilovo (Southwest)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1911.92;10609.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1911.92;10609.4">1911.92;10609.4</a></td>
+                        <td><a href="gallery.html#Ryan" class="table-link" target="_blank" rel="noopener noreferrer">Ryan</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/zuf5yl/comment/j1jdkpu/?utm_source=share&utm_medium=web2x&context=3" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://www.reddit.com/r/dayz/comments/1lmnp6x/to_our_friend_ryan/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross next to a bus sign</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>SKVSCh Biathlon Arena</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=398.734;11183.1" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=398.734;11183.1">398.734;11183.1</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sinystok (Northwest) #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1147.56;12273" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1147.56;12273">1147.56;12273</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sinystok (Northwest) #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1258.29;12376.7" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1258.29;12376.7">1258.29;12376.7</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sinystok (Northwest) #3</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1128.59;12385.5" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1128.59;12385.5">1128.59;12385.5</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tisy Military (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1478.43;13784.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1478.43;13784.8">1478.43;13784.8</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tisy Military Radar Platforms</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1838.84;13777.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1838.84;13777.9">1838.84;13777.9</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tisy Military (North</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1395.48;14246.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1395.48;14246.8">1395.48;14246.8</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Deep Lake</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=1781;14681.1" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=1781;14681.1">1781;14681.1</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with Sword</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Deep Lake Barn</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=2440.22;14726.7" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=2440.22;14726.7">2440.22;14726.7</a></td>
+                        <td><a href="gallery.html#Bobby_Chap" class="table-link" target="_blank" rel="noopener noreferrer">Bobby & Chap</a></td>
+                        <td><a href="https://www.youtube.com/watch?v=lOA2VKohUgA&lc=UgwFDRrfbZW7yIFn8YF4AaABAg" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Stary Yar Cliffs</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=4714.66;14924.5" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=4714.66;14924.5">4714.66;14924.5</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Stary Yar Pub</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=4908.8;14851.1" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=4908.8;14851.1">4908.8;14851.1</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Novaya Petrovka Church</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3639.21;13121.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3639.21;13121.8">3639.21;13121.8</a></td>
+                        <td><a href="gallery.html#Elmer_aka_Pancake" class="table-link" target="_blank" rel="noopener noreferrer">Elmer aka Pancake</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/1918b77/recent_death_in_our_squad_were_trying_to_get_a/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://x.com/ghostdoublem/status/1744162364847477243" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Novaya Petrovka Factory #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3822.33;12972.3" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3822.33;12972.3">3822.33;12972.3</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Novaya Petrovka Factory #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3702.08;13006.5" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3702.08;13006.5">3702.08;13006.5</a></td>
+                        <td><a href="gallery.html#Patrick_T._aka_ProJecTxPaTT" class="table-link" target="_blank" rel="noopener noreferrer">Patrick T. aka ProJecTxPaTT</a></td>
+                        <td><a href="https://www.reddit.com/r/dayz/comments/zuf5yl/comment/j964ao3/?utm_source=share&utm_medium=web2x&context=3" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>–</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Novaya Petrovka Factory #3</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3600.8;12954.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3600.8;12954.2">3600.8;12954.2</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Novaya Petrovka Train Station</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3322.06;12497.7" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3322.06;12497.7">3322.06;12497.7</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Green Ballistic Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bashnya (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3974;11453.3" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3974;11453.3">3974;11453.3</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>North-West Airfield (West)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=3981.2;10412.7" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=3981.2;10412.7">3981.2;10412.7</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with Megaphone</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Grishino Farm (Northwest)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5295.91;10616.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5295.91;10616.2">5295.91;10616.2</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Grishino 1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5911.23;10014.1" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5911.23;10014.1">5911.23;10014.1</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Grishino 2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5909.14;10015.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5909.14;10015.4">5909.14;10015.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Devil's Castle #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6503.47;11571.1" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6503.47;11571.1">6503.47;11571.1</a></td>
+                        <td><a href="gallery.html#John_aka_Prospect" class="table-link" target="_blank" rel="noopener noreferrer">John aka Prospect</a></td>
+                        <td>
+                            <a href="https://youtube.com/shorts/BDcq0T7xd7E?si=LDavEQVpvvcV04uZ" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://youtube.com/shorts/BDcq0T7xd7E?si=LDavEQVpvvcV04uZ" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Devil's Castle #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6804.84;11484.3" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6804.84;11484.3">6804.84;11484.3</a></td>
+                        <td><a href="gallery.html#Cody_aka_Kh0diak" class="table-link" target="_blank" rel="noopener noreferrer">Cody aka Kh0diak</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/user/tphace/comments/1l2csqs/comment/n0o4ay1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://www.reddit.com/r/dayz/comments/qtdf2s/i_pulled_this_from_fb_i_thought_it_was_really_cool/" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                            <a href="https://imgur.com/a/x0sSBHg" class="table-link" target="_blank" rel="noopener noreferrer">[3]</a>
+                            <a href="https://youtube.com/shorts/IlMxujD4ZUk?si=EmUe-xTtts0m3MgD" class="table-link" target="_blank" rel="noopener noreferrer">[4]</a>
+                        </td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ratnoye South</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6201.44;12578.3" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6201.44;12578.3">6201.44;12578.3</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with Baseball Bat</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Lysaya Gora (Southwest)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6349.06;13876.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6349.06;13876.9">6349.06;13876.9</a></td>
+                        <td><a href="gallery.html#Robert_J._aka_SpcKronos" class="table-link" target="_blank" rel="noopener noreferrer">Robert J. aka SpcKronos</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/1d34sk5/comment/l6adhso/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                            <a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link" target="_blank" rel="noopener noreferrer">[3]</a>
+                            <a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link" target="_blank" rel="noopener noreferrer">[4]</a>
+                        </td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kamensk (Southeast)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=7040.55;14240.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=7040.55;14240.4">7040.55;14240.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Red Motorcycle Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Arsenovo</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8492.3;14009" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8492.3;14009">8492.3;14009</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Severograd (North)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=7849.64;13006.7" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=7849.64;13006.7">7849.64;13006.7</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Gvozdno Cemetery #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=7866.84;11927.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=7866.84;11927.6">7866.84;11927.6</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>Wooden Cross on a Pile of Rocks</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Gvozdno Cemetery #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=7893.67;12007.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=7893.67;12007.8">7893.67;12007.8</a></td>
+                        <td><a href="gallery.html#Percy" class="table-link" target="_blank" rel="noopener noreferrer">Percy</a></td>
+                        <td>PM on Discord</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Gvozdno Forest</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8297.38;12042.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8297.38;12042.6">8297.38;12042.6</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Severograd Apartments #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8373.06;12864.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8373.06;12864.4">8373.06;12864.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Severograd Apartments #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8436.94;12874.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8436.94;12874.9">8436.94;12874.9</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Severograd Apartments #3</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8497.81;12937.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8497.81;12937.4">8497.81;12937.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Klyuch</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9256.92;13492.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9256.92;13492.2">9256.92;13492.2</a></td>
+                        <td><a href="gallery.html#SkyZ" class="table-link" target="_blank" rel="noopener noreferrer">SkyZ</a></td>
+                        <td><a href="https://www.reddit.com/user/tphace/comments/1d1xo9n/comment/lbg1esi/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Mountain Castle (South) </td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10226.5;11782.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10226.5;11782.9">10226.5;11782.9</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Red Motorcycle Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Krasnostav (West)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10537.9;12200.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10537.9;12200.9">10537.9;12200.9</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Krasnostav Airfield (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11786.1;12430.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11786.1;12430.2">11786.1;12430.2</a></td>
+                        <td><a href="gallery.html#Adam_B._aka_DocSatan" class="table-link" target="_blank" rel="noopener noreferrer">Adam B. aka DocSatan</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/q2b7iq/comment/hfkkodd/?utm_source=share&utm_medium=web2x&context=3" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://www.reddit.com/r/dayz/comments/m9sss6/rip_docsatan_from_the_dayz_down_under_pc/" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                            <a href="https://www.reddit.com/r/dayz/comments/sezq7f/comment/hup6z7l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[3]</a>
+                            <a href="https://www.reddit.com/r/dayz/comments/mbohjf/docsatan_funeral/" class="table-link" target="_blank" rel="noopener noreferrer">[4]</a>
+                        </td>
+                        <td>2x</td>
+                        <td>Wooden Cross with a UN Ballistic Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Krasnostav Airfield (North)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11934.7;13160.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11934.7;13160.4">11934.7;13160.4</a></td>
+                        <td><a href="gallery.html#Pauli" class="table-link" target="_blank" rel="noopener noreferrer">Pauli</a></td>
+                        <td>
+                            <a href="https://youtu.be/vmCIiEftFHE?t=807" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://youtube.com/shorts/IlMxujD4ZUk?si=djVoIPtImG8CsdTd" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ostry Military</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10939.7;13387.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10939.7;13387.9">10939.7;13387.9</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Dragon's Ridge</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11149.9;13705.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11149.9;13705.8">11149.9;13705.8</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Novodmitrovsk (West)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10451.7;14260" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10451.7;14260">10451.7;14260</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sokol</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11883.3;14920.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11883.3;14920.6">11883.3;14920.6</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezhki (North)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=15068.3;14217.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=15068.3;14217.2">15068.3;14217.2</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Olsha Antenna</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12981;12759.5" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12981;12759.5">12981;12759.5</a></td>
+                        <td><a href="gallery.html#Cody_P._aka_Wick" class="table-link" target="_blank" rel="noopener noreferrer">Cody P. aka Wick</a></td>
+                        <td>PM on Discord</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Krasnostav (East)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12305.5;12064.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12305.5;12064.8">12305.5;12064.8</a></td>
+                        <td><a href="gallery.html#Steve" class="table-link" target="_blank" rel="noopener noreferrer">Steve</a></td>
+                        <td><a href="https://www.reddit.com/r/dayz/comments/1i3k224/one_of_40_new_crosses_put_in_as_memorials_for_the/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>2x</td>
+                        <td>Wooden Cross on a Pile of Rocks</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Lake</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13335.2;12054.3" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13335.2;12054.3">13335.2;12054.3</a></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Lake Pub</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13439.7;12149.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13439.7;12149.9">13439.7;12149.9</a></td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Willow Lake #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13312.4;11570.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13312.4;11570.8">13312.4;11570.8</a></td>
+                        <td><a href="gallery.html#Balbanes3" class="table-link" target="_blank" rel="noopener noreferrer">Balbanes3</a></td>
+                        <td>
+                            <a href="https://x.com/jaws_lord/status/1330582717038268416" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://x.com/LottieTwitch/status/1302733878159908864" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                            <a href="https://www.youtube.com/watch?v=lOA2VKohUgA&t=399s" class="table-link" target="_blank" rel="noopener noreferrer">[3]</a>
+                            <a href="https://www.youtube.com/shorts/6Ua5TiIqe8g" class="table-link" target="_blank" rel="noopener noreferrer">[4]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Willow Lake #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13312.2;11569.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13312.2;11569.9">13312.2;11569.9</a></td>
+                        <td><a href="gallery.html#Eight4" class="table-link" target="_blank" rel="noopener noreferrer">Eight4</a></td>
+                        <td>
+                            <a href="https://www.reddit.com/r/dayz/comments/1g1bigc/comment/lrf972b/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://youtu.be/flrNbk5GWF0?si=3VotSugDnNbJtOLj" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Willow Lake #3</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13254.3;11528.7" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13254.3;11528.7">13254.3;11528.7</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rify Railway Crossing</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13582.8;11479.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13582.8;11479.2">13582.8;11479.2</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Willow Lake River</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13458.1;11363.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13458.1;11363.2">13458.1;11363.2</a></td>
+                        <td><a href="gallery.html#Phil" class="table-link" target="_blank" rel="noopener noreferrer">Phil</a></td>
+                        <td><a href="https://forums.dayz.com/topic/237746-status-report-12-december-2017/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rify</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13565.3;11081" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13565.3;11081">13565.3;11081</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezino Church</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13029.2;10568.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13029.2;10568.4">13029.2;10568.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Klen</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11510.5;11283.8" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11510.5;11283.8">11510.5;11283.8</a></td>
+                        <td><a href="gallery.html#Bendman" class="table-link" target="_blank" rel="noopener noreferrer">Bendman</a></td>
+                        <td>PM on Reddit</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with Ssh68Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Druzbha</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11460.4;10641.9" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11460.4;10641.9">11460.4;10641.9</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezino Fields (West)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12548.5;10063.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12548.5;10063.4">12548.5;10063.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezino Police</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12935.4;10161.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12935.4;10161.2">12935.4;10161.2</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>Wooden Cross attached to a Bin</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezino Pub</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12928.7;10082.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12928.7;10082.6">12928.7;10082.6</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezino Factory</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12909.1;9993.77" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12909.1;9993.77">12909.1;9993.77</a></td>
+                        <td><a href="gallery.html#Tristan" class="table-link" target="_blank" rel="noopener noreferrer">Tristan</a></td>
+                        <td><a href="https://youtube.com/shorts/IlMxujD4ZUk?si=HSv-_wiLlOXlGOJ6" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Berezino Residential</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12583;9512.46" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12583;9512.46">12583;9512.46</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Nizhnee</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12775;8004.96" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12775;8004.96">12775;8004.96</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Altar</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8263.4;9092.08" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8263.4;9092.08">8263.4;9092.08</a></td>
+                        <td><a href="gallery.html#Rafi" class="table-link" target="_blank" rel="noopener noreferrer">Rafi</a></td>
+                        <td><a href="https://youtube.com/shorts/IlMxujD4ZUk?si=HSv-_wiLlOXlGOJ6" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Teddy Bear</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Radio Zenit</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8105.7;9285.54" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8105.7;9285.54">8105.7;9285.54</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Glaza Lake</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=7353.75;9296.13" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=7353.75;9296.13">7353.75;9296.13</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Red Motorcycle Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kabanino</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=5697.18;8254.71" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=5697.18;8254.71">5697.18;8254.71</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Stary Sobor Barn</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6186.84;7796.48" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6186.84;7796.48">6186.84;7796.48</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Stary Sobor Military</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=6319.57;7905.83" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=6319.57;7905.83">6319.57;7905.83</a></td>
+                        <td><a href="gallery.html#zNomi" class="table-link" target="_blank" rel="noopener noreferrer">zNomi</a></td>
+                        <td><a href="https://www.reddit.com/r/dayz/comments/1cng1gh/new_player_memorial_dedicated_to_znomi_thank_you/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Forest Pond #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8879.33;8248.62" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8879.33;8248.62">8879.33;8248.62</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Forest Pond #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=8878.8;8249.55" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=8878.8;8249.55">8878.8;8249.55</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Forest Green House</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9100.48;8056.95" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9100.48;8056.95">9100.48;8056.95</a></td>
+                        <td><a href="gallery.html#Jared" class="table-link" target="_blank" rel="noopener noreferrer">Jared</a></td>
+                        <td><a href="https://www.reddit.com/r/dayz/comments/8f6nsi/dayz_the_last_game_i_ever_played_with_my_best/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Forest</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9252.7;8024.64" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9252.7;8024.64">9252.7;8024.64</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Black Forest Pub</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9789.47;8220.32" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9789.47;8220.32">9789.47;8220.32</a></td>
+                        <td><a href="gallery.html#Tyler" class="table-link" target="_blank" rel="noopener noreferrer">Tyler</a></td>
+                        <td><a href="https://youtu.be/QRo35MnbEzM?feature=shared" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Orlovets (South)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12280.4;6958.72" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12280.4;6958.72">12280.4;6958.72</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Solnechny Factory</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13241.6;7298.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13241.6;7298.4">13241.6;7298.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Solnechny Waterpump</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13394.9;6286.77" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13394.9;6286.77">13394.9;6286.77</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Solnechny Shore</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13504.3;6150.67" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13504.3;6150.67">13504.3;6150.67</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with with ChDKZ Military Beret</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Solnechny Quarry</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13192.5;6029.96" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13192.5;6029.96">13192.5;6029.96</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Three Valleys</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12994;5501.56" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12994;5501.56">12994;5501.56</a></td>
+                        <td><a href="gallery.html#Harry" class="table-link" target="_blank" rel="noopener noreferrer">Harry</a></td>
+                        <td><a href="https://www.facebook.com/groups/798824847418071/permalink/1777008422933037/" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Staroye Military</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10391.3;5857.19" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10391.3;5857.19">10391.3;5857.19</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Staroye (Southwest)</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=9901.09;5189.16" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=9901.09;5189.16">9901.09;5189.16</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>2x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rog Castle</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11225.2;4241.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11225.2;4241.4">11225.2;4241.4</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Cape Crutoy #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13306;4002.21" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13306;4002.21">13306;4002.21</a></td>
+                        <td><a href="gallery.html#Sam" class="table-link" target="_blank" rel="noopener noreferrer">Sam</a></td>
+                        <td>
+                            <a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                            <a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        </td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Cape Crutoy #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13619.8;3862.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13619.8;3862.6">13619.8;3862.6</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Skalisty</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13232.2;3184.61" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13232.2;3184.61">13232.2;3184.61</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with Welding Mask</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Skalisty Lighthouse #1</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13320.9;2781.85" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13320.9;2781.85">13320.9;2781.85</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Skalisty Lighthouse #2</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=13245.5;2765" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=13245.5;2765">13245.5;2765</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kamyshovo Shore</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=12229.4;3445.12" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=12229.4;3445.12">12229.4;3445.12</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kamyshovo Cliffs</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11804.2;3524.17" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11804.2;3524.17">11804.2;3524.17</a></td>
+                        <td><a href="gallery.html#Maximilian_S._aka_Hypernight" class="table-link" target="_blank" rel="noopener noreferrer">Maximilian S. aka Hypernight</a></td>
+                        <td>PM on Discord</td>
+                        <td>1x</td>
+                        <td>Wooden Cross with a Red Motorcycle Helmet</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Otmel</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=11610.3;3094.47" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11610.3;3094.47">11610.3;3094.47</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Green Bay</td>
+                        <td><a href="https://izurvive.com/chernarusplus/#location=10946;3066.05" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=10946;3066.05">10946;3066.05</a></td>
+                        <td>–</td>
+                        <td>–</td>
+                        <td>1x</td>
+                        <td>Wooden Cross</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-socials">
+            <a href="https://new.reddit.com/user/tphace/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/reddit.png');" aria-label="Reddit"></a>
+            <a href="https://discord.com/users/541638623007604747" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/discord.png');" aria-label="Discord"></a>
+            <a href="https://www.dayz.com/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/dayz.png');" aria-label="DayZ"></a>
+            <a href="https://www.izurvive.com/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/map.png');" aria-label="Maps"></a>
+            <a href="http://www.youtube.com/@tphace" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/yt.png');" aria-label="YouTube"></a>
+        </div>
+        <div class="footer-disclaimer">
+            The Memorials of DayZ is a fan-created project and is not affiliated with, endorsed by, or connected to Bohemia Interactive a.s. in any official capacity. All trademarks and copyrights related to DayZ are the property of Bohemia Interactive. This website exists solely to celebrate the player community and stories within the DayZ universe.
+        </div>
+    </footer>
+    <script>
+    const modal = document.getElementById("mapModal");
+    const openBtn = document.getElementById("openMap");
+    const closeBtn = document.getElementById("closeMap");
+    const mapImg = document.getElementById("mapImage");
+    const wrapper = document.getElementById("mapWrapper");
+
+    let scale = 1;
+    let isDragging = false;
+    let startX, startY, translateX = 0,
+        translateY = 0;
+
+    if (openBtn) {
+        openBtn.onclick = () => {
+            modal.style.display = "block";
+            resetMap();
+        };
+    }
+
+    const closeModal = () => { modal.style.display = "none"; };
+    if (closeBtn) closeBtn.onclick = closeModal;
+
+    window.onclick = (e) => { if (e.target == modal) closeModal(); };
+    document.addEventListener('keydown', (e) => { if (e.key === "Escape") closeModal(); });
+
+    wrapper.onmousedown = (e) => {
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        wrapper.style.cursor = "grabbing";
+    };
+
+    window.onmousemove = (e) => {
+        if (!isDragging) return;
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateTransform();
+    };
+
+    window.onmouseup = () => {
+        isDragging = false;
+        wrapper.style.cursor = 'grab';
+    };
+
+    wrapper.onwheel = (e) => {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        scale = Math.min(Math.max(0.3, scale + delta), 4);
+        updateTransform();
+    };
+
+    function updateTransform() {
+        mapImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
+
+    function resetMap() {
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        updateTransform();
+    }
+
+
+    const preview = document.createElement('div');
+    preview.className = 'preview-window';
+    preview.innerHTML = '<iframe></iframe>';
+    document.body.appendChild(preview);
+    const iframe = preview.querySelector('iframe');
+
+    document.querySelectorAll('.table-link[data-preview]').forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            if (window.innerWidth <= 800) return;
+            iframe.src = link.dataset.preview;
+            preview.style.display = 'block';
+        });
+
+        link.addEventListener('mousemove', e => {
+            if (window.innerWidth <= 800) return;
+
+            const offset = 20;
+            const margin = 20;
+            let x = e.clientX + offset;
+            let y = e.clientY + offset;
+
+            if (x + preview.offsetWidth + margin > window.innerWidth) {
+                x = e.clientX - preview.offsetWidth - offset;
+            }
+            if (y + preview.offsetHeight + margin > window.innerHeight) {
+                y = e.clientY - preview.offsetHeight - offset;
+            }
+
+            preview.style.left = x + 'px';
+            preview.style.top = y + 'px';
+        });
+
+        link.addEventListener('mouseleave', () => {
+            preview.style.display = 'none';
+            iframe.src = '';
+        });
+    });
+    </script>
+</body>
+
+</html>
