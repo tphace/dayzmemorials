@@ -725,7 +725,14 @@
         .header-banner {
             height: 18vh;
         }
-    }
+
+        @media (pointer: coarse),
+        (max-width: 1024px) {
+            .preview-window {
+                display: none !important;
+                pointer-events: none;
+            }
+        }
     </style>
 </head>
 
@@ -2228,13 +2235,13 @@
 
     document.querySelectorAll('.table-link[data-preview]').forEach(link => {
         link.addEventListener('mouseenter', () => {
-            if (window.innerWidth <= 800) return;
+            if (window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 1024) return;
             iframe.src = link.dataset.preview;
             preview.style.display = 'block';
         });
 
         link.addEventListener('mousemove', e => {
-            if (window.innerWidth <= 800) return;
+            if (window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 1024) return;
 
             const offset = 20;
             const margin = 20;
