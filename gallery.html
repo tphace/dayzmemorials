@@ -536,7 +536,8 @@
         (max-width: 1024px) {
             .preview-window {
                 display: none !important;
-                pointer-events: none;
+                pointer-events: none !important;
+                visibility: hidden !important;
             }
         }
     </style>
@@ -1424,13 +1425,16 @@
     iframe.setAttribute('referrerpolicy', 'no-referrer');
 
 
-    document.querySelectorAll('.memorial-link').forEach(link => {
+    document.querySelectorAll('.memorial-link[data-preview]').forEach(link => {
         link.addEventListener('mouseenter', () => {
+            if (window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 1024) return;
+
             iframe.src = link.dataset.preview;
             preview.style.display = 'block';
         });
 
         link.addEventListener('mousemove', e => {
+            if (window.matchMedia("(pointer: coarse)").matches || window.innerWidth <= 1024) return;
             const offset = 20;
             const margin = 20;
 
