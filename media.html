@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Memorials of DayZ – Media</title>
+    <meta name="description" content="A curated tribute to DayZ players remembered with in‑game wooden crosses.">
+    <link rel="canonical" href="https://tphace.github.io/dayzmemorials/media.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tphace.github.io/dayzmemorials/media.html">
+    <meta property="og:title" content="The Memorials of DayZ – Media">
+    <meta property="og:description" content="A curated tribute to DayZ players remembered with in‑game wooden crosses.">
+    <meta property="og:image" content="https://tphace.github.io/dayzmemorials/images/nav/banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://tphace.github.io/dayzmemorials/media.html">
+    <meta name="twitter:title" content="The Memorials of DayZ – Media">
+    <meta name="twitter:description" content="A curated tribute to DayZ players remembered with in‑game wooden crosses.">
+    <meta name="twitter:image" content="https://tphace.github.io/dayzmemorials/images/nav/banner.jpg">
+    <link rel="icon" type="image/x-icon" href="images/nav/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <style>
+    :root {
+        --bg-color: #1e1e1e;
+        --text-bright: #ffffff;
+        --text-dim: #999999;
+        --text-meta: #bbbbbb;
+        --text-muted: #666666;
+        --accent: #222222;
+        --nav-height: 50px;
+        --link-color: var(--text-dim);
+        --link-underline: rgba(255, 255, 255, 0.25);
+        --link-underline-hover: rgba(255, 255, 255, 0.55);
+    }
+
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-bright);
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    /* --- NAVIGATION --- */
+    nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        min-height: var(--nav-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        z-index: 1000;
+        background-color: rgba(10, 10, 10, 0.95);
+        background-image: url('images/nav/pattern.png');
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+        backdrop-filter: blur(7px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-logo {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--text-muted);
+        background-image: url('images/nav/favicon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .nav-logo:hover {
+        border-color: var(--text-bright);
+        transform: scale(1.05);
+    }
+
+    .nav-tagline {
+        font-family: 'Crimson Pro', serif;
+        font-style: italic;
+        font-size: 1.00rem;
+        color: var(--text-dim);
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--text-dim);
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s;
+    }
+
+    .nav-links a.active {
+        color: var(--text-bright);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 2px;
+    }
+
+    .nav-links a:hover {
+        color: var(--text-bright);
+    }
+
+    /* --- HEADER --- */
+    .header-banner {
+        position: relative;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    .header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/nav/banner_head.avif');
+        background-size: cover;
+        background-position: center 40%;
+        filter: grayscale(50%) brightness(0.35);
+        z-index: 1;
+    }
+
+    .header-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Crimson Pro', serif;
+        font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+        font-weight: 200;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .curator-tag {
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+        letter-spacing: 6px;
+        color: var(--text-dim);
+        margin-top: 8px;
+        font-weight: 300;
+        text-transform: lowercase;
+    }
+
+    /* --- MAIN CONTENT BEREICH --- */
+    main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 40px 100px 40px;
+    }
+
+    main a:not(.social-icon) {
+        color: var(--link-color);
+        text-decoration-line: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 0.07em;
+        text-decoration-color: var(--link-underline);
+        transition: color 160ms ease, text-decoration-color 160ms ease;
+        font-size: 0.7rem;
+        text-transform: none;
+        letter-spacing: 2px;
+    }
+
+    main a:hover {
+        color: inherit;
+        text-decoration-color: var(--link-underline-hover);
+    }
+
+    .welcome-intro {
+        max-width: 850px;
+        margin: 10px auto 40px auto;
+        text-align: center;
+
+    }
+
+    .welcome-intro p {
+        font-family: 'Crimson Pro', serif;
+        font-size: 1.25rem;
+        font-weight: 200;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        color: var(--text-bright);
+    }
+
+    .section-divider {
+        width: 40px;
+        height: 1px;
+        background: var(--text-muted);
+        margin: 20px auto;
+    }
+
+    .media-section-title {
+        font-family: 'Crimson Pro', serif;
+        font-size: 1.5rem;
+        letter-spacing: 6px;
+        text-transform: none;
+        color: var(--text-bright);
+        margin: 40px 0 30px 0;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .media-section-subtitle {
+        max-width: 700px;
+        margin: -20px auto 60px auto;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.9rem;
+        color: var(--text-dim);
+        line-height: 1.6;
+        text-align: center;
+        font-weight: 300;
+        opacity: 0.8;
+    }
+
+    .media-grid {
+        display: grid;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .media-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .media-card {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .media-card:hover {
+        border-color: rgba(255, 255, 255, 1.0);
+        transform: translateY(-4px);
+    }
+
+    .media-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: grayscale(30%);
+        transition: filter 0.3s ease;
+    }
+
+    .media-card:hover img {
+        filter: grayscale(0%);
+    }
+
+    .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 10, 10, 0.85);
+        backdrop-filter: blur(5px);
+        /* Blurred background like footer */
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        cursor: zoom-out;
+    }
+
+    .lightbox-overlay img {
+        max-width: 90%;
+        max-height: 85%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    }
+
+
+    /* --- FOOTER --- */
+    footer {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.8);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-socials {
+        display: flex;
+        gap: 25px;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+    }
+
+    .footer-info {
+        font-size: 0.6rem;
+        color: var(--text-meta);
+        letter-spacing: 0.5px;
+        text-align: center;
+        max-width: 800px;
+        line-height: 1.5;
+        opacity: 0.7;
+    }
+
+    /* --- RESPONSIVE ADJUSTMENTS --- */
+    @media (max-width: 1100px) {
+        :root {
+            --nav-height: 110px;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 8px;
+            padding: 10px 15px;
+        }
+
+        .nav-links {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px 20px;
+        }
+
+        .header-banner {
+            height: 15vh;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 900px) {
+
+        .grid-4,
+        .grid-3,
+        .grid-2 {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        nav {
+            flex-direction: column;
+            gap: 12px;
+            padding: 15px;
+            height: auto;
+        }
+
+        .nav-links {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
+
+        .welcome-intro p {
+            font-size: 1.1rem;
+            padding: 0 10px;
+        }
+
+        .media-card {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+
+
+    @media (max-width: 600px) {
+
+        .nav-tagline {
+            display: none;
+        }
+
+        h1 {
+            letter-spacing: 4px;
+            padding: 0 10px;
+        }
+
+        .curator-tag {
+            letter-spacing: 3px;
+            margin-top: 4px;
+        }
+
+        .header-banner {
+            height: 18vh;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-brand">
+            <a href="index.html" class="nav-logo" aria-label="Welcome"></a>
+            <span class="nav-tagline">Gone, but not forgotten.</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="memorials-chernarus.html">Memorials of Chernarus</a></li>
+            <li><a href="memorials-livonia.html">Memorials of Livonia</a></li>
+            <li><a href="media.html" class="active">Media</a></li>
+        </ul>
+    </nav>
+    <header class="header-banner" id="welcome">
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>The Memorials of DayZ</h1>
+            <div class="curator-tag">curated by tphace</div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="welcome-intro">
+                <p>A collection of digital keepsakes dedicated to DayZ and this project.<br>These assets are free for personal use or for sharing within the community.</p>
+            </section>
+            <div class="section-divider"></div>
+            <h2 class="media-section-title">Poster</h2>
+            <p class="media-section-subtitle">
+                A set of high quality posters created specifically for the Memorial Project. Free to download and use for personal spaces, community servers, or remembrance events.
+            </p>
+            <section class="media-grid grid-4">
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/poster_memorial_01_thumb.avif')">
+                        <img src="images/downloads/thumb/poster_memorial_01_thumb.avif" alt="Poster" loading="lazy">
+                    </div>
+                    <a href="images/downloads/poster/poster_memorial_01_210x297mm.pdf" download>Hi-Res 210x297mm (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/poster_memorial_02_thumb.avif')">
+                        <img src="images/downloads/thumb/poster_memorial_02_thumb.avif" alt="Poster" loading="lazy">
+                    </div>
+                    <a href="images/downloads/poster/poster_memorial_02_210x297mm.pdf" download>Hi-Res 210x297mm (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/poster_memorial_03_thumb.avif')">
+                        <img src="images/downloads/thumb/poster_memorial_03_thumb.avif" alt="Poster" loading="lazy">
+                    </div>
+                    <a href="images/downloads/poster/poster_memorial_03_210x297mm.pdf" download>Hi-Res 210x297mm (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/poster_memorial_04_thumb.avif')">
+                        <img src="images/downloads/thumb/poster_memorial_04_thumb.avif" alt="Poster" loading="lazy">
+                    </div>
+                    <a href="images/downloads/poster/poster_memorial_04_210x297mm.pdf" download>Hi-Res 210x297mm (PDF)</a>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <h2 class="media-section-title">Postcards</h2>
+            <p class="media-section-subtitle">
+                A series of postcards from Chernarus and Livonia, capturing moments and landscapes from the world of DayZ. Made to be collected, printed, or simply appreciated for the places they represent.
+            </p>
+            <section class="media-grid grid-4">
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/postcards_memorial_01_thumb.avif')">
+                        <img src="images/downloads/thumb/postcards_memorial_01_thumb.avif" alt="Postcard">
+                    </div>
+                    <a href="images/downloads/postcards/postcards_memorial_01_148x105mm.pdf" download>Hi-Res 148x105mm (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/postcards_memorial_02_thumb.avif')">
+                        <img src="images/downloads/thumb/postcards_memorial_02_thumb.avif" alt="Postcard">
+                    </div>
+                    <a href="images/downloads/postcards/postcards_memorial_02_148x105mm.pdf" download>Hi-Res 148x105mm (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/postcards_memorial_03_thumb.avif')">
+                        <img src="images/downloads/thumb/postcards_memorial_03_thumb.avif" alt="Postcard">
+                    </div>
+                    <a href="images/downloads/postcards/postcards_memorial_03_148x105mm.pdf" download>Hi-Res 148x105mm (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/postcards_memorial_04_thumb.avif')">
+                        <img src="images/downloads/thumb/postcards_memorial_04_thumb.avif" alt="Postcard">
+                    </div>
+                    <a href="images/downloads/postcards/postcards_memorial_04_148x105mm.pdf" download>Hi-Res 148x105mm (PDF)</a>
+                </div>
+            </section>
+            <div class="section-divider"></div>
+            <h2 class="media-section-title">The Food Can Quartet</h2>
+            <p class="media-section-subtitle">
+                Printable labels inspired by the infamous in-game food cans of DayZ. Designed to fit standard EU and US can sizes — just print, cut, and apply.
+            </p>
+            <section class="media-grid grid-2">
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/cans_new_peaches.avif')">
+                        <img src="images/downloads/thumb/cans_new_peaches.avif" alt="Food Can Label">
+                    </div>
+                    <a href="images/downloads/cans/dayz_foodcan_01peaches.pdf" download>Can Label "Peaches" (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/cans_new_bacon.avif')">
+                        <img src="images/downloads/thumb/cans_new_bacon.avif" alt="Food Can Label">
+                    </div>
+                    <a href="images/downloads/cans/dayz_foodcan_02tacbac.pdf" download>Can Label "TacBac" (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/cans_new_spaghetti.avif')">
+                        <img src="images/downloads/thumb/cans_new_spaghetti.avif" alt="Food Can Label">
+                    </div>
+                    <a href="images/downloads/cans/dayz_foodcan_03spaghetti.pdf" download>Can Label "Spaghetti" (PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/cans_new_beanz.avif')">
+                        <img src="images/downloads/thumb/cans_new_beanz.avif" alt="Food Can Label">
+                    </div>
+                    <a href="images/downloads/cans/dayz_foodcan_04beanz.pdf" download>Can Label "Beanz" (PDF)</a>
+                </div>
+            </section>
+            <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Full Screen Preview">
+            </div>
+    </main>
+    <footer>
+        <div class="footer-socials">
+            <a href="https://new.reddit.com/user/tphace/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/reddit.png');" aria-label="Reddit"></a>
+            <a href="https://discord.com/users/541638623007604747" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/discord.png');" aria-label="Discord"></a>
+            <a href="https://www.dayz.com/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/dayz.png');" aria-label="DayZ"></a>
+            <a href="https://www.izurvive.com/" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/map.png');" aria-label="Maps"></a>
+            <a href="http://www.youtube.com/@tphace" target="_blank" rel="noopener noreferrer" class="social-icon" style="background-image: url('images/nav/yt.png');" aria-label="YouTube"></a>
+        </div>
+        <div class="footer-info">
+            The Memorials of DayZ is a fan-created project and is not affiliated with, endorsed by, or connected to Bohemia Interactive a.s. in any official capacity. All trademarks and copyrights related to DayZ are the property of Bohemia Interactive. This website exists solely to celebrate the player community and stories within the DayZ universe.
+        </div>
+    </footer>
+    <script>
+    function openLightbox(imageSrc) {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = imageSrc;
+        lightbox.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+    });
+    </script>
+    <script data-goatcounter="https://tphace.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+
+</html>
