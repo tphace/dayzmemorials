@@ -75,7 +75,6 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        margin: 0;
     }
 
     /* --- NAVIGATION --- */
@@ -236,6 +235,10 @@
         height: 1px;
         background: var(--text-muted);
         margin: 20px auto;
+    }
+
+    .memorial-grid .section-divider {
+        grid-column: 1 / -1;
     }
 
     .container {
@@ -430,6 +433,10 @@
             gap: 18px;
         }
 
+        .memorial-grid .section-divider {
+            grid-column: auto;
+        }
+
         .video-section {
             grid-column: auto;
             margin-top: 10px;
@@ -486,7 +493,7 @@
                 <h2 class="faq-question">Some crosses seem to be missing</h2>
                 <p class="faq-answer">That is correct. Some crosses — like the orthodox-style ones — are regular static objects that are placed on the map (sometimes since ArmA days) for design reasons, like any other static object. However, the player memorials are usually small wooden crosses, often placed together with a bench next to them. </p>
             </article>
-            <div class="section-divider" style="grid-column: span 2;"></div>
+            <div class="section-divider"></div>
             <div class="video-section">
                 <div class="video-meta-header">
                     <span>Official Media</span>
