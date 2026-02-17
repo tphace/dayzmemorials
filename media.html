@@ -266,6 +266,10 @@
         margin-bottom: 100px;
     }
 
+    .grid-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     .grid-4 {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -417,6 +421,7 @@
 
     @media (max-width: 900px) {
 
+        .grid-5,
         .grid-4,
         .grid-3,
         .grid-2 {
@@ -504,7 +509,7 @@
             <p class="media-section-subtitle">
                 A set of high quality posters created specifically for the Memorial Project. Free to download and use for personal spaces, community servers, or remembrance events.
             </p>
-            <section class="media-grid grid-4">
+            <section class="media-grid grid-5">
                 <div class="media-item">
                     <div class="media-card" onclick="openLightbox('images/downloads/thumb/poster_memorial_01_thumb.avif')">
                         <img src="images/downloads/thumb/poster_memorial_01_thumb.avif" alt="Poster" loading="lazy">
@@ -528,6 +533,12 @@
                         <img src="images/downloads/thumb/poster_memorial_04_thumb.avif" alt="Poster" loading="lazy">
                     </div>
                     <a href="images/downloads/poster/poster_memorial_04_210x297mm.pdf" download>210x297mm (Hi-Res PDF)</a>
+                </div>
+                <div class="media-item">
+                    <div class="media-card" onclick="openLightbox('images/downloads/thumb/poster_memorial_05_thumb.avif')">
+                        <img src="images/downloads/thumb/poster_memorial_05_thumb.avif" alt="Poster" loading="lazy">
+                    </div>
+                    <a href="images/downloads/poster/poster_memorial_05_210x297mm.pdf" download>210x297mm (Hi-Res PDF)</a>
                 </div>
             </section>
             <div class="section-divider"></div>
