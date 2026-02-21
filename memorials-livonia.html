@@ -467,7 +467,6 @@
         margin: 50px auto;
         padding: 0 20px 100px 20px;
         max-width: 1200px;
-        padding-bottom: 160px;
     }
 
     .table-container {
@@ -553,9 +552,17 @@
         letter-spacing: 0.5px;
     }
 
-    .memorial-table td:nth-child(3) {
+    /* Nur der Inhalt (Link/Text) in der Koordinaten-Zelle wird Monospace */
+    .memorial-table td:nth-child(3)>* {
         font-family: monospace;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+    }
+
+    /* Das Label (::before) wird explizit auf die Standard-Schrift zurückgesetzt */
+    .memorial-table td:nth-child(3)::before {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.65rem;
+        text-transform: uppercase;
     }
 
     .preview-window {
@@ -678,17 +685,6 @@
         pointer-events: none;
     }
 
-    @media (min-width: 1024px) {
-        footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-        }
-
-        .main {
-            padding-bottom: 150px;
-        }
-    }
 
     @media (min-width: 701px) {
         .table-container::after {
@@ -731,6 +727,74 @@
             .preview-window {
                 display: none !important;
                 pointer-events: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .memorial-table,
+            .memorial-table thead,
+            .memorial-table tbody,
+            .memorial-table tr,
+            .memorial-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .table-container::after {
+                display: none !important;
+            }
+
+            .memorial-table thead {
+                display: none;
+            }
+
+            .memorial-table tr {
+                margin-bottom: 25px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                background: rgba(255, 255, 255, 0.02);
+                padding: 10px;
+            }
+
+            .memorial-table td {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px 15px !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+                min-height: 45px;
+                text-align: right !important;
+            }
+
+            .memorial-table td::before {
+                content: attr(data-label);
+                flex-shrink: 0;
+                width: 40%;
+                text-align: left;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.65rem;
+                color: var(--text-bright);
+                letter-spacing: 1px;
+                padding-right: 10px;
+            }
+
+            .memorial-table td>* {
+                flex-grow: 0;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .memorial-table td:first-child::before {
+                content: "# "counter(rowNumber);
+            }
+
+            .memorial-table td:last-child {
+                border-bottom: none;
+            }
+
+            .memorial-table td span a+a {
+                margin-left: 10px;
             }
         }
     </style>
@@ -813,142 +877,144 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td>Kolembrody (West)</td>
-                        <td><a href="https://izurvive.com/livonia/#location=7935.48;11817.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=7935.48;11817.6">7935.48;11817.6</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>Wooden Cross with Car Tire</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Kolembrody (West)</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=7935.48;11817.6" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=7935.48;11817.6">7935.48;11817.6</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross with Car Tire</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Kopa Prison</td>
-                        <td><a href="https://izurvive.com/livonia/#location=5662.77;8787.92" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=5662.77;8787.92">5662.77;8787.92</a></td>
-                        <td><a href="gallery.html#Waspher" class="table-link" target="_blank" rel="noopener noreferrer">Waspher</a></td>
-                        <td><a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link">[1]</a></td>
-                        <td>–</td>
-                        <td>Wooden Cross with Green Armband</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Kopa Prison</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=5662.77;8787.92" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=5662.77;8787.92">5662.77;8787.92</a></td>
+                        <td data-label="Dedicated to"><a href="gallery.html#Waspher" class="table-link" target="_blank" rel="noopener noreferrer">Waspher</a></td>
+                        <td data-label="Source"><a href="https://www.youtube.com/shorts/BDcq0T7xd7E" class="table-link">[1]</a></td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross with Green Armband</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Lipina</td>
-                        <td><a href="https://izurvive.com/livonia/#location=5651.98;6651.81" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=5651.98;6651.81">5651.98;6651.81</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Lipina</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=5651.98;6651.81" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=5651.98;6651.81">5651.98;6651.81</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Adamów (East)</td>
-                        <td><a href="https://izurvive.com/livonia/#location=3614.11;6908.88" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3614.11;6908.88">3614.11;6908.88</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>1x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Adamów (East)</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=3614.11;6908.88" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3614.11;6908.88">3614.11;6908.88</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">1x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Western Sawmill</td>
-                        <td><a href="https://izurvive.com/livonia/#location=1670.02;3678.98" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=1670.02;3678.98">1670.02;3678.98</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>1x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Western Sawmill</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=1670.02;3678.98" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=1670.02;3678.98">1670.02;3678.98</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">1x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Dambog</td>
-                        <td><a href="https://izurvive.com/livonia/#location=591.641;1125.98" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=591.641;1125.98">591.641;1125.98</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>1x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Dambog</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=591.641;1125.98" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=591.641;1125.98">591.641;1125.98</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">1x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Tymbark (South)</td>
-                        <td><a href="https://izurvive.com/livonia/#location=2373.03;106.302" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=2373.03;106.302">2373.03;106.302</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>3x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Tymbark (South)</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=2373.03;106.302" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=2373.03;106.302">2373.03;106.302</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">3x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Polana Pub</td>
-                        <td><a href="https://izurvive.com/livonia/#location=3303.74;2062.96" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3303.74;2062.96">3303.74;2062.96</a></td>
-                        <td><a href="gallery.html#Lucas_aka_Yaan" class="table-link" target="_blank" rel="noopener noreferrer">Lucas aka Yaan</a></td>
-                        <td>
-                            <a href="https://feedback.bistudio.com/T170250" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
-                            <a href="https://www.youtube.com/watch?v=2SnzgySz78M" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Polana Pub</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=3303.74;2062.96" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3303.74;2062.96">3303.74;2062.96</a></td>
+                        <td data-label="Dedicated to"><a href="gallery.html#Lucas_aka_Yaan" class="table-link" target="_blank" rel="noopener noreferrer">Lucas aka Yaan</a></td>
+                        <td data-label="Source">
+                            <span>
+                                <a href="https://feedback.bistudio.com/T170250" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a>
+                                <a href="https://www.youtube.com/watch?v=2SnzgySz78M" class="table-link" target="_blank" rel="noopener noreferrer">[2]</a>
+                            </span>
                         </td>
-                        <td>–</td>
-                        <td>Wooden Cross with Sword and Helmet</td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross with Sword and Helmet</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Polana Chapel</td>
-                        <td><a href="https://izurvive.com/livonia/#location=3198.31;2299.54" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3198.31;2299.54">3198.31;2299.54</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Polana Chapel</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=3198.31;2299.54" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3198.31;2299.54">3198.31;2299.54</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Polana (Southeast)</td>
-                        <td><a href="https://izurvive.com/livonia/#location=3830.41;1818.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3830.41;1818.4">3830.41;1818.4</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>1x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Polana (Southeast)</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=3830.41;1818.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=3830.41;1818.4">3830.41;1818.4</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">1x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Dolnik (Northwest)</td>
-                        <td><a href="https://izurvive.com/livonia/#location=10816.6;1287.53" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10816.6;1287.53">10816.6;1287.53</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Dolnik (Northwest)</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=10816.6;1287.53" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10816.6;1287.53">10816.6;1287.53</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Kulno (South)</td>
-                        <td><a href="https://izurvive.com/livonia/#location=10944.4;1800.28" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10944.4;1800.28">10944.4;1800.28</a></td>
-                        <td><a href="gallery.html#Brighton" class="table-link" target="_blank" rel="noopener noreferrer">Brighton</a></td>
-                        <td>PM on Reddit by "Empty_castle00"</td>
-                        <td>2x</td>
-                        <td>Wooden Cross with a Brown Cowboy Hat</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Kulno (South)</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=10944.4;1800.28" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10944.4;1800.28">10944.4;1800.28</a></td>
+                        <td data-label="Dedicated to"><a href="gallery.html#Brighton" class="table-link" target="_blank" rel="noopener noreferrer">Brighton</a></td>
+                        <td data-label="Source">PM on Reddit by "Empty_castle00"</td>
+                        <td data-label="Bench">2x</td>
+                        <td data-label="Memorial Type">Wooden Cross with a Brown Cowboy Hat</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Ivetów</td>
-                        <td><a href="https://izurvive.com/livonia/#location=11819.9;7344.56" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=11819.9;7344.56">11819.9;7344.56</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Ivetów</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=11819.9;7344.56" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=11819.9;7344.56">11819.9;7344.56</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">–</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Sitnik Lake</td>
-                        <td><a href="https://izurvive.com/livonia/#location=10981.6;9231.62" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10981.6;9231.62">10981.6;9231.62</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>1x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Sitnik Lake</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=10981.6;9231.62" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10981.6;9231.62">10981.6;9231.62</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">1x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td>Grabin Cemetery</td>
-                        <td><a href="https://izurvive.com/livonia/#location=10899.5;10605.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10899.5;10605.2">10899.5;10605.2</a></td>
-                        <td>–</td>
-                        <td>–</td>
-                        <td>1x</td>
-                        <td>Wooden Cross</td>
+                        <td data-label="#"></td>
+                        <td data-label="Location">Grabin Cemetery</td>
+                        <td data-label="Coordinates"><a href="https://izurvive.com/livonia/#location=10899.5;10605.2" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/livonia/#location=10899.5;10605.2">10899.5;10605.2</a></td>
+                        <td data-label="Dedicated to">–</td>
+                        <td data-label="Source">–</td>
+                        <td data-label="Bench">1x</td>
+                        <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
                 </tbody>
             </table>
