@@ -359,6 +359,29 @@
         text-transform: uppercase;
     }
 
+    .update-notice {
+        max-width: 600px;
+        margin: 0 auto 60px auto;
+        padding: 18px 20px;
+        background-color: rgba(45, 60, 45, 0.3);
+        border: 1px solid rgba(100, 120, 100, 0.2);
+        text-align: center;
+    }
+
+    .update-notice p {
+        margin: 0;
+        font-size: 0.72rem;
+        letter-spacing: 1.8px;
+        color: var(--text-dim);
+    }
+
+    .update-notice .highlight {
+        color: var(--text-bright);
+        font-weight: 300;
+        display: block;
+        margin-top: 5px;
+
+    }
 
     .changelog-section {
         margin-top: 0px;
@@ -551,13 +574,11 @@
         letter-spacing: 0.5px;
     }
 
-    /* Nur der Inhalt (Link/Text) in der Koordinaten-Zelle wird Monospace */
     .memorial-table td:nth-child(3)>* {
         font-family: monospace;
         font-size: 0.75rem;
     }
 
-    /* Das Label (::before) wird explizit auf die Standard-Schrift zurückgesetzt */
     .memorial-table td:nth-child(3)::before {
         font-family: 'Inter', sans-serif;
         font-size: 0.65rem;
@@ -828,7 +849,7 @@
             <div class="map-action-wrapper">
                 <p class="map-hint">Click to Enlarge</p>
                 <a href="images/maps/memorials_livonia.jpg" target="_blank" rel="noopener noreferrer" decoding="async" class="download-btn">
-                    Download Version 3.2.6 | February 2026 | DayZ 1.28 | Hi-Res JPG
+                    Download Version 3.3 | April 2026 | DayZ 1.29 | Hi-Res JPG
                 </a>
             </div>
         </div>
@@ -842,14 +863,17 @@
             <div class="map-controls">Scroll to Zoom • Drag to Move • ESC to quit</div>
         </div>
     </div>
+    <div class="update-notice">
+        <p>DayZ Update 1.29 <span class="highlight">No new memorial assets have been discovered. I will continue to monitor future updates for any additions.</span></p>
+    </div>
     <div class="changelog-section">
         <details class="changelog-details">
             <summary class="changelog-title">
-                RECENT CHANGES (1.28)
+                RECENT CHANGES
                 <span class="chevron"></span>
             </summary>
             <div class="changelog-content">
-                <p>Added new location in:</p>
+                <p>~Update 1.28~ <br>Added new location in:</p>
                 <ul>
                     <li>
                         <span class="loc-name">Kulno (South)</span>

@@ -359,6 +359,28 @@
         text-transform: uppercase;
     }
 
+    .update-notice {
+        max-width: 600px;
+        margin: 0 auto 60px auto;
+        padding: 18px 20px;
+        background-color: rgba(31, 35, 44, 1);
+        border: 1px solid rgba(100, 120, 100, 0.2);
+        text-align: center;
+    }
+
+    .update-notice p {
+        margin: 0;
+        font-size: 0.72rem;
+        letter-spacing: 1.8px;
+        color: var(--text-dim);
+    }
+
+    .update-notice .highlight {
+        color: var(--text-bright);
+        font-weight: 300;
+        display: block;
+        margin-top: 5px;
+    }
 
     .changelog-section {
         margin-top: 0px;
@@ -552,13 +574,11 @@
         letter-spacing: 0.5px;
     }
 
-    /* Nur der Inhalt (Link/Text) in der Koordinaten-Zelle wird Monospace */
     .memorial-table td:nth-child(3)>* {
         font-family: monospace;
         font-size: 0.75rem;
     }
 
-    /* Das Label (::before) wird explizit auf die Standard-Schrift zurückgesetzt */
     .memorial-table td:nth-child(3)::before {
         font-family: 'Inter', sans-serif;
         font-size: 0.65rem;
@@ -827,7 +847,7 @@
             <div class="map-action-wrapper">
                 <p class="map-hint">Click to Enlarge</p>
                 <a href="images/maps/memorials_chernarus.jpg" target="_blank" rel="noopener noreferrer" decoding="async" class="download-btn">
-                    Download Version 4.9.8 | March 2026 | DayZ 1.28 | Hi-Res JPG
+                    Download Version 5.0 | April 2026 | DayZ 1.29 | Hi-Res JPG
                 </a>
             </div>
         </div>
@@ -841,97 +861,108 @@
             <div class="map-controls">Scroll to Zoom • Drag to Move • ESC to quit</div>
         </div>
     </div>
+    <div class="update-notice">
+        <p>DayZ Update 1.29 <span class="highlight">No new memorial assets have been discovered. I will continue to monitor future updates for any additions.</span></p>
+    </div>
     <div class="changelog-section">
         <details class="changelog-details">
             <summary class="changelog-title">
-                RECENT CHANGES (1.28)
+                RECENT CHANGES
                 <span class="chevron"></span>
             </summary>
             <div class="changelog-content">
-                <p>Added new location in:</p>
-                <ul>
-                    <li>
-                        <span class="loc-name">Elektrozavodsk Church (Northeast)</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Murky Bay</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Myshkino (Northeast)</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Lopatino (South)</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Novaya Petrovka Factory #3</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Black Lake Pub</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Rify Railway Crossing</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Berezino Residential</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Black Forest Pond #1</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Black Forest Pond #2</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Black Forest Pub</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Solnechny Waterpump</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Solnechny Shore</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Solnechny Quarry</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Rog Castle</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Cape Crutoy #2</span>
-                    </li>
-                </ul>
                 <p>Memorials dedicated to:</p>
                 <ul>
-                    <li>
-                        <span class="loc-name">Devil's Castle #1</span>
-                        <span class="loc-coords">6804.84;11484.3</span>
-                        <span class="loc-ded">for Cody aka Kh0diak</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Black Forest Pub</span>
-                        <span class="loc-coords">9789.47;8220.32 </span>
-                        <span class="loc-ded">for Tyler</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Lopatino (South)</span>
-                        <span class="loc-coords">2558.91;9240.89</span>
-                        <span class="loc-ded">for Big Red</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Three Valleys</span>
-                        <span class="loc-coords">12994;5501.56</span>
-                        <span class="loc-ded">for Harry</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Komarovo #1</span>
-                        <span class="loc-coords">3774.59;2605.17</span>
-                        <span class="loc-ded">for Eddie aka AZCowboy</span>
-                    </li>
-                    <li>
-                        <span class="loc-name">Black Lake Pub</span>
-                        <span class="loc-coords">13439.7;12149.9</span>
-                        <span class="loc-ded">for Bailey aka coltsallday02</span>
-                    </li>
-                </ul>
+                        <li>
+                            <span class="loc-name">Black Lake Pub</span>
+                            <span class="loc-coords">13439.7;12149.9</span>
+                            <span class="loc-ded">for Bailey aka coltsallday02</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Rog Castle</span>
+                            <span class="loc-coords">11225.2;4241.4</span>
+                            <span class="loc-ded">for Abizzo420 aka Bizzo</span>
+                        </li>
+                    <br>
+                    <p>~Update 1.28~ <br>Added new location in:</p>
+                    <ul>
+                        <li>
+                            <span class="loc-name">Elektrozavodsk Church (Northeast)</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Murky Bay</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Myshkino (Northeast)</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Lopatino (South)</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Novaya Petrovka Factory #3</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Black Lake Pub</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Rify Railway Crossing</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Berezino Residential</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Black Forest Pond #1</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Black Forest Pond #2</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Black Forest Pub</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Solnechny Waterpump</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Solnechny Shore</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Solnechny Quarry</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Rog Castle</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Cape Crutoy #2</span>
+                        </li>
+                    </ul>
+                    <p>Memorials dedicated to:</p>
+                    <ul>
+                        <li>
+                            <span class="loc-name">Devil's Castle #1</span>
+                            <span class="loc-coords">6804.84;11484.3</span>
+                            <span class="loc-ded">for Cody aka Kh0diak</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Black Forest Pub</span>
+                            <span class="loc-coords">9789.47;8220.32 </span>
+                            <span class="loc-ded">for Tyler</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Lopatino (South)</span>
+                            <span class="loc-coords">2558.91;9240.89</span>
+                            <span class="loc-ded">for Big Red</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Three Valleys</span>
+                            <span class="loc-coords">12994;5501.56</span>
+                            <span class="loc-ded">for Harry</span>
+                        </li>
+                        <li>
+                            <span class="loc-name">Komarovo #1</span>
+                            <span class="loc-coords">3774.59;2605.17</span>
+                            <span class="loc-ded">for Eddie aka AZCowboy</span>
+                        </li>
+                    </ul>
             </div>
         </details>
     </div>
@@ -2148,8 +2179,8 @@
                         <td data-label="#"></td>
                         <td data-label="Location">Rog Castle</td>
                         <td data-label="Coordinates"><a href="https://izurvive.com/chernarusplus/#location=11225.2;4241.4" class="table-link" target="_blank" rel="noopener noreferrer" data-preview="https://izurvive.com/chernarusplus/#location=11225.2;4241.4">11225.2;4241.4</a></td>
-                        <td data-label="Dedicated to">–</td>
-                        <td data-label="Source">–</td>
+                        <td data-label="Dedicated to"><a href="gallery.html#Abizzo420" class="table-link" target="_blank" rel="noopener noreferrer">Abizzo420 aka Bizzo</a></td>
+                        <td data-label="Source"><a href="https://www.reddit.com/user/tphace/comments/1l2csqs/comment/oenqsv8/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" class="table-link" target="_blank" rel="noopener noreferrer">[1]</a></td>
                         <td data-label="Bench">1x</td>
                         <td data-label="Memorial Type">Wooden Cross</td>
                     </tr>
