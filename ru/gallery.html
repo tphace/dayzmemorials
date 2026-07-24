@@ -1,0 +1,2712 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мемориалы DayZ | Галерея и известные имена</title>
+    <meta
+      name="description"
+      content="Истории за именами. Галерея известных мемориалов игрокам DayZ: фотографии мест и истории, стоящие за каждым памятником."
+    />
+    <link
+      rel="canonical"
+      href="https://tphace.github.io/dayzmemorials/ru/gallery.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://tphace.github.io/dayzmemorials/gallery.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://tphace.github.io/dayzmemorials/ru/gallery.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://tphace.github.io/dayzmemorials/gallery.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tphace.github.io/dayzmemorials/ru/gallery.html"
+    />
+    <meta property="og:title" content="Мемориалы DayZ – Галерея" />
+    <meta
+      property="og:description"
+      content="A curated tribute to DayZ players remembered with in‑game wooden crosses."
+    />
+    <meta
+      property="og:image"
+      content="https://tphace.github.io/dayzmemorials/images/nav/bannerV2.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://tphace.github.io/dayzmemorials/ru/gallery.html"
+    />
+    <meta name="twitter:title" content="Мемориалы DayZ – Галерея" />
+    <meta
+      name="twitter:description"
+      content="A curated tribute to DayZ players remembered with in‑game wooden crosses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tphace.github.io/dayzmemorials/images/nav/bannerV2.jpg"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/nav/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: #1e1e1e;
+        --text-bright: #ffffff;
+        --text-dim: #999999;
+        --text-meta: #bbbbbb;
+        --text-muted: #666666;
+        --accent: #222222;
+        --nav-height: 50px;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-bright);
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      /* --- NAVIGATION --- */
+      nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        min-height: var(--nav-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        z-index: 1000;
+        background-color: rgba(10, 10, 10, 0.95);
+        background-image: url("../images/nav/pattern.png");
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+        backdrop-filter: blur(7px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .nav-logo {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--text-muted);
+        background-image: url("../images/nav/favicon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .nav-logo:hover {
+        border-color: var(--text-bright);
+        transform: scale(1.05);
+      }
+
+      .nav-tagline {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--text-dim);
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-dim);
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a.active {
+        color: var(--text-bright);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 2px;
+      }
+
+      .nav-links a:hover {
+        color: var(--text-bright);
+      }
+      .language-switcher a + a {
+        margin-left: 10px;
+      }
+
+      .language-switcher a.active {
+        color: var(--text-bright);
+      }
+
+      /* --- HEADER --- */
+      .header-banner {
+        position: relative;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+      }
+
+      .header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/nav/banner_head.avif");
+        background-size: cover;
+        background-position: center 40%;
+        filter: grayscale(50%) brightness(0.5);
+        z-index: 1;
+      }
+
+      .header-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Spectral", serif;
+        font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+        font-weight: 200;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .curator-tag {
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+        letter-spacing: 6px;
+        margin-top: 8px;
+        font-weight: 200;
+        text-transform: lowercase;
+      }
+
+      /* --- MAIN CONTENT --- */
+      main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      .intro-section {
+        max-width: 850px;
+        margin: 0 auto 25px auto;
+        padding-top: 10px;
+        text-align: center;
+        padding: 0 75px;
+      }
+
+      .intro-text {
+        font-family: "Spectral", serif;
+        font-style: normal;
+        font-size: 1.25rem;
+        font-weight: 200;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+        color: var(--text-bright);
+        margin-left: -40px;
+        margin-right: -40px;
+      }
+
+      .section-header {
+        text-align: center;
+        margin: 20px 0 15px 0;
+        padding: 0 40px;
+      }
+
+      .section-header h2 {
+        font-family: "Spectral", serif;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        color: var(--text-bright);
+        font-weight: 200;
+        margin-bottom: 5px;
+      }
+
+      .section-divider {
+        width: 100%;
+        max-width: 300px;
+        height: 25px;
+        margin: 25px auto 0px auto;
+
+        background-image: url("../images/nav/ornament.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 40px 100px 40px;
+      }
+
+      .memorial-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 100px 60px;
+      }
+
+      .entry {
+        display: flex;
+        flex-direction: column;
+        scroll-margin-top: 140px;
+      }
+
+      .memorial-img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        border: 1px solid var(--accent);
+        margin-bottom: 25px;
+      }
+
+      .memorial-name {
+        font-family: "Spectral", serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      .memorial-location {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--text-meta);
+        margin: 8px 0 25px 0;
+        padding-bottom: 8px;
+        font-weight: 600;
+      }
+
+      .memorial-description {
+        font-size: 0.9rem;
+        color: var(--text-dim);
+        margin-bottom: 0px;
+        font-weight: 300;
+      }
+
+      .memorial-quote {
+        font-family: "Spectral", serif;
+        font-size: 0.9rem;
+        color: var(--text-bright);
+        border-left: 1px solid #ffffff;
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: clamp(15px, 5%, 40px);
+        display: block;
+      }
+
+      .memorial-description a {
+        color: var(--text-meta);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        transition:
+          color 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .memorial-description a:hover {
+        color: var(--text-bright);
+        border-bottom-color: var(--text-bright);
+      }
+
+      .memorial-description p {
+        margin: 0 0 1em 0;
+      }
+
+      .memorial-description p:last-child {
+        margin-bottom: 0;
+      }
+
+      .memorial-link {
+        color: var(--text-meta);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        padding-bottom: 1px;
+        transition:
+          color 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .memorial-link:hover {
+        color: var(--text-bright);
+        border-bottom-color: var(--text-bright);
+      }
+
+      .memorial-quote a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition:
+          border-color 0.2s ease,
+          opacity 0.2s ease;
+      }
+
+      .memorial-quote a:hover {
+        border-bottom-color: var(--text-bright);
+        opacity: 0.8;
+      }
+
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.95);
+        background-image: url("../images/nav/pattern.png");
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+        backdrop-filter: blur(15px);
+        cursor: zoom-out;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .lightbox.active {
+        display: flex;
+        opacity: 1;
+      }
+
+      .lightbox-content {
+        max-width: 90%;
+        max-height: 80vh;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+
+        display: block;
+      }
+
+      .lightbox.active .lightbox-content {
+        transform: scale(1);
+      }
+
+      .lightbox-caption {
+        position: relative;
+        margin-top: 20px;
+
+        font-family: "Spectral", serif;
+        font-size: 1.2rem;
+        color: var(--text-bright);
+        letter-spacing: 2px;
+        text-align: center;
+      }
+
+      /* --- JUMP NAVIGATION ENHANCED --- */
+      .jump-nav {
+        margin-top: 50px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        border-radius: 5px;
+        font-family: "Spectral", serif;
+        font-size: 0.9rem;
+        line-height: 2;
+        text-align: center;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .jump-nav-title {
+        display: block;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--text-meta);
+        margin-bottom: 15px;
+        opacity: 0.7;
+      }
+
+      .jump-nav a {
+        color: var(--text-bright);
+        text-decoration: none;
+        padding: 2px 8px;
+        border-radius: 4px;
+        transition: background 0.2s ease;
+        display: inline-block;
+      }
+
+      .jump-nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      .jump-divider {
+        margin: 0 4px;
+        color: rgba(255, 255, 255, 0.2);
+        user-select: none;
+      }
+
+      .disclaimer-text {
+        font-family: "Spectral", serif;
+        font-size: 0.9rem;
+        color: var(--text-dim);
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-style: italic;
+        text-align: center;
+        opacity: 1;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* --- FOOTER --- */
+
+      footer {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.5);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 25px;
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+
+      .social-icon:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+
+      .footer-info {
+        font-size: 0.6rem;
+        color: var(--text-meta);
+        letter-spacing: 0.5px;
+        text-align: center;
+        max-width: 800px;
+        line-height: 1.5;
+        opacity: 0.7;
+      }
+
+      /* --- RESPONSIVE ADJUSTMENTS --- */
+      @media (max-width: 1100px) {
+        :root {
+          --nav-height: 110px;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 8px;
+          padding: 10px 15px;
+        }
+
+        .nav-links {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5px 20px;
+        }
+
+        .header-banner {
+          height: 15vh;
+        }
+      }
+
+      .preview-window {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        background: #111;
+        border: 3px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        z-index: 2000;
+        transition:
+          left 0.05s linear,
+          top 0.05s linear;
+        pointer-events: none;
+        display: none;
+      }
+
+      .preview-window iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        filter: grayscale(40%) brightness(1);
+      }
+
+      @media (max-width: 600px) {
+        .nav-tagline {
+          display: none;
+        }
+
+        h1 {
+          letter-spacing: 4px;
+          padding: 0 10px;
+        }
+
+        .curator-tag {
+          letter-spacing: 3px;
+          margin-top: 4px;
+        }
+
+        .header-banner {
+          height: 18vh;
+        }
+
+        .preview-window {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .memorial-grid {
+          grid-template-columns: 1fr;
+          gap: 40px 0;
+        }
+
+        @media (pointer: coarse), (max-width: 1024px) {
+          .preview-window {
+            display: none !important;
+            pointer-events: none !important;
+            visibility: hidden !important;
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="index.html" class="nav-logo" aria-label="Главная"></a>
+        <span class="nav-tagline">Ушли, но не забыты.</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="faq.html">Вопросы и ответы</a></li>
+        <li><a href="gallery.html" class="active">Галерея</a></li>
+        <li><a href="memorials-chernarus.html">Мемориалы Черноруси</a></li>
+        <li><a href="memorials-livonia.html">Мемориалы Ливонии</a></li>
+        <li><a href="media.html">Материалы</a></li>
+        <li class="language-switcher" aria-label="Выбор языка">
+          <a href="../gallery.html" lang="en">EN</a
+          ><a href="gallery.html" lang="ru" class="active" aria-current="page"
+            >RU</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="header-banner" id="welcome">
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <h1>Мемориалы DayZ</h1>
+        <div class="curator-tag">куратор — tphace</div>
+      </div>
+    </header>
+    <main id="content"></main>
+    <section class="intro-section">
+      <div class="intro-text">
+        По всей Черноруси и Ливонии можно встретить простые деревянные кресты,
+        установленные в память об игроках, для которых DayZ имела особое
+        значение. Этот раздел представляет собой архив таких мест и содержит
+        сведения об их расположении, а также истории людей, которым они
+        посвящены. Проект призван сохранить память об этих мемориалах и
+        обеспечить уважительное отношение к ним.
+        <br />
+        <br />
+        Если вы знаете о мемориале и можете предоставить подтвержденную
+        информацию, вы можете внести свой вклад и помочь сохранить память о тех,
+        кому он посвящен.
+      </div>
+      <div class="jump-nav">
+        <span class="jump-nav-title">В память о</span>
+        <a href="#Steve_R_aka_Str8OuttaCherno">Steve R. (Str8OuttaCherno)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Gabriel_aka_SIX">Gabriel (SIX)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Hughie D. aka weav_deth666">Hughie D. (weav_deth666)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Anthony_aka_WotalTanker">Anthony (WotalTanker)</a>
+        <span class="jump-divider">|</span> <a href="#Maks1019">Maks1019</a>
+        <span class="jump-divider">|</span>
+        <a href="#Eddie_aka_AZCowboy">Eddie (AZCowboy)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Sergei_T._aka_Bojindo">Sergei T. (Bojindo)</a>
+        <span class="jump-divider">|</span> <a href="#Chris">Chris</a>
+        <span class="jump-divider">|</span>
+        <a href="#Jen_aka_Poisonantler">Jen (Poisonantler)</a>
+        <span class="jump-divider">|</span> <a href="#Jordan">Jordan</a>
+        <span class="jump-divider">|</span> <a href="#HarryZeleno">Harry</a>
+        <span class="jump-divider">|</span>
+        <a href="#Jake_L._aka_AE86FORLIFE">Jake L. (AE86FORLIFE)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Jack_Forrest_(Jacka_Foresta)">Jack Forrest</a>
+        <span class="jump-divider">|</span>
+        <a href="#MoonCrawler710">Gabe (MoonCrawler710)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Scouse-Mouse-Uk">Scouse-Mouse-Uk</a>
+        <span class="jump-divider">|</span> <a href="#Big_Red">Big Red</a>
+        <span class="jump-divider">|</span> <a href="#Ryan">Ryan</a>
+        <span class="jump-divider">|</span> <a href="#EazyRider">Eazy Rider</a>
+        <span class="jump-divider">|</span>
+        <a href="#Bobby_Chap">Bobby & Chap</a>
+        <span class="jump-divider">|</span>
+        <a href="#Elmer_aka_Pancake">Elmer (Pancake)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Patrick_T._aka_ProJecTxPaTT">Patrick T. (ProJecTxPaTT)</a>
+        <span class="jump-divider">|</span>
+        <a href="#John_aka_Prospect">John (Prospect)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Cody_aka_Kh0diak">Cody (Kh0diak)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Robert_J._aka_SpcKronos">Robert J. (SpcKronos)</a>
+        <span class="jump-divider">|</span> <a href="#Percy">Percy</a>
+        <span class="jump-divider">|</span> <a href="#SkyZ">SkyZ</a>
+        <span class="jump-divider">|</span>
+        <a href="#Adam_B._aka_DocSatan">Adam B. (DocSatan)</a>
+        <span class="jump-divider">|</span> <a href="#Pauli">Pauli</a>
+        <span class="jump-divider">|</span>
+        <a href="#Cody_P._aka_Wick">Cody P. (Wick)</a>
+        <span class="jump-divider">|</span> <a href="#Steve">Steve</a>
+        <span class="jump-divider">|</span>
+        <a href="#Bailey">Bailey (coltsallday02)</a>
+        <span class="jump-divider">|</span> <a href="#Balbanes3">Balbanes3</a>
+        <span class="jump-divider">|</span> <a href="#Eight4">Eight4</a>
+        <span class="jump-divider">|</span> <a href="#Phil">Phil</a>
+        <span class="jump-divider">|</span> <a href="#Bendman">Bendman</a>
+        <span class="jump-divider">|</span> <a href="#Tristan">Tristan</a>
+        <span class="jump-divider">|</span> <a href="#Rafi">Rafi</a>
+        <span class="jump-divider">|</span> <a href="#zNomi">zNomi</a>
+        <span class="jump-divider">|</span> <a href="#Jared">Jared</a>
+        <span class="jump-divider">|</span> <a href="#Tyler">Tyler</a>
+        <span class="jump-divider">|</span> <a href="#Harry">Harry</a>
+        <span class="jump-divider">|</span> <a href="#Abizzo420">Abizzo420</a>
+        <span class="jump-divider">|</span> <a href="#Sam">Sam</a>
+        <span class="jump-divider">|</span>
+        <a href="#Diane_aka_MissFoo">Diane (MissFoo)</a>
+        <span class="jump-divider">|</span>
+        <a href="#Maximilian_S._aka_Hypernight">Max S. (Hypernight)</a>
+        <span class="jump-divider">|</span> <a href="#Waspher">Waspher</a>
+        <span class="jump-divider">|</span>
+        <a href="#Lucas_aka_Yaan">Lucas (Yaan)</a>
+        <span class="jump-divider">|</span> <a href="#Brighton">Brighton</a>
+        <span class="jump-divider"></span>
+      </div>
+    </section>
+    <div class="section-header" id="chernarus">
+      <div class="section-divider"></div>
+      <h2>Мемориалы Черноруси</h2>
+      <div class="disclaimer-text">
+        Некоторые цитаты слегка отредактированы для удобства чтения и понимания
+        с сохранением первоначального смысла.
+      </div>
+    </div>
+    <div class="container">
+      <div class="memorial-grid">
+        <article class="entry" id="Steve_R_aka_Str8OuttaCherno">
+          <img src="../images/spots/stever.avif" class="memorial-img" />
+          <h2 class="memorial-name">Steve R., он же Str8OuttaCherno</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6644.04;2957.93"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6644.04;2957.93"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6644.04;2957.93</a
+            >
+            • Кладбище Черногорска
+          </div>
+          <div class="memorial-description">
+            <p>
+              Несколько лет назад мы потеряли отзывчивого, замечательного и всеми любимого участника сообщества — Стива Рейнольдс, также известного как MedicalCrab и Str8OuttaCherno. Разработчики почтили его память особым крестом на кладбище Черногорска, навсегда сохранив память о нем в DayZ.
+            </p>
+            <p>
+              Еще раз спасибо разработчикам за то, что почтили и сохранили память о нем, за искренние соболезнования и место, куда мы можем прийти. Каждый раз во время игры мы оставляем ему снаряжение и немного разговариваем. Думаю, он бы этим гордился.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/watch?v=zADIi5S5gJk&lc=UgxMyVKuS4U6XsmPxzZ4AaABAg"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «SPKer»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Gabriel_aka_SIX">
+          <img src="../images/spots/gabriel.avif" class="memorial-img" />
+          <h2 class="memorial-name">Gabriel, он же SIX</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6622.92;2240.29"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6622.92;2240.29"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6622.92;2240.29</a
+            >
+            • Черногорский пирс
+          </div>
+          <div class="memorial-description">
+            <p>
+              Этот мемориал установлен в память о Габриэле, также известном как SIX, создателе первого мода автопередвижения для DayZ. Он работал парамедиком в Калифорнии и некоторое время управлял крупным сервером EXP Servers — сначала в Arma, затем в DayZ SA.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «vigilante»</div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Покойся с миром, Гейб. Он внес огромный вклад в сообщество моддеров DayZ и был просто замечательным человеком. Было очень трогательно увидеть, что разработчики сделали это в его память. Покойся с миром, SIX. Люблю тебя, бро.
+            </p>
+            <div class="memorial-quote">Комментарий на YouTube от пользователя «@SOSgator»</div>
+          </div>
+          <div class="memorial-quote">
+            <a
+              href="https://steamcommunity.com/id/6IX6OD/"
+              target="_blank"
+              rel="noopener"
+              >Аккаунт SIX в Steam</a
+            >
+          </div>
+        </article>
+        <article class="entry" id="Hughie_D._aka_weav_deth666">
+          <img src="../images/spots/hughied.avif" class="memorial-img" />
+          <h2 class="memorial-name">Hughie D., он же weav_deth666</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6482.95;2337.22"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6482.95;2337.22"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6482.95;2337.22</a
+            >
+            • Колонка Черногорска
+          </div>
+          <div class="memorial-description">
+            <p>
+              15 октября 2023 года при трагических обстоятельствах ушел из жизни мой хороший друг из родного города. Хьюи был моим близким другом детства и любящим отцом. Его потеря оставила в наших сердцах пустоту и разбила нас. Даже когда наши жизни пошли разными путями, DayZ оставалась для нас способом поддерживать связь — возможностью для компании друзей, которым уже за тридцать, вместе строить лагеря, общаться и делиться тем, что происходит в нашей жизни. Он по-настоящему любил эту игру и провел в ее мире более тысячи часов, преимущественно на сервере 0009.
+            </p>
+            <p>
+              Мы просим установить мемориал там, где он в последний раз вышел из игры, чтобы собираться, вспоминать совместные приключения и чтить человека, делавшего мир светлее. Для нас невероятно важно знать, что память о нем живет в любимой игре; уверен, на нашем месте он сделал бы то же для любого из нас».
+            </p>
+            <p>
+              ПОКОЙСЯ С МИРОМ, НАШ ДОРОГОЙ ДРУГ ХЬЮИ ДИЦИНОСКИ. 12.06.1987–15.10.2023
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://feedback.bistudio.com/T176352"
+                target="_blank"
+                rel="noopener">Запрос Джека М. («benimbz») в трекере обратной связи Bohemia</a>
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Anthony_aka_WotalTanker">
+          <img src="../images/spots/anthony.avif" class="memorial-img" />
+          <h2 class="memorial-name">Anthony, он же WotalTanker</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=5400.42;2206.18"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=5400.42;2206.18"
+              target="_blank"
+              rel="noopener">
+                МЕСТО: 5400.42;2206.18
+            </a>
+            • Аэродром Балота
+          </div>
+          <div class="memorial-description">
+            <p>
+              Покойся с миром, WotalTanker. Энтони был важной частью многих каналов, посвященных DayZ, и нам будет очень его не хватать. Он всегда заглядывал, чтобы по-дружески поболтать и посмеяться.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://x.com/DokterStrangel1/status/1582318293339164672"
+                target="_blank"
+                rel="noopener">Публикация в X.com от пользователя «DokterStrangelove»</a>
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Maks1019">
+          <img src="../images/spots/maks1019.avif" class="memorial-img" />
+          <h2 class="memorial-name">Maks1019</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=5168.16;2520.27"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=5168.16;2520.27"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 5168.16;2520.27</a
+            >
+            • Аэродром Балота
+          </div>
+          <div class="memorial-description">
+            <p>
+              Один из мемориалов на аэродроме Балота посвящен моему другу Maks1019. Он был довольно известен в сообществе военно-тактических ролевых игр на PlayStation, и я познакомился с ним через множество общих друзей. Через некоторое время мы выяснили, что живем в соседних городах, а команды наших школ всегда играли друг против друга в американский футбол. Мы так и не успели встретиться и провести время вместе вживую до того, как в июне 2024 года он покончил с собой. Однако я присутствовал на его похоронах и познакомился с его родителями. В целом он был отличным парнем. Пилотка на его кресте — отсылка к тому, что перед смертью он собирался поступить на службу в военно-воздушные силы.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «pro f essor»</div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              После обновления 1.27 у моего друга Макса появился собственный крест. Рядом с ним лежит пилотка, поскольку до того, как он покончил с собой в июне 2024 года, он собирался поступить на службу в военно-воздушные силы. Если вы хотите почтить его память, крест можно найти где-то неподалеку от аэродрома Балота.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/IlMxujD4ZUk?si=O0C2BxZ6CFGzZmDN"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@ProfessorP07»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Eddie_aka_AZCowboy">
+          <img src="../images/spots/eddie.avif" class="memorial-img" />
+          <h2 class="memorial-name">Eddie, он же AZCowboy</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=3774.59;2605.17"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=3774.59;2605.17"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 3774.59;2605.17</a
+            >
+            • Комарово #1
+          </div>
+          <div class="memorial-description">
+            <p>
+              Этот мемориал был установлен в память об Эдуардо «Eddie» Лупе Уртадо. Он служил в пограничном патруле и погиб вместе со своей сестрой и матерью в лобовом столкновении, произошедшем в День матери.
+              <a
+                href="https://www.azfamily.com/2024/05/14/border-patrol-agent-his-mother-sister-killed-northern-arizona-crash/"
+                target="_blank"
+                rel="noopener"
+                >Вот посвященный этому новостной материал.</a
+              >
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1cyd47t/comment/l58nr69/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «iamivanman9»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Эдди служил в пограничном патруле и буквально тащил нашу команду на себе. Он был хорошим человеком и верным другом — из тех, кто не боялся вступить в любую схватку и обычно выходил из нее победителем. Он погиб по вине пьяного водителя в День матери. Покойся с миром.
+            </p>
+            <p>
+              Его мемориал разместили в Комарово, потому что неподалеку находилась первая база, которую мы построили вместе. Именно там мы все познакомились, а Эдди был нашим главным строителем базы.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Reddit от пользователя «kelseysOF»</div>
+          </div>
+        </article>
+        <article class="entry" id="Sergei_T._aka_Bojindo">
+          <img src="../images/spots/sergeyt.avif" class="memorial-img" />
+          <h2 class="memorial-name">Сергей Т., он же Bojindo</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2619;2231.88"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2619;2231.88"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2619;2231.88</a
+            >
+            • Острог
+          </div>
+          <div class="memorial-description">
+            <p>
+              Этот крест установлен в память о Сергее Тарасенко — в игре он был известен под ником Sergei Bozhindo. Он основал один из старейших RP-серверов DayZ — RUSSIAN FOREST RP. Черный берет был частью образа его персонажа на сервере. В 2020 году Сергей умер от сердечного приступа. Он был семьянином, отцом двоих детей, настоящим офицером и патриотом своей страны.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/qyultp/comment/hligevq/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «dayzona_ru»</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://youtu.be/oxyr_hRcrUU?si=o9NrhExz1kJhUn2A"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «В память о Bojindo» @Chase-yf7ty</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Chris">
+          <img src="../images/spots/chris.avif" class="memorial-img" />
+          <h2 class="memorial-name">Chris</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2651.5;1225.32"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2651.5;1225.32"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2651.5;1225.32</a
+            >
+            • Сторож (Тюремный остров)
+          </div>
+          <div class="memorial-description">
+            <p>
+              Это крест Криса, расположенный на Тюремном острове — на берегу, сразу за мостом.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Больше настоящих мемориалов в DayZ» @_AGONY</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Jen_aka_Poisonantler">
+          <img src="../images/spots/jen.avif" class="memorial-img" />
+          <h2 class="memorial-name">Jen, она же Poisonantler</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2911.68;3941.74"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2911.68;3941.74"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2911.68;3941.74</a
+            >
+            • Ербенка
+          </div>
+          <div class="memorial-description">
+            <p>
+              Наше сообщество потеряло одного из своих участников и замечательную стримершу. Джен, известная под ником Poisonantler, ушла из жизни при трагических обстоятельствах 8 марта 2018 года. Команда разработчиков решила почтить ее память, установив небольшой крест и скамейку на месте, где она в последний раз вышла из игры.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://forums.dayz.com/topic/238378-status-report-5-june-2018/"
+                target="_blank"
+                rel="noopener"
+                >Отчет о состоянии DayZ (5 июня 2018 года)</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Если вам когда-нибудь доведется побывать на Ербенке — холме к западу от Бора — и вы наткнетесь на это место, вспомните Джен, известную как Poisonantler. Она была игроком и стримершей DayZ и ушла из жизни в 2018 году. Светлая ей память.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://x.com/adamfrancu/status/1004104189436485632"
+                target="_blank"
+                rel="noopener"
+                >Публикация в X.com от пользователя «@adamfrancu»</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/97hmvs/comment/e48he2g/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «BatyAlquawen»</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.twitch.tv/poisonantler/видео/238300349"
+                target="_blank"
+                rel="noopener"
+                >twitch.tv/poisonantler</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/watch?v=Ldu_DjsyfTo"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Это была моя дорогая Jen» @Rebelzize</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Jordan">
+          <img src="../images/spots/jordan.avif" class="memorial-img" />
+          <h2 class="memorial-name">Jordan</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2881.49;4326.72"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2881.49;4326.72"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2881.49;4326.72</a
+            >
+            • Ербенка
+          </div>
+          <div class="memorial-description">
+            <p>
+              Недавно ушел из жизни Джоржан, один из участников нашего сообщества DayZ. Его друзья хотели узнать, можно ли установить в игре мемориал в его память неподалеку от города Бор в Черноруси. Мне кажется, место под английским дубом хорошо для этого подойдет.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://feedback.bistudio.com/T177091"
+                target="_blank"
+                rel="noopener"
+                >Запрос Джека М. («DrDeSync») в трекере обратной связи Bohemia</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="HarryZeleno">
+          <img src="../images/spots/harry.avif" class="memorial-img" />
+          <h2 class="memorial-name">Harry</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2705.5;5453.92"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2705.5;5453.92"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2705.5;5453.92</a
+            >
+            • Церковь в Зеленогорске
+          </div>
+          <div class="memorial-description">
+            <p>
+              В Зеленогорске рядом с церковью и скамейкой есть мемориал. Он посвящен Гарри, одному из моих самых близких друзей. Мы попросили разработчиков добавить его, и они сделали это в одном из недавних обновлений.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/IlMxujD4ZUk?si=HSv-_wiLlOXlGOJ6"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@TheHopelessGamer»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Jake_L._aka_AE86FORLIFE">
+          <img src="../images/spots/jakel.avif" class="memorial-img" />
+          <h2 class="memorial-name">Jake L., он же AE86FORLIFE</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=4542.7;6496.28"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=4542.7;6496.28"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 4542.7;6496.28</a
+            >
+            • Погоревка
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мемориал Джейку находится в Погоревке. Он играл на нашем сервере сообщества «WTR — We That Remain», где мы также создали для него постоянный мемориал — уникальный гараж, расположенный в Погоревке, последнем городе, в котором жил его персонаж во время игры с нами. Нам не хватает его каждый день.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «lektarg»</div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Когда мы узнали о смерти Джейка, участники нашего сообщества сразу рассказали нам, что Bohemia Interactive может добавлять в игру памятные места. У нас довольно крупный ролевой сервер на PlayStation, а в Погоревке жил его самый любимый персонаж из всех, за которых он когда-либо играл. Для нас очень важно, что память о нем сохранена в месте, которое имело такое большое значение и для него, и для нашего сообщества.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «rikkitikki»</div>
+          </div>
+        </article>
+        <article class="entry" id="Jack_Forrest_(Jacka_Foresta)">
+          <img src="../images/spots/jackforest.avif" class="memorial-img" />
+          <h2 class="memorial-name">Jack Forrest (Jacka Foresta)</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=3638.1;6916.25"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=3638.1;6916.25"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 3638.1;6916.25</a
+            >
+            • Молочная ферма
+          </div>
+          <div class="memorial-description">
+            <p>
+              На молочной ферме неподалеку от Зеленой горы установлен крест в память о моем друге, известном в игре под именем Jack Forrest. Он часто проводил там время на чешском RP-сервере. Джек трагически погиб в автомобильной аварии, и теперь сообщество в его честь называет это место «Фермой Джека Форреста».
+            </p>
+            <p>
+              Через два года после его смерти участники RP-сообщества провели памятную
+              <a
+                href="https://youtu.be/EQ-ygWaGGEs?si=syBnotEdfaR_fK7p"
+                target="_blank"
+                rel="noopener"
+                >церемонию</a
+              >
+              и даже создали для него именное надгробие. Его мемориальный крест можно найти в углу возле кустов.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/inqio6/comment/g4b8r5d/?utm_source=share&utm_medium=web2x&context=3"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Leon1700»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="MoonCrawler710">
+          <img src="../images/spots/mooncrawler710.avif" class="memorial-img" />
+          <h2 class="memorial-name">Gabe, он же MoonCrawler710</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=1169.44;6307.1"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=1169.44;6307.1"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 1169.44;6307.1</a
+            >
+            • Плотина Тишина
+          </div>
+          <div class="memorial-description">
+            <p>
+              Он был известен под ником MoonCrawler710. Его настоящее имя — Гейб. В октябре 2023 года он умер после долгой борьбы с раком.
+            </p>
+            <p>
+              Мы начали вместе играть в DayZ еще до того, как у него диагностировали меланому глаза — редкую и агрессивную форму рака. Врачи быстро удалили ему глаз, надеясь остановить болезнь до того, как она успеет распространиться. На протяжении всего восстановления мы продолжали играть в DayZ, чтобы помочь ему хотя бы ненадолго отвлечься от происходящего. Почти год признаков рака не было, но затем выяснилось, что болезнь распространилась на внутренние органы. Он перенес множество операций: ему удаляли части органов, а некоторые органы пришлось удалить полностью, пока он продолжал бороться с раком. Все это время DayZ оставалась для нас способом уйти от реальности. Мы часами путешествовали вместе и хотя бы ненадолго забывали о его болезни.
+            </p>
+            <p>
+              Во время одного из таких путешествий мы нашли Плотину Тишина и решили обосноваться там. Мы часами рыбачили у озера, на берегу которого теперь стоит его крест, и просто разговаривали.
+            </p>
+            <p>
+              4 июля 2023 года нам обоим показалось немного странным проводить День независимости в игре, поэтому мы пригласили других игроков сервера присоединиться к нашему пикнику. Мы сказали всем взять с собой напитки и удочки. Не прошло и пятнадцати минут, как собралось более двадцати человек. Один парень по нескольку раз летал на вертолете из безопасной зоны, привозя на праздник все новых людей. Это было одно из самых безумных событий, которые я когда-либо видел, и все происходящее действительно казалось волшебством. Никто из присутствующих, кроме нас с Гейбом, не знал, что это будет его последний День независимости. Но все эти люди все равно собрались вместе и помогли ему сильнее, чем когда-либо смогут представить.
+            </p>
+            <p>
+              Это было одно из самых трогательных событий, свидетелем которых мне доводилось быть. После смерти Гейба я связался с разработчиками DayZ, и они почтили его память мемориалом и следующими словами:
+            </p>
+            <p>
+              «Нам хочется верить, что дух MoonCrawler-а взмыл далеко за пределы Луны, оставив за собой след из звездной пыли».
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «HalfDeaf»</div>
+          </div>
+        </article>
+        <article class="entry" id="Scouse-Mouse-Uk">
+          <img
+            src="../images/spots/scouse-mouse-uk.avif"
+            class="memorial-img"
+          />
+          <h2 class="memorial-name">Scouse-Mouse-Uk</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=360.438;6615.42"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=360.438;6615.42"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 360.438;6615.42</a
+            >
+            • Большой котел (запад)
+          </div>
+          <div class="memorial-description">
+            <p>
+              Этот мемориал посвящен моему брату Scouse-Mouse-Uk. Он всегда
+              устраивал базу в тех двух домах и любил PvE в DayZ. PvP его почти
+              не интересовало: он в основном рыбачил в ручье или охотился в
+              лесу. Ему было 40 лет, и он играл в DayZ с первого релиза. Его
+              друзья написали разработчикам и добились появления креста в игре.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/user/tphace/comments/1siidfx/comment/ovrnwbd/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Even_News_8282»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Big_Red">
+          <img src="../images/spots/bigred.avif" class="memorial-img" />
+          <h2 class="memorial-name">Big Red</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2558.91;9240.89"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2558.91;9240.89"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2558.91;9240.89</a
+            >
+            • Лопатино (юг)
+          </div>
+          <div class="memorial-description">
+            <p>
+              Big Red был любимым и уважаемым участником PvE-сообщества DayZ. Его знали как доброго человека с отличным чувством юмора, который обрел в игре настоящих друзей. После его смерти Bohemia Interactive почтила его память, установив крест и скамейку на месте его любимой базы в Черноруси, чтобы игроки на всех серверах могли помнить о нем. Друзья вспоминают его как человека, который наполнял их время в игре теплом и смехом.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtu.be/DXPeBBjJ_3M?si=PMaW3NPhqn3CwLDU"
+                target="_blank"
+                rel="noopener"
+                >Видео от Grump E Lemming на YouTube</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Ryan">
+          <img src="../images/spots/ryan.avif" class="memorial-img" />
+          <h2 class="memorial-name">Ryan</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=1911.92;10609.4"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=1911.92;10609.4"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 1911.92;10609.4</a
+            >
+            • Вавилово
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мемориал к юго-западу от Вавилово был добавлен в память о моем друге Райане. Мы познакомились в начале 2018 года, и он был замечательным другом. Ему всегда нравилось это место в игре, особенно до того, как отсюда убрали старое автобусное депо. Именно поэтому рядом с его крестом установлен знак автобусной остановки. Я скучаю по нему каждый день. Чертовски скучаю.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/zuf5yl/comment/j1jdkpu/?utm_source=share&utm_medium=web2x&context=3"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Ladimus»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Несмотря на четыре часовых пояса, смену работы и переезды между штатами и странами, нам с друзьями наконец удалось всем вместе встретиться в игре и посетить могилу нашего друга Райана.
+            </p>
+            <p>
+              Некоторые участники сообщества DayZ на Reddit, возможно, знают, что эта могила была установлена в память о Райане. Теперь она также отмечена на Карте мемориалов, созданной другим выжившим — tphace.
+            </p>
+            <p>
+              Мы узнали о его смерти несколько лет назад, после чего я связался с командой разработчиков и попросил добавить в игру что-нибудь в память о нем. Большинство участников нашей компании впервые познакомились с Райаном еще во времена раннего доступа, когда в Вавилово находилось автобусное депо.
+            </p>
+            <p>
+              Он был невероятно харизматичным, веселым и простым в общении человеком. Райан всегда говорил прямо и не терпел всякой херни — за это мы его особенно сильно любили. А еще он постоянно надирал мне задницу в Dark Souls III.
+            </p>
+            <p>
+              С тех пор прошло много лет, и все мы повзрослели: кто-то из нас уже женился, кто-то служит в армии, а я теперь работаю в Bohemia Interactive. Я часто думаю о том, как бы он отреагировал, увидев, где все мы оказались сейчас.
+            </p>
+            <p>
+              Мы скучаем по нему каждый день. Пожалуйста, не забывайте разговаривать со своими друзьями...
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1lmnp6x/to_our_friend_ryan/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Публикация в Reddit от пользователя «Ladimus»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="EazyRider">
+          <img src="../images/spots/eazyrider.avif" class="memorial-img" />
+          <h2 class="memorial-name">Eazy Rider</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=1258.29;12376.7"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=1258.29;12376.7"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 1258.29;12376.7</a
+            >
+            • Синысток (северо-запад) #2
+          </div>
+          <div class="memorial-description">
+            <p>
+              Хочу дополнить информацию для вашего замечательного проекта: мемориал в Синостоке (1258;12376) посвящен моему дорогому другу Eazy Rider — настоящему джентльмену и прекрасному человеку. Ваше
+              <a
+                href="https://youtu.be/w_Ah3PSVlPA"
+                target="_blank"
+                rel="noopener"
+                >видео</a
+              >
+              вернуло мне множество теплых воспоминаний. Спасибо вам и продолжайте в том же духе.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/user/tphace/comments/1siidfx/comment/ojnmq8o/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Electrical_Read_6125»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Bobby_Chap">
+          <img src="../images/spots/bobbychap.avif" class="memorial-img" />
+          <h2 class="memorial-name">Bobby & Chap</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=2440.22;14726.7"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=2440.22;14726.7"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 2440.22;14726.7</a
+            >
+            • Амбар у Глубокого озера
+          </div>
+          <div class="memorial-description">
+            <p>
+              К северо-востоку от Тисов расположены две могилы с одним крестом, установленные в память о двух погибших участниках нашей группы. Они находятся за большим амбаром у кромки леса, немного южнее церкви на возвышенности над поселком. Позади амбара, рядом с могилами, стоят две скамейки.
+            </p>
+            <p>
+              Наша группа из четырех человек под названием «The Ghosts» впервые решила встретиться в реальной жизни. Двое участников жили недалеко друг от друга, поэтому встретились заранее и вместе поехали на одной машине в стейк-хаус, где мы договорились собраться. Мы с моим другом Ричем тоже жили относительно близко, поэтому впервые встретились и отправились к месту встречи на моей машине. Я и Рич приехали туда и несколько часов ждали двух остальных участников, но они так и не появились. Мы прождали еще несколько часов, однако они по-прежнему не приезжали и не отвечали на звонки. В конце концов нам пришлось разъехаться по домам, так и не встретившись с друзьями. Мы предположили, что у них, скорее всего, просто сломалась машина.
+            </p>
+            <p>
+              К сожалению, на следующий день мы узнали, что по пути к нам в машину Роберта и Чапа врезался пьяный водитель. Оба погибли. Сам водитель умер примерно через неделю. Нам сказали, что наши друзья погибли мгновенно.
+            </p>
+            <p>
+              Разработчики установили мемориал в память о них на месте нашей старой базы, где мы все встретились в игре и которую удерживали больше года. По понятным причинам мы называли ее «базой в амбаре». Теперь они навсегда похоронены позади него, а это место навсегда останется нашим домом в DayZ. Покойтесь с миром, Бобби и Чап — самые надежные бойцы с белыми повязками, которые когда-либо были в нашей группе!
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/watch?v=lOA2VKohUgA&lc=UgwFDRrfbZW7yIFn8YF4AaABAg"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «WakefulOne»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Elmer_aka_Pancake">
+          <img src="../images/spots/elmer.avif" class="memorial-img" />
+          <h2 class="memorial-name">Elmer, он же Pancake</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=3639.21;13121.8"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=3639.21;13121.8"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 3639.21;13121.8</a
+            >
+            • Церковь в Новой Петровке
+          </div>
+          <div class="memorial-description">
+            <p>
+              1 июля 2024 года наше сообщество потеряло очень близкого друга, выжившего, отца двоих детей и боевого товарища для многих из нас. Наш друг Элмер «Pancake» трагически и неожиданно ушел из жизни. Мы познакомились с Pancake в 2016 году, и после тысяч часов, проведенных вместе за выживанием, общением и укреплением дружбы, вскоре стали лучшими друзьями.
+            </p>
+            <p>
+              Мы жили в разных концах страны, но все равно воспринимали его как родного брата. Он был человеком, с которым мы разговаривали каждый день, что бы ни происходило. Теперь этого больше не будет. Мы все надеемся, что разработчики смогут добавить в игру мемориал в память о Pancake, чтобы мы могли приходить к нему. Мы подумали о церкви в Новой Петровке, поскольку всегда любили обустраивать там базу. Мы любим тебя и скучаем по тебе, Pancake. Покойся с миром.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1918b77/recent_death_in_our_squad_were_trying_to_get_a/"
+                target="_blank"
+                rel="noopener"
+                >Публикация в Reddit от пользователя «sn0wxyz»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              «Дружба, возникшая при жизни, может оборваться смертью, но узы, которые нас связывали, нерушимы».
+              <br />
+              - Покойся с миром, Elmer
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «sn0man_»</div>
+            <div class="memorial-quote">
+              <a
+                href="https://x.com/ghostdoublem/status/1744162364847477243"
+                target="_blank"
+                rel="noopener"
+                >Публикация в X.com от пользователя «@ghostdoublem»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Patrick_T._aka_ProJecTxPaTT">
+          <img src="../images/spots/patrickt.avif" class="memorial-img" />
+          <h2 class="memorial-name">Patrick T., он же ProJecTxPaTT</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=3702.08;13006.5"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=3702.08;13006.5"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 3702.08;13006.5</a
+            >
+            • Фабрика в Новой Петровке
+          </div>
+          <div class="memorial-description">
+            <p>
+              В память об одном из наших погибших участников, Патрике Т., также известном как «ProJecTxPaTT», после трагического вторжения в его дом был установлен крест. Он был потрясающим человеком, и его забрали у нас слишком рано.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/zuf5yl/comment/j964ao3/?utm_source=share&utm_medium=web2x&context=3"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «JortDubyaBusch»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="John_aka_Prospect">
+          <img src="../images/spots/john.avif" class="memorial-img" />
+          <h2 class="memorial-name">John, он же Prospect</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6503.47;11571.1"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6503.47;11571.1"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6503.47;11571.1</a
+            >
+            • Чертов Замок #2
+          </div>
+          <div class="memorial-description">
+            <p>
+              Это крест Джона, также известного как Prospect. Он находится к
+              северо-западу от Чертового Замка.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/BDcq0T7xd7E?si=LDavEQVpvvcV04uZ"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Больше настоящих мемориалов в DayZ» @_AGONY
+              </a>
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Боже, я так скучаю по Prospect. Я играл с ним каждые выходные в октябре, кроме тех, когда он, к сожалению, ушел из жизни. Он многому меня научил. Спасибо, Bohemia.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/BDcq0T7xd7E?si=LDavEQVpvvcV04uZ"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@alexawendigo»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Cody_aka_Kh0diak">
+          <img src="../images/spots/cody.avif" class="memorial-img" />
+          <h2 class="memorial-name">Cody, он же Kh0diak</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6804.84;11484.3"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6804.84;11484.3"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6804.84;11484.3</a
+            >
+            • Чертов Замок
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мемориал моего друга Коди, известного в игре под ником Kh0diak, находится у Чертова замка. Ему было 30 лет.
+            </p>
+            <p>
+              Коди неожиданно ушел из жизни 1 ноября 2021 года в результате автомобильной аварии по дороге домой. Он активно выступал в поддержку права на владение оружием и был очень умным, трудолюбивым и надежным человеком. Безгранично преданный близким, он был готов на все, чтобы помочь тем, кого любил. Но прежде всего Коди был заботливым отцом, который больше всего на свете любил своего двухлетнего сына.
+            </p>
+            <p>
+              Мы из Западной Виргинии. Этот знак памяти очень много для нас значит. Нам нравится то, что вы делаете.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/user/tphace/comments/1l2csqs/comment/n0o4ay1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Lucky_Gap_5469»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Два дня назад ушел из жизни мой лучший друг и бессменный напарник по DayZ. Ему бы очень понравилось это место. Не знаю, смогу ли я теперь снова запустить игру. Покойся с миром, братиш.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/qtdf2s/i_pulled_this_from_fb_i_thought_it_was_really_cool/"
+                target="_blank"
+                rel="noopener"
+                >"Christina Fields" на YouTube DayZ Channel</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Наконец-то мы с другом смогли добраться до Чертова замка, чтобы почтить память Коди — друга Кристины Филдс. С любовью &lt;3
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://imgur.com/a/x0sSBHg"
+                target="_blank"
+                rel="noopener"
+                >Анонимная публикация в Facebook</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              ...увидев комментарий лучшей подруги Коди, команда DayZ установила в его память мемориал у Чертова Замка. Именно там находилась база, которую они удерживали на официальных серверах в течение шести месяцев, и там же они в последний раз вместе вышли из игры.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/IlMxujD4ZUk?si=EmUe-xTtts0m3MgD"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Больше настоящих мемориалов в DayZ» @_AGONY</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Robert_J._aka_SpcKronos">
+          <img src="../images/spots/spckronos.avif" class="memorial-img" />
+          <h2 class="memorial-name">Robert J., он же SpcKronos</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6349.06;13876.9"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6349.06;13876.9"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6349.06;13876.9</a
+            >
+            • Лысая гора (юго-запад)
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мой друг Роберт, известный под ником SpcKronos, умер от рака. Его мемориал находится на карте по координатам 6349;13875...
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1d34sk5/comment/l6adhso/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «DowntownLetterhead92»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Это крест Роберта, также известного как SpcKronos. Он расположен в лесу к юго-востоку от Каменска.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Больше настоящих мемориалов в DayZ» @_AGONY</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              SpcKronos — мой отец. Он очень любил эту игру. Невероятно видеть, что разработчики установили в его память крест.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@LaneMartin-s2f»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Там появились две скамейки, крест и несколько камней, которых раньше не было. Мы часто приходили туда, чтобы перекусить и развести костер, поскольку находившийся рядом холм частично скрывал дым. В этом месте мы обычно ненадолго останавливались отдохнуть или выходили из игры. Именно там он вышел из игры в последний раз. Его настоящее имя — Роберт Джонс, также известный как SpcKronos.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@aiden2011hend»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Percy">
+          <img src="../images/spots/percy.avif" class="memorial-img" />
+          <h2 class="memorial-name">Percy</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=7893.67;12007.8"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=7893.67;12007.8"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 7893.67;12007.8</a
+            >
+            • Кладбище в Гвоздно
+          </div>
+          <div class="memorial-description">
+            <p>
+              Парень, с которым я играл, Перси, скончался в 2024 году. Я связался с командой разработчиков DayZ, и они установили мемориал в его честь на кладбище в Гвоздно. Он был другом моего друга, и мы все общались в Discord и часто вместе играли. В основном мы играли на Намальске, но когда заходили в Черно, то строили базу в близлежащей церкви.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «xibalbus»</div>
+          </div>
+        </article>
+        <article class="entry" id="SkyZ">
+          <img src="../images/spots/skyz.avif" class="memorial-img" />
+          <h2 class="memorial-name">SkyZ</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=9256.92;13492.2"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=9256.92;13492.2"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 9256.92;13492.2</a
+            >
+            • Ключ
+          </div>
+          <div class="memorial-description">
+            <p>
+              В Ключе покоится мой лучший друг SkyZ. Он хотел, чтобы рядом были его фирменная бейсболка и повязка нашей фракции, которой он очень гордился и ради которой всегда помогал другим.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/user/tphace/comments/1d1xo9n/comment/lbg1esi/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «RoyBeer»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Adam_B._aka_DocSatan">
+          <img src="../images/spots/docsatan.avif" class="memorial-img" />
+          <h2 class="memorial-name">Adam B., он же DocSatan</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=11786.1;12430.2"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=11786.1;12430.2"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 11786.1;12430.2</a
+            >
+            • Аэродром Красностава
+          </div>
+          <div class="memorial-description">
+            <p>
+              Могила DocSatan, оказавшего большое влияние на сообщества DayZDownUnder (DDU) и DUG. Мемориал был добавлен в версии 1.13.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/q2b7iq/comment/hfkkodd/?utm_source=share&utm_medium=web2x&context=3"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Bearsgoroar»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Светлая память DocSatan из австралийского ПК-сообщества DayZ Down Under, который ушел из жизни в марте 2021 года из-за осложнений, вызванных пневмонией. Нам будет тебя не хватать, брат.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/m9sss6/rip_docsatan_from_the_dayz_down_under_pc/"
+                target="_blank"
+                rel="noopener"
+                >Публикация в Reddit от пользователя «Boydy73»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Этот мемориал посвящен DocSatan — заметному участнику сообщества DayZ DownUnder и лидеру игровой группы «Lone Wolf Collective». В 2021 году он неожиданно ушел из жизни из-за пневмонии. После его смерти австралийский стример Boydy73 попросил разработчиков установить постоянный мемориал в одном из любимых мест DocSatan. Разработчики согласились, почтив память игрока, которого во всем сообществе знали за исключительное дружелюбие и неизменный шлем ООН.
+            </p>
+            <p>
+              Помимо официального мемориала на карте, на сервере DayZ DownUnder существует отдельный мемориал, созданный сообществом на горе Клен. Он расположен точно в том месте, где DocSatan в последний раз вышел из игры, и состоит из надгробного знака и винтовки Мосина, на которой лежит его знаменитый шлем ООН.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/sezq7f/comment/hup6z7l/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Handgun_Hero»</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/mbohjf/docsatan_funeral/"
+                target="_blank"
+                rel="noopener"
+                >Reddit — церемония памяти DocSatan</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Pauli">
+          <img src="../images/spots/paulie.avif" class="memorial-img" />
+          <h2 class="memorial-name">Pauli</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=11934.7;13160.4"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=11934.7;13160.4"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 11934.7;13160.4</a
+            >
+            • Аэродром Красностава (север)
+          </div>
+          <div class="memorial-description">
+            <p>
+              ...недавно ушел из жизни преданный поклонник DayZ — настолько преданный, что его даже похоронили в футболке с символикой игры. В обновлении 1.17 разработчики установили в его память крест в любимом месте Паули — у оливкового дома с куполообразной крышей неподалеку от Северо-восточного аэродрома.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtu.be/vmCIiEftFHE?t=807"
+                target="_blank"
+                rel="noopener"
+                >WOBO на YouTube</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Паули был моим другом. Его мемориал находится у дома в северо-западной части Северо-восточного аэродрома. Светлая память ушедшим игрокам!
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/IlMxujD4ZUk?si=djVoIPtImG8CsdTd"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@Jameson-offroad-adventures»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Cody_P._aka_Wick">
+          <img src="../images/spots/codyp.avif" class="memorial-img" />
+          <h2 class="memorial-name">Cody P., он же Wick</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=12981;12759.5"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=12981;12759.5"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 12981;12759.5</a
+            >
+            • Антенна Ольши
+          </div>
+          <div class="memorial-description">
+            <p>
+              Разработчики добавили мемориал в память о моем друге и дополнили его особой личной деталью. Он расположен рядом с вышкой в Ольше. В 2023 году Коди погиб в аварии на мотоцикле. Мы познакомились в DayZ, а позднее выяснили, что живем всего в нескольких минутах друг от друга. За шесть или семь лет мы стали очень близкими друзьями. Когда я рассказал представителю DayZ о мотоциклетной аварии, оказалось, что человек, отвечающий за мемориалы, тоже потерял друга в похожей аварии. Поэтому на крест Коди поместили мотоциклетный шлем. Это был очень трогательный и по-настоящему особенный жест.
+            </p>
+            <p>
+              Я выбрал место возле вышки в Ольше, потому что именно там, на радиовышке, находилась его база, когда мы впервые встретились. Кажется, это было на сервере Trump’s Wall. Кроме того, оттуда открывается красивый вид, а рядом стоит скамейка, поэтому это место показалось мне подходящим.
+            </p>
+            <p>
+              Его звали Коди П., а в игре он был известен под ником Wick. Администратор сервера Sunnyvale, на котором мы раньше играли, также собирался установить в безопасной зоне мемориал в виде мотоцикла. С ним можно было бы взаимодействовать с помощью кнопки «Нажмите F, чтобы отдать дань уважения». На протяжении многих сезонов Wick занимал первое место в таблице лидеров по количеству убийств и оставался активным участником сообщества.
+            </p>
+            <p>
+              В октябре 2024 года на сервере Sunnyvale прошла большая памятная церемония. Это был очень добрый и трогательный жест.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «glokked»</div>
+          </div>
+        </article>
+        <article class="entry" id="Steve">
+          <img src="../images/spots/steve.avif" class="memorial-img" />
+          <h2 class="memorial-name">Steve</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=12305.5;12064.8"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=12305.5;12064.8"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 12305.5;12064.8</a
+            >
+            • Красностав (восток)
+          </div>
+          <div class="memorial-description">
+            <p>
+              После тяжелой борьбы с раком мой друг Стив ушел из жизни в апреле 2024 года.
+            </p>
+            <p>
+              Я познакомился со Стивом через свою жену. Позже мы стали работать вместе, а когда началась пандемия COVID-19, я снова начал играть на Xbox. Именно тогда мы со Стивом по-настоящему сблизились, а я познакомился с его компанией друзей.
+            </p>
+            <p>
+              В первый вечер нашей совместной игры мы отправились в место, которое они называли Старым лагерем, и готовили мясо на костре. Мне казалось, что я отлично справляюсь, когда я нашел на причале кусок жира и принес его обратно. Они уже давно играли в DayZ, а для меня это был первый раз. После того как мы съели найденный мной жир, мы разделились, и вскоре я начал слышать смех. Ребята сказали, что поблизости каннибалы, и бросились меня искать. Я думал, что каннибалы — это неигровые персонажи, добавленные для разнообразия противников. Но оказалось, что каннибалом был я.
+            </p>
+            <p>
+              Во время следующего похода в Старый лагерь я положил в карманы слишком много приготовленного мяса и умер от перегрева. После этого мы перебрались в Березино и построили базу в здании системы оповещения. Стив был рядом, когда я впервые убил другого игрока из винтовки Winchester.
+            </p>
+            <p>
+              Как бы то ни было, этот крест установлен в Старом лагере. Теперь память о Стиве навсегда сохранена в месте, где мы проводили бесчисленные часы вместе, когда не могли встретиться в реальной жизни.
+            </p>
+            <p>
+              На карте Черноруси найдите аэродром Красностава. Немного юго-восточнее него расположен ручей в форме буквы Y. Рядом с ним находятся несколько больших камней и небольшая поляна. Именно там установлен крест.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1i3k224/one_of_40_new_crosses_put_in_as_memorials_for_the/"
+                target="_blank"
+                rel="noopener"
+                >Публикация в Reddit от пользователя «OGWhiz»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Bailey">
+          <img src="../images/spots/bailey.avif" class="memorial-img" />
+          <h2 class="memorial-name">Bailey, он же coltsallday02</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=13439.7;12149.9"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=13439.7;12149.9"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 13439.7;12149.9</a
+            >
+            • Паб у Черного озера
+          </div>
+          <div class="memorial-description">
+            <p>
+              С самых времен альфа-версии Бейли провел в DayZ почти нечеловеческое количество часов. Готов поспорить, что к моменту своей смерти он наиграл больше, чем многие стримеры.
+            </p>
+            <p>
+              Изначально я связался с командой разработчиков с просьбой установить крест, чтобы сделать сюрприз его семье, в том числе братьям, которые тоже состояли в нашей группе. Именно он практически заставил меня начать играть с ним в DayZ и, честно говоря, не переставал рассказывать об игре, когда я перешел с Xbox на PS5. Благодаря ему я провел в DayZ не меньше 500 часов.
+            </p>
+            <p>
+              После того как крест был добавлен и я показал матери Бейли по видеосвязи в Facebook Messenger, я возвращаюсь к мемориалу перед каждым вайпом персонажей. Я кладу рядом одно из его любимых оружий — SV-98 или винтовку Мосина, — подсвечиваю его дорожным фальшфейером, а перед крестом оставляю банку тактического бекона, квас Mad Monk и пакет физраствора. Когда все готово, я оставляю своего персонажа у креста до самого вайпа. В PSN в ночь перед каждым вайпом персонажей меня всегда можно найти у его мемориала.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/user/tphace/comments/1l2csqs/comment/ocwetfb/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «THELaffingDevil»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Balbanes3">
+          <img src="../images/spots/balbanes3.avif" class="memorial-img" />
+          <h2 class="memorial-name">Balbanes3</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=13312.4;11570.8"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=13312.4;11570.8"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 13312.4;11570.8</a
+            >
+            • Ивовое озеро
+          </div>
+          <div class="memorial-description">
+            <p>
+              Недавно мы провели внутриигровую церемонию памяти в честь нашего хорошего друга @Balbanes3, который ушел из жизни. Огромное спасибо @dayz за то, что они любезно дали ему место упокоения рядом с Ивовым озером. Мы скучаем по тебе, дружище.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://x.com/jaws_lord/status/1330582717038268416"
+                target="_blank"
+                rel="noopener"
+                >Публикация в X.com от пользователя «LordJaws»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Для тех, кто знал Balbanes в сообществе DayZ, у меня, к сожалению, очень печальные новости. Я общалась с его женой и с сожалением сообщаю, что в прошлом месяце он внезапно ушел из жизни. Я просто убита этим. Он был замечательным человеком и хорошим другом. Его жена попросила меня передать это. [7 сент. 2020]
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://x.com/LottieTwitch/status/1302733878159908864"
+                target="_blank"
+                rel="noopener"
+                >Публикация в X.com от пользователя «@LottieTwitch»</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/watch?v=lOA2VKohUgA&t=399s"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «18 секретных мест» @RavPlays</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/6Ua5TiIqe8g"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Трогательные мемориалы DayZ» @EvangelineDayZ</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Eight4">
+          <img src="../images/spots/eight4.avif" class="memorial-img" />
+          <h2 class="memorial-name">Eight4</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=13312.2;11569.9"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=13312.2;11569.9"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 13312.2;11569.9</a
+            >
+            • Ивовое озеро
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мой брат Eight4 увековечен у Ивового озера вместе со своим другом. Если будете пробегать мимо, оставьте им пива на двоих.
+            </p>
+            <p>
+              Мне очень приятно слышать о людях, которые нашли его место упокоения в игре. Если помните, там на самом деле стоят два креста. Один — моего брата, чей ник в игре был Eight4. Второй — его друга, который ушел из жизни немного раньше него; его ник в игре был Balbanes.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1g1bigc/comment/lrf972b/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Lower-Cherry-8830»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              ...трогательная дань памяти замечательному и любимому участнику сообщества DayZ...
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtu.be/flrNbk5GWF0?si=3VotSugDnNbJtOLj"
+                target="_blank"
+                rel="noopener"
+                >Paddy O'Brien на YouTube</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Phil">
+          <img src="../images/spots/phil.avif" class="memorial-img" />
+          <h2 class="memorial-name">Phil</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=13458.1;11363.2"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=13458.1;11363.2"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 13458.1;11363.2</a
+            >
+            • Река Ивового озера
+          </div>
+          <div class="memorial-description">
+            <p>
+              Команда DayZ получила сообщение от Тима, Макса, Нильса, Доминика, Винсента и Йонаса. Эта компания игроков DayZ потеряла своего друга Фила в результате трагического несчастного случая в 2017 году. Они вспоминают свою первую встречу с ним:
+            </p>
+            <p>
+              «Мы познакомились с ним в самом начале существования DayZ Standalone неподалеку от Рифов, у старого места крушения вертолета — одного из тех, которые тогда не появлялись в случайных местах. Ситуация получилась довольно забавной: мы с ним не замечали друг друга до тех пор, пока оба одновременно не забрались внутрь вертолета. Мы оба ужасно перепугались! Хотя в то время большинство игроков стреляли без предупреждения, мы этого не сделали. Уже через две минуты мы вместе до слез смеялись в его TeamSpeak. Так началась лучшая дружба в моей жизни. Благодаря DayZ у нас появилось еще очень много замечательных общих воспоминаний. Я и вся наша команда хотим поблагодарить вас за них!»
+            </p>
+            <p>
+              Они отправили нам это сообщение в день рождения Фила и попросили увековечить его память в игре на том месте, где они впервые встретились.
+            </p>
+            <p>
+              Поэтому мы, разработчики DayZ, решили установить там небольшой памятный крест. Он появится в игре начиная с версии 0.63. Если вы когда-нибудь наткнетесь на него, просто помните: этот крест посвящен Филу, одному из игроков DayZ.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://forums.dayz.com/topic/237746-status-report-12-december-2017/"
+                target="_blank"
+                rel="noopener"
+                >Отчет о состоянии DayZ (12 декабря 2017 года)</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Bendman">
+          <img src="../images/spots/bendman.avif" class="memorial-img" />
+          <h2 class="memorial-name">Bendman</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=11510.5;11283.8"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=11510.5;11283.8"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 11510.5;11283.8</a
+            >
+            • Гора Клен
+          </div>
+          <div class="memorial-description">
+            <p>
+              Хочу сообщить о еще одном мемориале на горе Клен. Bendman был моим
+              другом. Крест установили на месте его последней базы — наша группа
+              решила, что именно там он должен находиться.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Reddit от пользователя «yaboirequis33»</div>
+          </div>
+        </article>
+        <article class="entry" id="Tristan">
+          <img src="../images/spots/tristan.avif" class="memorial-img" />
+          <h2 class="memorial-name">Tristan</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=12909.1;9993.77"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=12909.1;9993.77"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 12909.1;9993.77</a
+            >
+            • Фабрика в Березино
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мемориал в Березино у красно-белой трубы посвящен товарищу моего
+              друга по имени Tristan, трагически ушедшему из жизни.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/IlMxujD4ZUk?si=HSv-_wiLlOXlGOJ6"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@SlyBac0nNZ»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Rafi">
+          <img src="../images/spots/rafi.avif" class="memorial-img" />
+          <h2 class="memorial-name">Rafi</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=8263.4;9092.08"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=8263.4;9092.08"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 8263.4;9092.08</a
+            >
+            • Алтар
+          </div>
+          <div class="memorial-description">
+            <p>
+              Крест с плюшевым медведем. У моего друга было одно из крупнейших PvE-сообществ DayZ на Xbox. Для меня было честью быть торговцем и администратором на сервере Hellgate. Его мечта продолжает жить. Он любил DayZ.
+            </p>
+            <p>Светлая память Rafi</p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtube.com/shorts/IlMxujD4ZUk?si=HSv-_wiLlOXlGOJ6"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@dudesweet5464»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="zNomi">
+          <img src="../images/spots/znomie.avif" class="memorial-img" />
+          <h2 class="memorial-name">zNomi</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=6319.57;7905.83"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=6319.57;7905.83"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 6319.57;7905.83</a
+            >
+            • Военный лагерь Старого Собора
+          </div>
+          <div class="memorial-description">
+            <p>
+              Посвящается zNomi. Как и многие из нас, мы с zNomi играли в DayZ с самого первого дня. Мы выросли на этой игре, проводя в ней ночи напролет — до четырех утра. Спасибо тебе за все воспоминания; zNomi бы это очень понравилось. Мемориал расположен над военным лагерем Старого Собора и был добавлен в версии 1.25.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/1cng1gh/new_player_memorial_dedicated_to_znomi_thank_you/"
+                target="_blank"
+                rel="noopener"
+                >Публикация в Reddit от пользователя «deadboymike»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Jared">
+          <img src="../images/spots/jared.avif" class="memorial-img" />
+          <h2 class="memorial-name">Jared</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=9100.48;8056.95"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=9100.48;8056.95"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 9100.48;8056.95</a
+            >
+            • Черный лес
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мы познакомились в DayZ в 2014 году, и за три года, что я его знал, стали лучшими друзьями. В 2017 году он умер от рака. В тот день, когда все случилось, он отправлялся на третий курс химиотерапии и попросил меня не заходить в игру до следующей недели, когда он вернется «поправившимся». Это был последний раз, когда мы играли вместе. После его смерти я несколько раз запускал DayZ, но так и не смог заставить себя играть. Я начинал плакать, а иногда просто оставлял игру открытой и сидел на пустом сервере TeamSpeak 3, которым мы пользовались много лет назад. Я скучаю по тебе, Jared. Я все еще жду.
+            </p>
+            <p>Мы всегда строили базу в Черном лесу, в том самом доме.</p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/r/dayz/comments/8f6nsi/dayz_the_last_game_i_ever_played_with_my_best/"
+                target="_blank"
+                rel="noopener"
+                >Публикация в Reddit от пользователя «DarkOverKill»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Tyler">
+          <img src="../images/spots/tyler.avif" class="memorial-img" />
+          <h2 class="memorial-name">Tyler</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=9789.47;8220.32"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=9789.47;8220.32"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 9789.47;8220.32</a
+            >
+            • Паб в Черном лесу
+          </div>
+          <div class="memorial-description">
+            <p>
+              Этот крест установлен в память о моем брате Тайлере. Разработчики только недавно добавили его мемориал, и мы все собрались здесь, в пабе к юго-востоку от Горки, чтобы впервые его увидеть.
+            </p>
+            <p>
+              Когда-то мы построили здесь свою первую базу — мой брат, я и наш друг Крис. Тогда мы играли на Xbox, а теперь перешли на ПК. С этим домом связано множество воспоминаний: тыквенная грядка во дворе, перестрелки из-за украденного урожая — это было наше место.
+            </p>
+            <p>
+              Каждый раз, проходя мимо этого дома, мы обязательно что-нибудь здесь оставляем. Всегда.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://youtu.be/QRo35MnbEzM?feature=shared"
+                target="_blank"
+                rel="noopener"
+                >Фрагмент игрового видео DayZ на YouTube, автор "CamCANTRUN"</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Harry">
+          <img src="../images/spots/harry2.avif" class="memorial-img" />
+          <h2 class="memorial-name">Harry</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=12994;5501.56"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=12994;5501.56"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 12994;5501.56</a
+            >
+            • Три Долины
+          </div>
+          <div class="memorial-description">
+            <p>
+              Крест моего друга Гарри находится в Трех Долинах [...] Он был замечательным человеком, и участники нашего клана очень по нему скучают. Гарри совершенно не умел ориентироваться на местности, зато у него было золотое сердце.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.facebook.com/groups/798824847418071/permalink/1777008422933037/"
+                target="_blank"
+                rel="noopener"
+                >"Dave H." в Facebook</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Abizzo420">
+          <img src="../images/spots/abizzo420.avif" class="memorial-img" />
+          <h2 class="memorial-name">Abizzo420, он же Bizzo</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=11225.2;4241.4"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=11225.2;4241.4"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 11225.2;4241.4</a
+            >
+            • Замок Рог
+          </div>
+          <div class="memorial-description">
+            <p>
+              Посвящается моему брату Abizzo420, также известному как Bizzo, который ушел из жизни 14 декабря 2024 года в возрасте всего 25 лет.
+            </p>
+            <p>
+              С детства он играл в самые разные игры, но особенно любил DayZ, где провел более ста дней игрового времени. Он обожал эту игру и умел сделать ее интереснее для всех вокруг. Он был жизнерадостным и невероятно притягательным человеком, всегда готовым помочь другим. Будь то общение с игроками через голосовой чат или создание незабываемых моментов в игре, он действительно оставил заметный след в сообществе.
+            </p>
+            <p>
+              Мемориал появился благодаря его другу Стивену, с которым он познакомился в игре. Стивен связался с разработчиками и попросил установить постоянный мемориал. Теперь он находится неподалеку от замка Рог — в особом для моего брата месте, где он вместе с друзьями построил одну из своих первых и самых больших баз.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.reddit.com/user/tphace/comments/1l2csqs/comment/ohb60lx/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на Reddit от пользователя «Nice-Stomach-4094»</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Sam">
+          <img src="../images/spots/sam.avif" class="memorial-img" />
+          <h2 class="memorial-name">Sam</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=13306;4002.21"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=13306;4002.21"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 13306;4002.21</a
+            >
+            • Мыс Крутой
+          </div>
+          <div class="memorial-description">
+            <p>
+              Мы дружили много лет и играли вместе в DayZ уже даже не помню сколько. К сожалению, в 2022 году он покончил с собой. Я часто прихожу сюда и вспоминаю все наши истории и моменты, которые мы пережили вместе. Он был не просто другом, с которым я играл в DayZ, — этот человек в каком-то смысле изменил мою жизнь. Он с нуля научил меня делать татуировки, благодаря чему я смог построить карьеру.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >Комментарий на YouTube от пользователя «@frunmah8178»</a
+              >
+            </div>
+          </div>
+          <br />
+          <div class="memorial-description">
+            <p>
+              Это крест Сэма. Он расположен у последнего дома перед мысом Крутой. Именно здесь находилась его последняя база.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Больше настоящих мемориалов в DayZ» @_AGONY</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Diane_aka_MissFoo">
+          <img src="../images/spots/diane.avif" class="memorial-img" />
+          <h2 class="memorial-name">Diane, она же MissFoo</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=13245.5;2765"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=13245.5;2765"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 13245.5;2765</a
+            >
+            • Маяк на острове Скалистый
+          </div>
+          <div class="memorial-description">
+            <p>
+              Дайан, также известная как MissFoo, была любимой подругой сообщества DayZ, особенно тесного круга игроков и стримеров на Twitch, где ее знали как «бабушку DayZ». Она была матерью и заботилась о других. Мы называли остров Скалистый «островом Дайан», потому что часто устраивали там PvP вместе с ней, а пока она была рядом, никому не позволялось занимать это место!
+            </p>
+            <p>
+              Дайан ушла из жизни 22 июня 2022 года. Нам ее очень не хватает.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «TheUKGhoul»</div>
+          </div>
+        </article>
+        <article class="entry" id="Maximilian_S._aka_Hypernight">
+          <img src="../images/spots/maximilians.avif" class="memorial-img" />
+          <h2 class="memorial-name">Maximilian S., он же Hypernight</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/chernarusplus/#location=11804.2;3524.17"
+              class="memorial-link"
+              data-preview="https://izurvive.com/chernarusplus/#location=11804.2;3524.17"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 11804.2;3524.17</a
+            >
+            • Скалы Камышово
+          </div>
+          <div class="memorial-description">
+            <p>
+              После того как вскоре по окончании школы мы потеряли друга в аварии на мотоцикле, один из моих друзей связался с командой DayZ. Его крест установлен на скалах к западу от Камышово. DayZ была его любимой игрой, и я уверен, что Максимилиан С., известный под ником Hypernight, оценил бы этот жест.
+            </p>
+            <div class="memorial-quote">Личное сообщение в Discord от пользователя «Toffel»</div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="section-header" id="livonia">
+      <div class="section-divider"></div>
+      <h2>Мемориалы Ливонии</h2>
+      <div class="disclaimer-text">
+        Некоторые цитаты слегка отредактированы для удобства чтения и понимания
+        с сохранением первоначального смысла.
+      </div>
+    </div>
+    <div class="container">
+      <div class="memorial-grid">
+        <article class="entry" id="Waspher">
+          <img src="../images/spots/waspher.avif" class="memorial-img" />
+          <h2 class="memorial-name">Waspher</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/livonia/#location=5662.77;8787.92"
+              class="memorial-link"
+              data-preview="https://izurvive.com/livonia/#location=5662.77;8787.92"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 5662.77;8787.92</a
+            >
+            • Тюрьма Копа
+          </div>
+          <div class="memorial-description">
+            <p>
+              Это крест Waspher. Он расположен по дороге к тюрьме в Ливонии.
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                target="_blank"
+                rel="noopener"
+                >YouTube — «Больше настоящих мемориалов в DayZ» @_AGONY</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Lucas_aka_Yaan">
+          <img src="../images/spots/lucas.avif" class="memorial-img" />
+          <h2 class="memorial-name">Lucas, он же Yaan</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/livonia/#location=3303.74;2062.96"
+              class="memorial-link"
+              data-preview="https://izurvive.com/livonia/#location=3303.74;2062.96"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 3303.74;2062.96</a
+            >
+            • Паб в Поляне
+          </div>
+          <div class="memorial-description">
+            <p>
+              Поздним вечером 18 января 2023 года мой друг умер от сердечного приступа во время игры в DayZ. К тому моменту с нашей первой встречи прошло около шести лет. Лукас «Yaan» ушел от нас так, как, наверное, хотел бы каждый: в окружении множества друзей, занимаясь любимым делом. Мы создали мемориал в Поляне, в Ливонии, чтобы сохранить память о нем. Я обращаюсь к разработчикам с просьбой увековечить в игре его самого и все связанные с ним воспоминания. Наш товарищ и рыцарь, Yaan...
+            </p>
+            <div class="memorial-quote">
+              <a
+                href="https://feedback.bistudio.com/T170250"
+                target="_blank"
+                rel="noopener"
+                >Запрос Джека М. («arthur_galvao») в трекере обратной связи Bohemia</a
+              >
+            </div>
+            <div class="memorial-quote">
+              <a
+                href="https://www.youtube.com/watch?v=2SnzgySz78M"
+                target="_blank"
+                rel="noopener"
+                >YouTube "Em Memória de Yan - DAYZ- À Homenagem"</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="entry" id="Brighton">
+          <img src="../images/spots/brighton.avif" class="memorial-img" />
+          <h2 class="memorial-name">Brighton</h2>
+          <div class="memorial-location">
+            <a
+              href="https://izurvive.com/livonia/#location=10944.4;1800.28"
+              class="memorial-link"
+              data-preview="https://izurvive.com/livonia/#location=10944.4;1800.28"
+              target="_blank"
+              rel="noopener"
+              >МЕСТО: 10944.4;1800.28</a
+            >
+            • Кульно (юг)
+          </div>
+          <div class="memorial-description">
+            <p>
+              Его звали Брайтон, ему был 21 год. Он был потрясающим гитаристом и по-настоящему особенным человеком, который любил всех и все вокруг и хотел лишь делиться своей любовью с миром. Я выбрал место в Кульно, потому что мы постоянно строили там базу — это было наше место. Мы все время устраивали засады на тех, кто направлялся в Дольник, и считали, что весь этот город принадлежит нам. До сих пор это единственное место, где я строю базу. Оно стало для меня практически вторым домом. Брайтон ушел из жизни при трагических обстоятельствах.
+            </p>
+            <div class="memorial-quote">
+              Оригинальный текст был немного отредактирован из соображений деликатности.
+              <br />
+              Личное сообщение в Reddit от пользователя «Empty_castle00»
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <img class="lightbox-content" src="" alt="" />
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <footer>
+      <div class="footer-socials">
+        <a
+          href="https://new.reddit.com/user/tphace/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/reddit.png&quot;)"
+          aria-label="Reddit"
+        ></a>
+        <a
+          href="https://discordapp.com/users/541638623007604747"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/discord.png&quot;)"
+          aria-label="Discord"
+        ></a>
+        <a
+          href="https://www.dayz.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/dayz.png&quot;)"
+          aria-label="DayZ"
+        ></a>
+        <a
+          href="https://www.izurvive.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/map.png&quot;)"
+          aria-label="Maps"
+        ></a>
+        <a
+          href="http://www.youtube.com/@tphace"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/yt.png&quot;)"
+          aria-label="YouTube"
+        ></a>
+      </div>
+      <div class="footer-info">
+        «Мемориалы DayZ» — фанатский проект, официально не связанный с Bohemia
+        Interactive a.s. Все товарные знаки и авторские права, относящиеся к
+        DayZ, принадлежат Bohemia Interactive. Этот сайт создан исключительно в
+        память о сообществе игроков и его историях во вселенной DayZ.
+      </div>
+    </footer>
+    <script>
+      const preview = document.createElement("div");
+      preview.className = "preview-window";
+      preview.innerHTML = "<iframe></iframe>";
+      document.body.appendChild(preview);
+
+      const iframe = preview.querySelector("iframe");
+      iframe.setAttribute("sandbox", "allow-same-origin allow-scripts");
+      iframe.setAttribute("referrerpolicy", "no-referrer");
+
+      document
+        .querySelectorAll(".memorial-link[data-preview]")
+        .forEach((link) => {
+          link.addEventListener("mouseenter", () => {
+            if (
+              window.matchMedia("(pointer: coarse)").matches ||
+              window.innerWidth <= 1024
+            )
+              return;
+
+            iframe.src = link.dataset.preview;
+            preview.style.display = "block";
+          });
+
+          link.addEventListener("mousemove", (e) => {
+            if (
+              window.matchMedia("(pointer: coarse)").matches ||
+              window.innerWidth <= 1024
+            )
+              return;
+            const offset = 20;
+            const margin = 20;
+
+            const previewWidth = preview.offsetWidth;
+            const previewHeight = preview.offsetHeight;
+
+            let x = e.clientX + offset;
+            let y = e.clientY + offset;
+
+            if (x + previewWidth + margin > window.innerWidth) {
+              x = e.clientX - previewWidth - offset;
+            }
+
+            if (y + previewHeight + margin > window.innerHeight) {
+              y = e.clientY - previewHeight - offset;
+            }
+
+            x = Math.max(margin, x);
+            y = Math.max(margin, y);
+
+            preview.style.left = x + "px";
+            preview.style.top = y + "px";
+          });
+
+          link.addEventListener("mouseleave", () => {
+            preview.style.display = "none";
+            iframe.src = "";
+          });
+        });
+
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = lightbox.querySelector(".lightbox-content");
+      const lightboxCap = document.getElementById("lightbox-caption");
+
+      document.querySelectorAll(".memorial-img").forEach((img) => {
+        img.style.cursor = "zoom-in";
+
+        img.addEventListener("click", () => {
+          const entry = img.closest(".entry");
+          const name = entry.querySelector(".memorial-name").innerText;
+
+          lightboxImg.src = img.src;
+          lightboxCap.innerText = name;
+
+          lightbox.classList.add("active");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      lightbox.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+        setTimeout(() => {
+          lightboxImg.src = "";
+        }, 300);
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (
+          (e.key === "Escape" || e.key === "Esc" || e.keyCode === 27) &&
+          lightbox.classList.contains("active")
+        ) {
+          lightbox.classList.remove("active");
+          document.body.style.overflow = "";
+          setTimeout(() => {
+            lightboxImg.src = "";
+          }, 300);
+        }
+      });
+    </script>
+    <script
+      data-goatcounter="https://tphace.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
+</html>

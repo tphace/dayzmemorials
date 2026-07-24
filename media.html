@@ -131,6 +131,14 @@
     .nav-links a:hover {
         color: var(--text-bright);
     }
+    .language-switcher a + a {
+        margin-left: 10px;
+    }
+
+    .language-switcher a.active {
+        color: var(--text-bright);
+    }
+
 
     /* --- HEADER --- */
     .header-banner {
@@ -489,6 +497,7 @@
             <li><a href="memorials-chernarus.html">Memorials of Chernarus</a></li>
             <li><a href="memorials-livonia.html">Memorials of Livonia</a></li>
             <li><a href="media.html" class="active">Media</a></li>
+            <li class="language-switcher" aria-label="Language"><a href="media.html" lang="en" class="active" aria-current="page">EN</a><a href="ru/media.html" lang="ru">RU</a></li>
         </ul>
     </nav>
     <header class="header-banner" id="welcome">
