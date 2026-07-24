@@ -46,7 +46,6 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        margin: 0;
     }
 
     /* --- NAVIGATION --- */
@@ -128,7 +127,8 @@
     .nav-links a:hover {
         color: var(--text-bright);
     }
-    .language-switcher a + a {
+
+    .language-switcher a+a {
         margin-left: 10px;
     }
 
@@ -642,7 +642,7 @@
             <span class="jump-nav-title">In Remembrance of</span>
             <a href="#Steve_R_aka_Str8OuttaCherno">Steve R. (Str8OuttaCherno)</a> <span class="jump-divider">|</span>
             <a href="#Gabriel_aka_SIX">Gabriel (SIX)</a> <span class="jump-divider">|</span>
-            <a href="#Hughie D. aka weav_deth666">Hughie D. (weav_deth666)</a> <span class="jump-divider">|</span>
+            <a href="#Hughie_D._aka_weav_deth666">Hughie D. (weav_deth666)</a> <span class="jump-divider">|</span>
             <a href="#Anthony_aka_WotalTanker">Anthony (WotalTanker)</a> <span class="jump-divider">|</span>
             <a href="#Maks1019">Maks1019</a> <span class="jump-divider">|</span>
             <a href="#Eddie_aka_AZCowboy">Eddie (AZCowboy)</a> <span class="jump-divider">|</span>
@@ -1526,7 +1526,8 @@
                 </div>
             </article>
             <article class="entry" id="Sam">
-                <img src="images/spots/sam.avif" class="memorial-img">
+                <!-- 'alt' ergänzt für gute Praxis -->
+                <img src="images/spots/sam.avif" class="memorial-img" alt="Memorial Sam">
                 <h2 class="memorial-name">Sam</h2>
                 <div class="memorial-location"><a href="https://izurvive.com/chernarusplus/#location=13306;4002.21" class="memorial-link" data-preview="https://izurvive.com/chernarusplus/#location=13306;4002.21" target="_blank" rel="noopener">LOC: 13306;4002.21</a> • Cape Crutoy</div>
                 <div class="memorial-description">
