@@ -1,0 +1,1496 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мемориалы DayZ | Карта Ливонии и расположение крестов</title>
+    <meta
+      name="description"
+      content="Мемориальные кресты и надгробия по всей Ливонии. Подробные координаты и расположение на карте памятников игрокам в DayZ."
+    />
+    <link
+      rel="canonical"
+      href="https://tphace.github.io/dayzmemorials/ru/memorials-livonia.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://tphace.github.io/dayzmemorials/memorials-livonia.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://tphace.github.io/dayzmemorials/ru/memorials-livonia.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://tphace.github.io/dayzmemorials/memorials-livonia.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tphace.github.io/dayzmemorials/ru/memorials-livonia.html"
+    />
+    <meta property="og:title" content="Мемориалы DayZ – Мемориалы Ливонии" />
+    <meta
+      property="og:description"
+      content="A curated tribute to DayZ players remembered with in‑game wooden crosses."
+    />
+    <meta
+      property="og:image"
+      content="https://tphace.github.io/dayzmemorials/images/nav/bannerV2.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://tphace.github.io/dayzmemorials/ru/memorials-livonia.html"
+    />
+    <meta name="twitter:title" content="Мемориалы DayZ – Мемориалы Ливонии" />
+    <meta
+      name="twitter:description"
+      content="A curated tribute to DayZ players remembered with in‑game wooden crosses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tphace.github.io/dayzmemorials/images/nav/bannerV2.jpg"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/nav/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: #1e1e1e;
+        --text-bright: #ffffff;
+        --text-dim: #999999;
+        --text-meta: #bbbbbb;
+        --text-muted: #666666;
+        --accent: #222222;
+        --nav-height: 50px;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-bright);
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      /* --- NAVIGATION --- */
+      nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        min-height: var(--nav-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        z-index: 1000;
+        background-color: rgba(10, 10, 10, 0.95);
+        background-image: url("../images/nav/pattern.png");
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+        backdrop-filter: blur(7px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .nav-logo {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--text-muted);
+        background-image: url("../images/nav/favicon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .nav-logo:hover {
+        border-color: var(--text-bright);
+        transform: scale(1.05);
+      }
+
+      .nav-tagline {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--text-dim);
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-dim);
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a.active {
+        color: var(--text-bright);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 2px;
+      }
+
+      .nav-links a:hover {
+        color: var(--text-bright);
+      }
+      .language-switcher a + a {
+        margin-left: 10px;
+      }
+
+      .language-switcher a.active {
+        color: var(--text-bright);
+      }
+
+      /* --- HEADER --- */
+      .header-banner {
+        position: relative;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+      }
+
+      .header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/nav/banner_head.avif");
+        background-size: cover;
+        background-position: center 40%;
+        filter: grayscale(50%) brightness(0.5);
+        z-index: 1;
+      }
+
+      .header-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Spectral", serif;
+        font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+        font-weight: 200;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .curator-tag {
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+        letter-spacing: 6px;
+        margin-top: 8px;
+        font-weight: 200;
+        text-transform: lowercase;
+      }
+
+      /* --- MAIN CONTENT --- */
+      main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .intro-section {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .intro-text {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: var(--text-dim);
+        font-weight: 200;
+      }
+
+      .section-header {
+        text-align: center;
+        margin: 30px auto 28px auto;
+      }
+
+      .section-header h2 {
+        font-family: "Spectral", serif;
+        font-size: 1.75rem;
+        text-transform: normal;
+        letter-spacing: 10px;
+        color: var(--text-bright);
+        font-weight: 300;
+      }
+
+      .section-divider {
+        width: 100%;
+        max-width: 300px;
+        height: 25px;
+        margin: 60px auto;
+
+        background-image: url("../images/nav/ornament.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .map-thumbnail-container {
+        text-align: center;
+        margin: 30px auto;
+        max-width: 600px;
+        padding: 0 20px;
+      }
+
+      .map-thumbnail {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        transition: all 0.4s ease;
+        filter: grayscale(20%) brightness(0.8);
+      }
+
+      .map-thumbnail:hover {
+        transform: scale(1.01);
+        border-color: var(--text-bright);
+        filter: grayscale(0%) brightness(1);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+      }
+
+      .map-modal {
+        display: none;
+        position: fixed;
+        z-index: 3000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+      }
+
+      .map-window {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85vw;
+        height: 85vh;
+        background-color: #111;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .close-map {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 35px;
+        font-weight: 200;
+        z-index: 4000;
+        transition: color 0.3s ease;
+      }
+
+      .close-map:hover {
+        transform: scale(1.2);
+        color: var(--text-dim);
+      }
+
+      .map-wrapper {
+        width: 100%;
+        height: 100%;
+        cursor: grab;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .map-full {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        transform-origin: center;
+        user-select: none;
+        -webkit-user-drag: none;
+        transition: transform 0.1s ease-out;
+      }
+
+      .map-controls {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--text-muted);
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        pointer-events: none;
+      }
+
+      .map-action-wrapper {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: var(--text-dim);
+        text-decoration: none;
+        font-size: 0.7rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        transition: all 0.3s ease;
+        background-color: transparent;
+      }
+
+      .download-btn:hover {
+        color: var(--text-bright);
+        border-color: var(--text-bright);
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      .map-hint {
+        font-size: 0.6rem;
+        color: var(--text-muted);
+        margin: 0;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      .update-notice {
+        max-width: 600px;
+        margin: 0 auto 60px auto;
+        padding: 18px 20px;
+        background-color: rgba(45, 60, 45, 0.3);
+        border: 1px solid rgba(100, 120, 100, 0.2);
+        text-align: center;
+      }
+
+      .update-notice p {
+        margin: 0;
+        font-size: 0.72rem;
+        letter-spacing: 1.8px;
+        color: var(--text-dim);
+      }
+
+      .update-notice .highlight {
+        color: var(--text-bright);
+        font-weight: 300;
+        display: block;
+        margin-top: 5px;
+      }
+
+      .changelog-section {
+        margin-top: 0px;
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 20px;
+        padding-bottom: 64px;
+      }
+
+      .changelog-details {
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .changelog-title {
+        list-style: none;
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        color: var(--text-meta);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s ease;
+      }
+
+      .changelog-title::-webkit-details-marker {
+        display: none;
+      }
+
+      .changelog-title:hover {
+        color: var(--text-bright);
+      }
+
+      .changelog-title .chevron {
+        width: 8px;
+        height: 8px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: rotate(45deg);
+        margin-bottom: 4px;
+        transition: transform 0.3s ease;
+      }
+
+      .changelog-details[open] .chevron {
+        transform: rotate(-135deg);
+        margin-bottom: -4px;
+      }
+
+      .changelog-content {
+        margin-top: 20px;
+        padding: 0 20px;
+        color: var(--text-dim);
+        font-size: 0.85rem;
+        font-weight: 300;
+        line-height: 1.8;
+      }
+
+      .changelog-content p {
+        margin-bottom: 10px;
+        color: var(--text-bright);
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+      }
+
+      .changelog-content ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .changelog-content li {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        padding-left: 15px;
+      }
+
+      .loc-name {
+        color: var(--text-meta);
+        font-weight: 400;
+      }
+
+      .loc-coords {
+        font-family: monospace;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+      }
+
+      .loc-ded {
+        font-family: monospace;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        margin-top: 2px;
+        font-style: italic;
+      }
+
+      .table-section {
+        margin: 50px auto;
+        padding: 0 20px 100px 20px;
+        max-width: 1200px;
+      }
+
+      .table-container {
+        overflow-x: auto;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .memorial-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        text-align: left;
+      }
+
+      .memorial-table {
+        counter-reset: rowNumber;
+      }
+
+      .memorial-table tbody tr {
+        counter-increment: rowNumber;
+      }
+
+      .memorial-table tbody tr td:first-child::before {
+        content: counter(rowNumber);
+        font-weight: bold;
+        color: var(--text-muted);
+      }
+
+      .memorial-table td:first-child {
+        width: 30px;
+        text-align: center;
+      }
+
+      .memorial-table thead th {
+        background-color: rgba(255, 255, 255, 0.03);
+        color: var(--text-bright);
+        text-transform: uppercase;
+        padding: 12px 15px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: left;
+      }
+
+      .memorial-table td {
+        padding: 12px 15px;
+        color: var(--text-dim);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        vertical-align: middle;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+        text-align: left;
+      }
+
+      .memorial-table tbody tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      .memorial-table tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.04);
+      }
+
+      .table-link {
+        color: var(--text-meta);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .table-link:hover {
+        color: var(--text-bright);
+        border-bottom: 1px solid var(--text-bright);
+      }
+
+      .memorial-table td {
+        padding: 12px 15px;
+        color: var(--text-dim);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        vertical-align: middle;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+      }
+
+      .memorial-table td:nth-child(3) > * {
+        font-family: monospace;
+        font-size: 0.75rem;
+      }
+
+      .memorial-table td:nth-child(3)::before {
+        font-family: "Inter", sans-serif;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+      }
+
+      .preview-window {
+        position: fixed;
+        width: 600px;
+        height: 600px;
+        background: #111;
+        border: 3px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+        z-index: 2000;
+        transition:
+          left 0.05s linear,
+          top 0.05s linear;
+        pointer-events: none;
+        display: none;
+      }
+
+      .preview-window iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        filter: grayscale(40%) brightness(1);
+      }
+
+      /* --- FOOTER --- */
+
+      footer {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.5);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 25px;
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+
+      .social-icon:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+
+      .footer-info {
+        font-size: 0.6rem;
+        color: var(--text-meta);
+        letter-spacing: 0.5px;
+        text-align: center;
+        max-width: 800px;
+        line-height: 1.5;
+        opacity: 0.7;
+      }
+
+      /* --- RESPONSIVE ADJUSTMENTS --- */
+      @media (max-width: 1100px) {
+        :root {
+          --nav-height: 110px;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 8px;
+          padding: 10px 15px;
+        }
+
+        .nav-links {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5px 20px;
+        }
+
+        .header-banner {
+          height: 15vh;
+        }
+      }
+
+      .table-container {
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .table-container thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      .table-container {
+        position: relative;
+      }
+
+      .table-container::after {
+        content: "Swipe to see more →";
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.6);
+        background: linear-gradient(
+          90deg,
+          rgba(30, 30, 30, 0) 0%,
+          rgba(30, 30, 30, 0.9) 40%
+        );
+        padding: 6px 8px 6px 24px;
+        border-radius: 4px;
+        pointer-events: none;
+      }
+
+      @media (min-width: 701px) {
+        .table-container::after {
+          display: none;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .memorial-table td,
+        .memorial-table thead th {
+          padding: 14px 12px;
+          font-size: 0.85rem;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .nav-tagline {
+          display: none;
+        }
+
+        h1 {
+          letter-spacing: 4px;
+          padding: 0 10px;
+        }
+
+        .curator-tag {
+          letter-spacing: 3px;
+          margin-top: 4px;
+        }
+
+        .header-banner {
+          height: 18vh;
+        }
+
+        @media (pointer: coarse), (max-width: 1024px) {
+          .preview-window {
+            display: none !important;
+            pointer-events: none;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .memorial-table,
+          .memorial-table thead,
+          .memorial-table tbody,
+          .memorial-table tr,
+          .memorial-table td {
+            display: block;
+            width: 100%;
+          }
+
+          .table-container::after {
+            display: none !important;
+          }
+
+          .memorial-table thead {
+            display: none;
+          }
+
+          .memorial-table tr {
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.02);
+            padding: 10px;
+          }
+
+          .memorial-table td {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            min-height: 45px;
+            text-align: right !important;
+          }
+
+          .memorial-table td::before {
+            content: attr(data-label);
+            flex-shrink: 0;
+            width: 40%;
+            text-align: left;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.65rem;
+            color: var(--text-bright);
+            letter-spacing: 1px;
+            padding-right: 10px;
+          }
+
+          .memorial-table td > * {
+            flex-grow: 0;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+          }
+
+          .memorial-table td:first-child::before {
+            content: "# " counter(rowNumber);
+          }
+
+          .memorial-table td:last-child {
+            border-bottom: none;
+          }
+
+          .memorial-table td span a + a {
+            margin-left: 10px;
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="index.html" class="nav-logo" aria-label="Главная"></a>
+        <span class="nav-tagline">Ушли, но не забыты.</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="faq.html">Вопросы и ответы</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="memorials-chernarus.html">Мемориалы Черноруси</a></li>
+        <li>
+          <a href="memorials-livonia.html" class="active">Мемориалы Ливонии</a>
+        </li>
+        <li><a href="media.html">Материалы</a></li>
+        <li class="language-switcher" aria-label="Выбор языка">
+          <a href="../memorials-livonia.html" lang="en">EN</a
+          ><a
+            href="memorials-livonia.html"
+            lang="ru"
+            class="active"
+            aria-current="page"
+            >RU</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="header-banner" id="welcome">
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <h1>Мемориалы DayZ</h1>
+        <div class="curator-tag">куратор — tphace</div>
+      </div>
+    </header>
+    <section class="section-header">
+      <h2>Карта Ливонии</h2>
+      <div class="map-thumbnail-container">
+        <img
+          src="../images/maps/memorials_livonia_thumb.jpg"
+          alt="Карта мемориалов Ливонии"
+          class="map-thumbnail"
+          id="openMap"
+        />
+        <div class="map-action-wrapper">
+          <p class="map-hint">Нажмите, чтобы увеличить</p>
+          <a
+            href="../images/maps/memorials_livonia.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            decoding="async"
+            class="download-btn"
+          >
+            Скачать версию 3.3 | апрель 2026 | DayZ 1.29 | JPG высокого
+            разрешения
+          </a>
+        </div>
+      </div>
+    </section>
+    <div id="mapModal" class="map-modal">
+      <div class="map-window">
+        <span class="close-map" id="closeMap">&times;</span>
+        <div class="map-wrapper" id="mapWrapper">
+          <img
+            src="../images/maps/memorials_livonia.jpg"
+            id="mapImage"
+            class="map-full"
+          />
+        </div>
+        <div class="map-controls">
+          Прокрутка — масштаб • Перетаскивание — перемещение • ESC — выход
+        </div>
+      </div>
+    </div>
+    <div class="update-notice">
+      <p>
+        Обновление DayZ 1.29
+        <span class="highlight"
+          >Новых мемориальных объектов не обнаружено. Я продолжу следить за
+          будущими обновлениями на предмет добавлений.</span
+        >
+      </p>
+    </div>
+    <div class="changelog-section">
+      <details class="changelog-details">
+        <summary class="changelog-title">
+          ПОСЛЕДНИЕ ИЗМЕНЕНИЯ
+          <span class="chevron"></span>
+        </summary>
+        <div class="changelog-content">
+          <p>~Обновление 1.28~ <br />Добавлены новые места в:</p>
+          <ul>
+            <li>
+              <span class="loc-name">Kulno (юг)</span>
+              <span class="loc-coords">10944.4;1800.28</span>
+              <span class="loc-ded">
+                <a
+                  href="gallery.html#Brighton"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >для Brighton</a
+                >
+              </span>
+            </li>
+          </ul>
+        </div>
+      </details>
+    </div>
+    <section class="table-section">
+      <div class="table-container">
+        <table class="memorial-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Место</th>
+              <th>Координаты</th>
+              <th>Кому посвящен</th>
+              <th>Источник</th>
+              <th>Скамейка</th>
+              <th>Тип мемориала</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Kolembrody (запад)</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=7935.48;11817.6"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=7935.48;11817.6"
+                  >7935.48;11817.6</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">
+                Деревянный крест с автомобильной шиной
+              </td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Kopa Prison</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=5662.77;8787.92"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=5662.77;8787.92"
+                  >5662.77;8787.92</a
+                >
+              </td>
+              <td data-label="Кому посвящен">
+                <a
+                  href="gallery.html#Waspher"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Waspher</a
+                >
+              </td>
+              <td data-label="Источник">
+                <a
+                  href="https://www.youtube.com/shorts/BDcq0T7xd7E"
+                  class="table-link"
+                  >[1]</a
+                >
+              </td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">
+                Деревянный крест с зеленой повязкой
+              </td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Lipina</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=5651.98;6651.81"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=5651.98;6651.81"
+                  >5651.98;6651.81</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Adamów (восток)</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=3614.11;6908.88"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=3614.11;6908.88"
+                  >3614.11;6908.88</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">1x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Western Sawmill</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=1670.02;3678.98"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=1670.02;3678.98"
+                  >1670.02;3678.98</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">1x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Dambog</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=591.641;1125.98"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=591.641;1125.98"
+                  >591.641;1125.98</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">1x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Tymbark (юг)</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=2373.03;106.302"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=2373.03;106.302"
+                  >2373.03;106.302</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">3x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Polana Pub</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=3303.74;2062.96"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=3303.74;2062.96"
+                  >3303.74;2062.96</a
+                >
+              </td>
+              <td data-label="Кому посвящен">
+                <a
+                  href="gallery.html#Lucas_aka_Yaan"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Lucas aka Yaan</a
+                >
+              </td>
+              <td data-label="Источник">
+                <span>
+                  <a
+                    href="https://feedback.bistudio.com/T170250"
+                    class="table-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >[1]</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=2SnzgySz78M"
+                    class="table-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >[2]</a
+                  >
+                </span>
+              </td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">
+                Деревянный крест с мечом и шлемом
+              </td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Polana Chapel</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=3198.31;2299.54"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=3198.31;2299.54"
+                  >3198.31;2299.54</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Polana (юго-восток)</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=3830.41;1818.4"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=3830.41;1818.4"
+                  >3830.41;1818.4</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">1x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Dolnik (северо-запад)</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=10816.6;1287.53"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=10816.6;1287.53"
+                  >10816.6;1287.53</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Kulno (юг)</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=10944.4;1800.28"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=10944.4;1800.28"
+                  >10944.4;1800.28</a
+                >
+              </td>
+              <td data-label="Кому посвящен">
+                <a
+                  href="gallery.html#Brighton"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Brighton</a
+                >
+              </td>
+              <td data-label="Источник">ЛС в Reddit от «Empty_castle00»</td>
+              <td data-label="Скамейка">2x</td>
+              <td data-label="Тип мемориала">
+                Деревянный крест с коричневой ковбойской шляпой
+              </td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Ivetów</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=11819.9;7344.56"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=11819.9;7344.56"
+                  >11819.9;7344.56</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">–</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Sitnik Lake</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=10981.6;9231.62"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=10981.6;9231.62"
+                  >10981.6;9231.62</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">1x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+            <tr>
+              <td data-label="#"></td>
+              <td data-label="Место">Grabin Cemetery</td>
+              <td data-label="Координаты">
+                <a
+                  href="https://izurvive.com/livonia/#location=10899.5;10605.2"
+                  class="table-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-preview="https://izurvive.com/livonia/#location=10899.5;10605.2"
+                  >10899.5;10605.2</a
+                >
+              </td>
+              <td data-label="Кому посвящен">–</td>
+              <td data-label="Источник">–</td>
+              <td data-label="Скамейка">1x</td>
+              <td data-label="Тип мемориала">Деревянный крест</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-socials">
+        <a
+          href="https://new.reddit.com/user/tphace/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/reddit.png&quot;)"
+          aria-label="Reddit"
+        ></a>
+        <a
+          href="https://discordapp.com/users/541638623007604747"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/discord.png&quot;)"
+          aria-label="Discord"
+        ></a>
+        <a
+          href="https://www.dayz.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/dayz.png&quot;)"
+          aria-label="DayZ"
+        ></a>
+        <a
+          href="https://www.izurvive.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/map.png&quot;)"
+          aria-label="Maps"
+        ></a>
+        <a
+          href="http://www.youtube.com/@tphace"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/yt.png&quot;)"
+          aria-label="YouTube"
+        ></a>
+      </div>
+      <div class="footer-info">
+        «Мемориалы DayZ» — фанатский проект, официально не связанный с Bohemia
+        Interactive a.s. Все товарные знаки и авторские права, относящиеся к
+        DayZ, принадлежат Bohemia Interactive. Этот сайт создан исключительно в
+        память о сообществе игроков и его историях во вселенной DayZ.
+      </div>
+    </footer>
+    <script>
+      const modal = document.getElementById("mapModal");
+      const openBtn = document.getElementById("openMap");
+      const closeBtn = document.getElementById("closeMap");
+      const mapImg = document.getElementById("mapImage");
+      const wrapper = document.getElementById("mapWrapper");
+
+      let scale = 1;
+      let isDragging = false;
+      let startX,
+        startY,
+        translateX = 0,
+        translateY = 0;
+
+      if (openBtn) {
+        openBtn.onclick = () => {
+          modal.style.display = "block";
+          resetMap();
+        };
+      }
+
+      const closeModal = () => {
+        modal.style.display = "none";
+      };
+      if (closeBtn) closeBtn.onclick = closeModal;
+
+      window.onclick = (e) => {
+        if (e.target == modal) closeModal();
+      };
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+
+      wrapper.onmousedown = (e) => {
+        isDragging = true;
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        wrapper.style.cursor = "grabbing";
+      };
+
+      window.onmousemove = (e) => {
+        if (!isDragging) return;
+        translateX = e.clientX - startX;
+        translateY = e.clientY - startY;
+        updateTransform();
+      };
+
+      window.onmouseup = () => {
+        isDragging = false;
+        wrapper.style.cursor = "grab";
+      };
+
+      wrapper.onwheel = (e) => {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        scale = Math.min(Math.max(0.3, scale + delta), 4);
+        updateTransform();
+      };
+
+      function updateTransform() {
+        mapImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      }
+
+      function resetMap() {
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        updateTransform();
+      }
+
+      const preview = document.createElement("div");
+      preview.className = "preview-window";
+      preview.innerHTML = "<iframe></iframe>";
+      document.body.appendChild(preview);
+      const iframe = preview.querySelector("iframe");
+
+      document.querySelectorAll(".table-link[data-preview]").forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          if (
+            window.matchMedia("(pointer: coarse)").matches ||
+            window.innerWidth <= 1024
+          )
+            return;
+          iframe.src = link.dataset.preview;
+          preview.style.display = "block";
+        });
+
+        link.addEventListener("mousemove", (e) => {
+          if (
+            window.matchMedia("(pointer: coarse)").matches ||
+            window.innerWidth <= 1024
+          )
+            return;
+
+          const offset = 20;
+          const margin = 20;
+          let x = e.clientX + offset;
+          let y = e.clientY + offset;
+
+          if (x + preview.offsetWidth + margin > window.innerWidth) {
+            x = e.clientX - preview.offsetWidth - offset;
+          }
+          if (y + preview.offsetHeight + margin > window.innerHeight) {
+            y = e.clientY - preview.offsetHeight - offset;
+          }
+
+          preview.style.left = x + "px";
+          preview.style.top = y + "px";
+        });
+
+        link.addEventListener("mouseleave", () => {
+          preview.style.display = "none";
+          iframe.src = "";
+        });
+      });
+    </script>
+    <script
+      data-goatcounter="https://tphace.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
+</html>

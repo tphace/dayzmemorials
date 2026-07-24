@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мемориалы DayZ | Вопросы и ответы о проекте</title>
+    <meta
+      name="description"
+      content="Что это за деревянные кресты? Как мы их находим? Ответы на вопросы о процессе поиска и об истории этих уникальных внутриигровых мемориалов."
+    />
+    <link
+      rel="canonical"
+      href="https://tphace.github.io/dayzmemorials/ru/faq.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://tphace.github.io/dayzmemorials/faq.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru"
+      href="https://tphace.github.io/dayzmemorials/ru/faq.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://tphace.github.io/dayzmemorials/faq.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://tphace.github.io/dayzmemorials/ru/faq.html"
+    />
+    <meta property="og:title" content="Мемориалы DayZ – Вопросы и ответы" />
+    <meta
+      property="og:description"
+      content="A curated tribute to DayZ players remembered with in‑game wooden crosses."
+    />
+    <meta
+      property="og:image"
+      content="https://tphace.github.io/dayzmemorials/images/nav/bannerV2.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://tphace.github.io/dayzmemorials/ru/faq.html"
+    />
+    <meta name="twitter:title" content="Мемориалы DayZ – Вопросы и ответы" />
+    <meta
+      name="twitter:description"
+      content="A curated tribute to DayZ players remembered with in‑game wooden crosses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tphace.github.io/dayzmemorials/images/nav/bannerV2.jpg"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/nav/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-color: #1e1e1e;
+        --text-bright: #ffffff;
+        --text-dim: #999999;
+        --text-meta: #bbbbbb;
+        --text-muted: #666666;
+        --accent: #222222;
+        --nav-height: 50px;
+        --link-color: var(--text-dim);
+        --link-color-hover: #cfcfcf;
+        --link-underline: rgba(255, 255, 255, 0.25);
+        --link-underline-hover: rgba(255, 255, 255, 0.55);
+      }
+
+      main a:not(.nav-card):not(.social-icon) {
+        color: var(--link-color);
+        text-decoration-line: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 0.07em;
+        text-decoration-color: inherit;
+        transition:
+          color 160ms ease,
+          text-decoration-color 160ms ease,
+          outline-color 120ms ease;
+      }
+
+      main a:visited:not(.nav-card):not(.social-icon) {
+        color: #8c8c8c;
+      }
+
+      main a:hover:not(.nav-card):not(.social-icon),
+      main a:focus-visible:not(.nav-card):not(.social-icon) {
+        color: var(--link-color-hover);
+        text-decoration-color: var(--link-underline-hover);
+      }
+
+      main a:focus-visible:not(.nav-card):not(.social-icon) {
+        outline: 2px solid rgba(255, 255, 255, 0.18);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-bright);
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* --- NAVIGATION --- */
+      nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        min-height: var(--nav-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        z-index: 1000;
+        background-color: rgba(10, 10, 10, 0.95);
+        background-image: url("../images/nav/pattern.png");
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+        backdrop-filter: blur(7px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .nav-logo {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid var(--text-muted);
+        background-image: url("../images/nav/favicon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.03);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .nav-logo:hover {
+        border-color: var(--text-bright);
+        transform: scale(1.05);
+      }
+
+      .nav-tagline {
+        font-family: "Spectral", serif;
+        font-style: italic;
+        font-size: 1rem;
+        color: var(--text-dim);
+        font-weight: 200;
+        letter-spacing: 1px;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-dim);
+        font-size: 0.65rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s;
+      }
+
+      .nav-links a.active {
+        color: var(--text-bright);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding-bottom: 2px;
+      }
+
+      .nav-links a:hover {
+        color: var(--text-bright);
+      }
+      .language-switcher a + a {
+        margin-left: 10px;
+      }
+
+      .language-switcher a.active {
+        color: var(--text-bright);
+      }
+
+      /* --- HEADER --- */
+      .header-banner {
+        position: relative;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+      }
+
+      .header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/nav/banner_head.avif");
+        background-size: cover;
+        background-position: center 40%;
+        filter: grayscale(50%) brightness(0.5);
+        z-index: 1;
+      }
+
+      .header-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Spectral", serif;
+        font-size: clamp(1.2rem, 3.5vw, 2.2rem);
+        font-weight: 200;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .curator-tag {
+        font-size: clamp(0.7rem, 2vw, 0.9rem);
+        letter-spacing: 6px;
+        margin-top: 8px;
+        font-weight: 200;
+        text-transform: lowercase;
+      }
+
+      /* --- MAIN CONTENT --- */
+      main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .section-header {
+        text-align: center;
+        margin: 45px auto 20px auto;
+      }
+
+      .section-header h2 {
+        font-family: "Spectral", serif;
+        font-size: 1.75rem;
+        text-transform: none;
+        letter-spacing: 5px;
+        color: var(--text-bright);
+        font-weight: 300;
+        margin: 0;
+      }
+
+      .section-divider {
+        width: 100%;
+        max-width: 300px;
+        height: 25px;
+        margin: 50px auto 0px auto;
+
+        background-image: url("../images/nav/ornament.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .memorial-grid .section-divider {
+        margin: 25px auto;
+        grid-column: 1 / -1;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 40px 20px 40px;
+      }
+
+      .memorial-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 60px;
+      }
+
+      .faq-item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .faq-question {
+        font-family: "Spectral", serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 0;
+        color: var(--text-bright);
+      }
+
+      .faq-answer {
+        font-size: 0.9rem;
+        color: var(--text-dim);
+        font-weight: 300;
+        line-height: 1.6;
+        border-top: 1px solid var(--text-muted);
+        padding-top: 8px;
+        margin-top: 0;
+      }
+
+      .video-section {
+        grid-column: span 2;
+        margin-top: 0px;
+      }
+
+      .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        background-color: #000;
+        margin-bottom: 15px;
+      }
+
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(20%) brightness(0.9);
+        transition: filter 0.3s ease;
+      }
+
+      .video-wrapper:hover iframe {
+        filter: none;
+      }
+
+      .video-meta-header {
+        font-size: 0.65rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .quote-attribution {
+        color: var(--text-bright);
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+
+      /* --- FOOTER --- */
+
+      footer {
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.5);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .footer-socials {
+        display: flex;
+        gap: 25px;
+      }
+
+      .social-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+      }
+
+      .social-icon:hover {
+        opacity: 1;
+        transform: translateY(-2px);
+      }
+
+      .footer-info {
+        font-size: 0.6rem;
+        color: var(--text-meta);
+        letter-spacing: 0.5px;
+        text-align: center;
+        max-width: 800px;
+        line-height: 1.5;
+        opacity: 0.7;
+      }
+
+      /* --- RESPONSIVE ADJUSTMENTS --- */
+      @media (max-width: 1100px) {
+        :root {
+          --nav-height: 110px;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 8px;
+          padding: 10px 15px;
+        }
+
+        .nav-links {
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 5px 20px;
+        }
+
+        .header-banner {
+          height: 15vh;
+        }
+
+        @media (max-width: 600px) {
+          h1 {
+            letter-spacing: 4px;
+            padding: 0 10px;
+          }
+
+          .nav-tagline {
+            display: none;
+          }
+
+          .curator-tag {
+            letter-spacing: 3px;
+            margin-top: 4px;
+          }
+
+          .header-banner {
+            height: 18vh;
+          }
+
+          .memorial-grid {
+            grid-template-columns: 1fr;
+            gap: 18px;
+          }
+
+          .memorial-grid .section-divider {
+            grid-column: auto;
+          }
+
+          .video-section {
+            grid-column: auto;
+            margin-top: 10px;
+          }
+
+          .container {
+            padding: 0 16px 120px 16px;
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <a href="index.html" class="nav-logo" aria-label="Главная"></a>
+        <span class="nav-tagline">Ушли, но не забыты.</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="faq.html" class="active">Вопросы и ответы</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="memorials-chernarus.html">Мемориалы Черноруси</a></li>
+        <li><a href="memorials-livonia.html">Мемориалы Ливонии</a></li>
+        <li><a href="media.html">Материалы</a></li>
+        <li class="language-switcher" aria-label="Выбор языка">
+          <a href="../faq.html" lang="en">EN</a
+          ><a href="faq.html" lang="ru" class="active" aria-current="page"
+            >RU</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header class="header-banner" id="welcome">
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <h1>Мемориалы DayZ</h1>
+        <div class="curator-tag">куратор — tphace</div>
+      </div>
+    </header>
+    <div class="section-header">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="container">
+      <main class="memorial-grid">
+        <article class="faq-item">
+          <h2 class="faq-question">Что это за проект?</h2>
+          <p class="faq-answer">
+            Мемориалы игроков — это небольшие деревянные кресты, расположенные
+            на ванильных картах DayZ. Они установлены в память об игроках,
+            которые были тесно связаны с игрой и которых больше нет с нами.
+            Разработчики размещают кресты по просьбе друзей или родственников.
+            Во многих случаях для мемориала выбирают место, которое имело особое
+            значение для человека в игре.
+            <br />
+            <br />
+            Ранние мемориалы упоминались в официальных отчетах о состоянии
+            разработки — например, от
+            <a
+              href="https://forums.dayz.com/topic/237746-status-report-12-december-2017/"
+              target="_blank"
+              rel="noopener"
+              >12 декабря 2017 года</a
+            >
+            или
+            <a
+              href="https://forums.dayz.com/topic/238378-status-report-5-june-2018/"
+              target="_blank"
+              rel="noopener"
+              >5 июня 2018 года</a
+            >). Более новые мемориалы зачастую добавлялись без публичных
+            объявлений, и о них знали только непосредственно причастные люди.
+            Даже без официального упоминания некоторые из них позднее удалось
+            связать с конкретными именами благодаря подтверждениям со стороны
+            сообщества — например, от друзей или родственников, поделившихся
+            информацией в социальных сетях.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h2 class="faq-question">Как вы их находите?</h2>
+          <p class="faq-answer">
+            Некоторые кресты обнаруживают старым добрым способом — случайно
+            находят их во время игры. Другие удается найти с помощью анализа
+            файлов и изучения карт, позволяющих определить их точное
+            местоположение. Нередко игроки, обнаружив крест, публикуют его
+            скриншот на Reddit и спрашивают, кому он посвящен. Иногда на такие
+            публикации отвечают друзья этого человека и рассказывают стоящую за
+            мемориалом историю. Именно так удалось выяснить, кому посвящены
+            некоторые из найденных памятных мест.
+            <br />
+            <br />
+            Если вы обнаружили крест, которого еще нет в списке, знаете имя
+            человека или можете поделиться его историей, свяжитесь со мной через
+            <a
+              href="https://discord.com/users/541638623007604747"
+              target="_blank"
+              rel="noopener"
+              >Discord</a
+            >
+            или
+            <a
+              href="https://new.reddit.com/user/tphace"
+              target="_blank"
+              rel="noopener"
+              >Reddit.</a
+            >
+            Я проверю информацию и соответствующим образом обновлю список.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h2 class="faq-question">Почему не все кресты есть на карте?</h2>
+          <p class="faq-answer">
+            Не каждый крест, найденный на карте, является мемориалом игроку.
+            Некоторые из них, например кресты в православном стиле, представляют
+            собой статичные объекты окружения — часть из них сохранилась еще со
+            времен оригинальных ассетов ArmA. Возможно, некоторые из этих
+            крестов были установлены разработчиками в память о людях, которых
+            они знали лично, однако убедительных доказательств этому обнаружено
+            не было.
+            <br />
+            <br />
+            Для мемориалов игрокам, как правило, используется конкретная модель
+            небольшого деревянного креста. Такие кресты часто спрятаны в
+            отдаленных местах, а рядом с ними иногда можно увидеть скамейку и
+            другие уникальные объекты. Этот проект посвящен исключительно
+            документированию памятных мест, созданных в честь конкретных
+            игроков.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h2 class="faq-question">А что на счет карты Сахал?</h2>
+          <p class="faq-answer">
+            На данный момент отдельная карта мемориалов для дополнения Frostline
+            еще не создана. Пока что на этой карте не было обнаружено ни одного
+            подтвержденного объекта, связанного с мемориалами, и сообщество
+            также не сообщало о проверенных находках.
+            <br />
+            <br />
+            Поскольку Сахал — относительно новая локация, возможно, мемориалы
+            либо хорошо спрятаны, либо их добавят потом. Я внимательно слежу за
+            сообщениями сообщества, и как только существование мемориала будет
+            подтверждено, информация о нем появится здесь.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h2 class="faq-question">Вы связаны с командой разработчиков?</h2>
+          <p class="faq-answer">
+            Я не имею отношения к команде разработчиков DayZ. Это независимый
+            личный проект, основанный на многолетних исследованиях и опыте,
+            накопленном за годы игры в DayZ. То, что начиналось как простая
+            коллекция сохраненных ссылок, со временем превратилось в отдельную
+            работу по документированию этой части игрового мира.
+            <br />
+            <br />
+            Я считаю себя куратором проекта: моя задача — находить,
+            систематизировать и публиковать уже существующую информацию о
+            мемориалах, чтобы эти знаки памяти, созданные сообществом, были
+            сохранены, встречены с уважением и не забыты.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h2 class="faq-question">Как запросить мемориал в память о друге?</h2>
+          <p class="faq-answer">
+            Если вы хотите попросить установить мемориал в память об ушедшем из
+            жизни друге, свяжитесь с разработчиками через
+            <a href="https://x.com/DayZ" target="_blank" rel="noopener"
+              >X (Twitter)</a
+            >
+            или
+            <a
+              href="https://feedback.bistudio.com/project/view/2/"
+              target="_blank"
+              rel="noopener"
+              >официальный трекер обратной связи Bohemia.</a
+            >
+          </p>
+        </article>
+        <div class="section-divider"></div>
+        <div class="video-section">
+          <div class="video-meta-header">
+            <span>Официальные материалы</span>
+            <span>Источник: YouTube / DayZ</span>
+          </div>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/zADIi5S5gJk"
+              title="DayZ 10 Year Anniversary Q&A"
+              loading="lazy"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+          <h2 class="faq-question">10-летие DayZ (декабрь 2023 года)</h2>
+          <div class="faq-answer">
+            <span class="quote-attribution">
+              <b
+                >Тим Пульсмайер, старший продюсер DayZ, кратко рассказал о
+                мемориалах в видеоблоге разработчиков, посвященном десятилетию
+                DayZ, в формате вопросов и ответов (06:35):</b
+              >
+            </span>
+            <i
+              >«За эти десять лет произошло немало случаев, когда люди теряли
+              своих близких. Игроки десятки раз обращались к нам, делясь
+              воспоминаниями, историями и моментами, пережитыми вместе с ними.
+              Это глубоко нас тронуло. Сегодня, путешествуя по Черноруссии или
+              Ливонии, вы можете наткнуться на отдельные могилы на холмах, на
+              возвышенностях возле деревень или просто посреди леса. За каждой
+              из них стоят воспоминания, приключения и пережитые вместе моменты.
+              Они посвящены игрокам, многие из которых ушли слишком рано и по
+              которым теперь очень скучают».</i
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-socials">
+        <a
+          href="https://new.reddit.com/user/tphace/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/reddit.png&quot;)"
+          aria-label="Reddit"
+        ></a>
+        <a
+          href="https://discordapp.com/users/541638623007604747"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/discord.png&quot;)"
+          aria-label="Discord"
+        ></a>
+        <a
+          href="https://www.dayz.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/dayz.png&quot;)"
+          aria-label="DayZ"
+        ></a>
+        <a
+          href="https://www.izurvive.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/map.png&quot;)"
+          aria-label="Maps"
+        ></a>
+        <a
+          href="http://www.youtube.com/@tphace"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          style="background-image: url(&quot;../images/nav/yt.png&quot;)"
+          aria-label="YouTube"
+        ></a>
+      </div>
+      <div class="footer-info">
+        «Мемориалы DayZ» — фанатский проект, официально не связанный с Bohemia
+        Interactive a.s. Все товарные знаки и авторские права, относящиеся к
+        DayZ, принадлежат Bohemia Interactive. Этот сайт создан исключительно в
+        память о сообществе игроков и его историях во вселенной DayZ.
+      </div>
+    </footer>
+    <script
+      data-goatcounter="https://tphace.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
+  </body>
+</html>
