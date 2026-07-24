@@ -21,7 +21,7 @@
     <link rel="icon" type="image/x-icon" href="images/nav/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;1,200;1,400&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
     <style>
     :root {
         --bg-color: #1e1e1e;
@@ -124,7 +124,7 @@
     }
 
     .nav-tagline {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Spectral', serif;
         font-style: italic;
         font-size: 1.00rem;
         color: var(--text-dim);
@@ -158,6 +158,14 @@
     .nav-links a:hover {
         color: var(--text-bright);
     }
+    .language-switcher a + a {
+        margin-left: 10px;
+    }
+
+    .language-switcher a.active {
+        color: var(--text-bright);
+    }
+
 
     /* --- HEADER --- */
     .header-banner {
@@ -190,7 +198,7 @@
     }
 
     h1 {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Spectral', serif;
         font-size: clamp(1.2rem, 3.5vw, 2.2rem);
         font-weight: 200;
         letter-spacing: 12px;
@@ -241,7 +249,7 @@
     }
 
     .welcome-intro p {
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Spectral', serif;
         font-style: light;
         font-size: 1.25rem;
         font-weight: 200;
@@ -327,7 +335,7 @@
     .nav-card h2 {
         position: relative;
         z-index: 2;
-        font-family: 'Crimson Pro', serif;
+        font-family: 'Spectral', serif;
         font-size: 1.25rem;
         text-transform: capitalize;
         letter-spacing: 4px;
@@ -478,6 +486,7 @@
             <li><a href="memorials-chernarus.html">Memorials of Chernarus</a></li>
             <li><a href="memorials-livonia.html">Memorials of Livonia</a></li>
             <li><a href="media.html">Media</a></li>
+            <li class="language-switcher" aria-label="Language"><a href="index.html" lang="en" class="active" aria-current="page">EN</a><a href="ru/index.html" lang="ru">RU</a></li>
         </ul>
     </nav>
     <header class="header-banner" id="welcome">
